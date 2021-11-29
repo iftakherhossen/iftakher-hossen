@@ -7,8 +7,7 @@ import Project from './Project'
 import { useState, useEffect } from 'react'
 import { Button, Tooltip } from '@mui/material';
 import ArrowCircleUpIcon from '@mui/icons-material/ArrowCircleUp';
-import { Box } from '@mui/system';
-import Link from 'next/link';
+import Blog from './Blog'
 
 export default function Index() {
   const [showButton, setShowButton] = useState(false);
@@ -35,20 +34,10 @@ export default function Index() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      {/* <Box className={styles.banglaBtn}>
-        <Tooltip title="Under Construction" placement="bottom" arrow>
-          <Button color="inherit" sx={{ color: 'white' }}>
-            <Link href="/bn" passHref>
-              Translate &nbsp;Bangla
-            </Link>
-          </Button>
-        </Tooltip>
-      </Box> */}
-
       <main className={styles.main}>
-
         <Home />
         <Project />
+        <Blog />
         <Contact />
       </main>
 
