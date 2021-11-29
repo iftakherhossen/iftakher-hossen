@@ -1,9 +1,9 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
-import { Typography } from '@mui/material'
 import Home from './Home'
 import Footer from './Footer'
 import Contact from './Contact'
+import Project from './Project'
 
 export default function Index() {
   return (
@@ -16,6 +16,7 @@ export default function Index() {
 
       <main className={styles.main}>
         <Home />
+        <Project />
         <Contact />
       </main>
 

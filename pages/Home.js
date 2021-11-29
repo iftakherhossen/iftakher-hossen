@@ -6,6 +6,7 @@ import { Box } from '@mui/system';
 import Image from 'next/image';
 import iftakher5 from '../public/iftakher5.png';
 import ArrowRightIcon from '@mui/icons-material/ArrowRight';
+import Link from 'next/link'
 
 const Home = () => {
     return (
@@ -58,12 +59,16 @@ const Home = () => {
                                                 RESUME <ArrowRightIcon />
                                             </Button>
                                         </a>
-                                        <Button color="inherit" className={styles.btn}>
-                                            Projects <ArrowRightIcon />
-                                        </Button>
-                                        <Button color="inherit" className={styles.btn}>
-                                            Contact <ArrowRightIcon />
-                                        </Button>
+                                        <Link href="#projects" passHref>
+                                            <Button color="inherit" className={styles.btn}>
+                                                Projects <ArrowRightIcon />
+                                            </Button>
+                                        </Link>
+                                        <Link href="#contact" passHref>
+                                            <Button color="inherit" className={styles.btn}>
+                                                Contact <ArrowRightIcon />
+                                            </Button>
+                                        </Link>
                                     </Box>
                                 </Box>
                             </Grid>
