@@ -26,7 +26,7 @@ const Home = () => {
                             }
                         },
                     }}>
-                    <Typography variant="h3" className={styles.title}>
+                    <Typography variant="h1" className={styles.title}>
                         Iftakher Hossen
                     </Typography>
                 </motion.div>
@@ -47,13 +47,13 @@ const Home = () => {
                             </Grid>
                             <Grid xs={12} sm={12} md={7} className={styles.sideBar2}>
                                 <Box className={styles.textWrapper}>
-                                    <Typography variant="h5" className={styles.designation}>
+                                    <Typography variant="h5" sx={{ fontSize: '2rem', fontWeight: 700 }} className={styles.designation}>
                                         Full-Stack Web Developer
                                     </Typography>
-                                    <Typography variant="body1" className={styles.description}>
+                                    <Typography variant="body1" sx={{ fontSize: '1rem', lineHeight: '1.6', margin: '1em 0 2em' }} className={styles.description}>
                                         I am a dedicated and hardworking person. I love to learn new technologies every day. I am familiar with React, Node.js, MongoDB, Material UI, Javascript, Data Structures, Bootstrap, Tailwind, Next.js, VS Code, Git. And learning more new technologies.
                                     </Typography>
-                                    <Box className={styles.btnGroup}>
+                                    <Box className={styles.btnGroup} sx={{}}>
                                         <a href="https://drive.google.com/file/d/1XFnyqeM_9yxzaj5qjMUEmPuAIL_0gSlq/view?usp=sharing" rel="noreferrer" target="_blank" download="Iftakher-Hossen-Resume">
                                             <Button color="inherit" className={styles.btn}>
                                                 RESUME <ArrowRightIcon />
