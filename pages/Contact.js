@@ -2,14 +2,23 @@ import { Button, Grid, TextField, Typography } from '@mui/material';
 import { Box } from '@mui/system';
 import React from 'react';
 import styles from '../styles/Home.module.css';
-import { useForm } from "react-hook-form";
 import SendIcon from '@mui/icons-material/Send';
 
 const Contact = () => {
-    const { register, handleSubmit, formState: { errors } } = useForm();
+    async function handleSubmit(e) {
+        e.preventDefault();
+        
+        const formData = {};
 
-    const onSubmit = data => {
-        console.log(data)
+        Array.from(e.currentTarget.elements).forEach(field => {
+            if (!field.name) return;
+            formData[field.name] = field.value;
+        });
+
+        await fetch('/api/mail', {
+            method: 'POST',
+            body: JSON.stringify(formData)
+        });
     }
 
     return (
@@ -26,42 +35,43 @@ const Contact = () => {
                 </Grid>
                 <Grid xs={12} sm={12} md={6}>
                     <Box className={styles.wrapper}>
-                        <form onSubmit={handleSubmit(onSubmit)} className={styles.formBg}>
+                        <form method="post" onSubmit={handleSubmit} className={styles.formBg}>
                             <TextField
+                                id="name"
                                 variant="standard"
                                 label="Name"
-                                {...register("name")}
+                                name="name"
                                 autoComplete="off"
                                 sx={{ width: '100%', mb: 3 }}
                             />
                             <TextField
+                                id="subject"
                                 variant="standard"
                                 label="Subject"
-                                {...register("sub", { required: true })}
+                                name="subject"
                                 autoComplete="off"
                                 sx={{ width: '100%', mb: 3 }}
                             />
-                            {errors.sub && <span>Subject is required!</span>}
                             <TextField
+                                id="email"
                                 variant="standard"
                                 label="Email"
-                                {...register("email", { required: true })}
+                                name="email"
                                 autoComplete="off"
                                 sx={{ width: '100%', mb: 3 }}
                             />
-                            {errors.email && <span>Email is required!</span>}
                             <textarea
-                                placeholder="Content"
-                                {...register("content", { required: true })}
+                                id="textarea"
+                                placeholder="Message"
                                 autoComplete="off"
+                                name="message"
                                 className={styles.textarea}
                             ></textarea>
-                            {errors.content && <span>Content is required!</span>}
                             <Button
                                 type="submit"
                                 variant="contained"
                                 sx={{ bgcolor: '#282C34', fontWeight: 600, letterSpacing: 1, fontSize: '1em' }}
-                            >Send &nbsp; <SendIcon sx={{fontSize: 18}} /></Button>
+                            >Send &nbsp; <SendIcon sx={{ fontSize: 18 }} /></Button>
                         </form>
                     </Box>
                 </Grid>

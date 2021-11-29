@@ -27,7 +27,7 @@ const Home = () => {
                         },
                     }}>
                     <Typography variant="h3" className={styles.title}>
-                        Iftakher Hossen
+                        ইফতেখার হোসেন
                     </Typography>
                 </motion.div>
             </header>
@@ -48,25 +48,25 @@ const Home = () => {
                             <Grid xs={12} sm={12} md={7} className={styles.sideBar2}>
                                 <Box className={styles.textWrapper}>
                                     <Typography variant="h5" className={styles.designation}>
-                                        Full-Stack Web Developer
+                                        ফুল-স্ট্যাক ওয়েব ডেভেলপার
                                     </Typography>
                                     <Typography variant="body1" className={styles.description}>
-                                        I am a dedicated and hardworking person. I love to learn new technologies every day. I am familiar with React, Node.js, MongoDB, Material UI, Javascript, Data Structures, Bootstrap, Tailwind, Next.js, VS Code, Git. And learning more new technologies.
+                                        আমি একজন নিবেদিতপ্রাণ এবং পরিশ্রমী মানুষ। আমি প্রতিদিন একটি নতুন প্রযুক্তি শিখতে ভালোবাসি। আমি রিয়েক্ট, নোড.জেএস, মঙ্গোডিবি, ম্যাটারিয়াল-ইউআই, জাভাস্ক্রিপ্ট, ডাটা স্ট্রাকচার, বুটস্ট্র্যাপ, টেইউইন্ড, ্নেক্সট.জেএস, ভিএস কোড, গিট এর সাথে পরিচিত। এবং আরও নতুন নতুন প্রযুক্তি শিখছি। 
                                     </Typography>
                                     <Box className={styles.btnGroup}>
                                         <a href="https://drive.google.com/file/d/1XFnyqeM_9yxzaj5qjMUEmPuAIL_0gSlq/view?usp=sharing" rel="noreferrer" target="_blank" download="Iftakher-Hossen-Resume">
                                             <Button color="inherit" className={styles.btn}>
-                                                RESUME <ArrowRightIcon />
+                                                রিজ্যুমে <ArrowRightIcon />
                                             </Button>
                                         </a>
                                         <Link href="#projects" passHref>
                                             <Button color="inherit" className={styles.btn}>
-                                                Projects <ArrowRightIcon />
+                                                প্রজেক্টস <ArrowRightIcon />
                                             </Button>
                                         </Link>
                                         <Link href="#contact" passHref>
                                             <Button color="inherit" className={styles.btn}>
-                                                Contact <ArrowRightIcon />
+                                                যোগাযোগ <ArrowRightIcon />
                                             </Button>
                                         </Link>
                                     </Box>

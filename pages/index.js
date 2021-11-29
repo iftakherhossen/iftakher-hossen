@@ -4,8 +4,29 @@ import Home from './Home'
 import Footer from './Footer'
 import Contact from './Contact'
 import Project from './Project'
+import { useState, useEffect } from 'react'
+import { Button, Tooltip } from '@mui/material';
+import ArrowCircleUpIcon from '@mui/icons-material/ArrowCircleUp';
+import { Box } from '@mui/system';
+import Link from 'next/link';
 
 export default function Index() {
+  const [showButton, setShowButton] = useState(false);
+
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      if (window.pageYOffset > 300) {
+        setShowButton(true);
+      } else {
+        setShowButton(false);
+      }
+    });
+  }, []);
+
+  const flyHigh = () => {
+    window.scrollTo(0, 0);
+  };
+
   return (
     <div className={styles.container}>
       <Head>
@@ -14,7 +35,18 @@ export default function Index() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
+      {/* <Box className={styles.banglaBtn}>
+        <Tooltip title="Under Construction" placement="bottom" arrow>
+          <Button color="inherit" sx={{ color: 'white' }}>
+            <Link href="/bn" passHref>
+              Translate &nbsp;Bangla
+            </Link>
+          </Button>
+        </Tooltip>
+      </Box> */}
+
       <main className={styles.main}>
+
         <Home />
         <Project />
         <Contact />
@@ -23,6 +55,15 @@ export default function Index() {
       <footer>
         <Footer />
       </footer>
+
+      {/* GO TOP Button */}
+      {showButton && (
+        <Tooltip title="Fly High" arrow>
+          <Button className={styles.flyUp} title="Fly High" onClick={flyHigh}>
+            <ArrowCircleUpIcon sx={{ fontSize: '2.8em', color: 'white' }} />
+          </Button>
+        </Tooltip>
+      )}
     </div>
   )
 }

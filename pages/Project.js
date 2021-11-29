@@ -2,7 +2,12 @@ import { Button, Card, CardActions, CardContent, CardMedia, Grid, Typography } f
 import { Box } from '@mui/system';
 import React from 'react';
 import styles from '../styles/Home.module.css';
-import Link from 'next/link'
+import Link from 'next/link';
+import Image from 'next/image';
+import projectImg1 from '../public/project1.jpg';
+import projectImg2 from '../public/project2.jpg';
+import projectImg3 from '../public/project3.jpg';
+import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 
 const Project = () => {
     return (
@@ -13,14 +18,14 @@ const Project = () => {
             <Box className={styles.divider}></Box>
 
             <Grid container sx={{ mt: 8, mb: 0 }}>
-                <Grid xs={12} md={6} lg={4} sx={{px: 2}}>
-                    <Card>
-                        <CardMedia
-                            component="img"
-                            height="140"
-                            image="/static/images/cards/contemplative-reptile.jpg"
+                <Grid xs={12} md={6} lg={4} className={styles.projectCard}>
+                    <Card className={styles.zoomAnimationWrapper}>
+                        <Link rel="noreferrer" target="_blank" href="https://oronno-opticals.web.app" passHref style={{ cursor: 'pointer' }}><Image
+                            height="650"
+                            src={projectImg1}
                             alt="Project Thumbnail"
-                        />
+                            className={styles.zoomAnimation}
+                        /></Link>
                         <CardContent>
                             <Typography gutterBottom variant="h5" component="div" style={{ fontWeight: 600 }}>
                                 Oronno Opticals
@@ -30,23 +35,23 @@ const Project = () => {
                             </Typography>
                         </CardContent>
                         <CardActions sx={{ display: 'flex', justifyContent: 'space-between' }}>
-                            <Link href="https://oronno-opticals.web.app/" passHref>
+                            <Link href="https://oronno-opticals.web.app" rel="noreferrer" target="_blank" passHref>
                                 <Button sx={{ color: '#282C34', fontWeight: 700 }}>
-                                    Live Site
+                                    Live Site &nbsp; <ArrowForwardIcon sx={{ fontSize: 16 }} />
                                 </Button>
                             </Link>
-                            <Button sx={{ color: '#282C34', fontWeight: 700 }}>Learn More</Button>
+                            <Button sx={{ color: '#282C34', fontWeight: 700 }}>Learn More &nbsp; <ArrowForwardIcon sx={{ fontSize: 16 }} /></Button>
                         </CardActions>
                     </Card>
                 </Grid>
-                <Grid xs={12} md={6} lg={4} sx={{ px: 2 }}>
-                    <Card>
-                        <CardMedia
-                            component="img"
-                            height="140"
-                            image="/static/images/cards/contemplative-reptile.jpg"
+                <Grid xs={12} md={6} lg={4} className={styles.projectCard}>
+                    <Card className={styles.zoomAnimationWrapper}>
+                        <Link rel="noreferrer" target="_blank" href="https://alavia-airlines.web.app" passHref style={{ cursor: 'pointer' }}><Image
+                            height="650"
+                            src={projectImg2}
                             alt="Project Thumbnail"
-                        />
+                            className={styles.zoomAnimation}
+                        /></Link>
                         <CardContent>
                             <Typography gutterBottom variant="h5" component="div" style={{ fontWeight: 600 }}>
                                 Alavian Airlines
@@ -56,19 +61,19 @@ const Project = () => {
                             </Typography>
                         </CardContent>
                         <CardActions sx={{ display: 'flex', justifyContent: 'space-between' }}>
-                            <Link href="https://alavia-airlines.web.app/" passHref><Button sx={{ color: '#282C34', fontWeight: 700 }}>Live Site</Button></Link>
-                            <Button sx={{ color: '#282C34', fontWeight: 700 }}>Learn More</Button>
+                            <Link rel="noreferrer" target="_blank" href="https://alavia-airlines.web.app" passHref><Button sx={{ color: '#282C34', fontWeight: 700 }}>Live Site &nbsp; <ArrowForwardIcon sx={{ fontSize: 16 }} /></Button></Link>
+                            <Button sx={{ color: '#282C34', fontWeight: 700 }}>Learn More &nbsp; <ArrowForwardIcon sx={{ fontSize: 16 }} /></Button>
                         </CardActions>
                     </Card>
                 </Grid>
-                <Grid xs={12} md={6} lg={4} sx={{ px: 2 }}>
-                    <Card>
-                        <CardMedia
-                            component="img"
-                            height="140"
-                            image="/static/images/cards/contemplative-reptile.jpg"
+                <Grid xs={12} md={6} lg={4} className={styles.projectCard}>
+                    <Card className={styles.zoomAnimationWrapper}>
+                        <Link rel="noreferrer" target="_blank" href="https://aayat-ambulance-service.netlify.app" passHref style={{ cursor: 'pointer' }}><Image
+                            height="650"
+                            src={projectImg3}
                             alt="Project Thumbnail"
-                        />
+                            className={styles.zoomAnimation}
+                        /></Link>
                         <CardContent>
                             <Typography gutterBottom variant="h5" component="div" style={{ fontWeight: 600 }}>
                                 Aayat Ambulance Service
@@ -78,8 +83,8 @@ const Project = () => {
                             </Typography>
                         </CardContent>
                         <CardActions sx={{ display: 'flex', justifyContent: 'space-between' }}>
-                            <Link href="https://aayat-ambulance-service.netlify.app/" passHref><Button sx={{ color: '#282C34', fontWeight: 700 }}>Live Site</Button></Link>
-                            <Button sx={{ color: '#282C34', fontWeight: 700 }}>Learn More</Button>
+                            <Link rel="noreferrer" target="_blank" href="https://aayat-ambulance-service.netlify.app" passHref><Button sx={{ color: '#282C34', fontWeight: 700 }}>Live Site &nbsp; <ArrowForwardIcon sx={{ fontSize: 16 }} /></Button></Link>
+                            <Button sx={{ color: '#282C34', fontWeight: 700 }}>Learn More &nbsp; <ArrowForwardIcon sx={{ fontSize: 16 }} /></Button>
                         </CardActions>
                     </Card>
                 </Grid>
