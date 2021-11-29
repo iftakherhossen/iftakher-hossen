@@ -26,7 +26,7 @@ const Home = () => {
                             }
                         },
                     }}>
-                    <Typography variant="h1" className={styles.title}>
+                    <Typography variant="h2" className={styles.title}>
                         Iftakher Hossen
                     </Typography>
                 </motion.div>
