@@ -26,11 +26,11 @@ const Home = () => {
                             </Grid>
                             <Grid xs={12} sm={12} md={7} className={styles.sideBar2}>
                                 <Box className={styles.textWrapper}>
-                                    <Typography sx={{ fontSize: 22, color: '#358DC8' }}>Hello There,</Typography>
                                     <Typography variant="h5" sx={{ fontSize: '1.8rem', fontWeight: 700, mb: '1.5rem' }} className={styles.designation}>
                                         Full-Stack Web Developer
                                     </Typography>
-                                    <Typography sx={{ fontSize: 22, color: '#358DC8' }}><code>Welcome to my Planet, I am</code></Typography>
+                                    <Typography sx={{ fontSize: 22, color: '#358DC8' }}>Hello There,</Typography>
+                                    <Typography sx={{ fontSize: 22, color: '#358DC8', mb: 1 }}><code>Welcome to my Planet, I am</code></Typography>
                                     <motion.div initial="hidden" animate="visible"
                                         variants={{
                                             hidden: {

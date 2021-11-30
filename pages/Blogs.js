@@ -3,7 +3,7 @@ import { Box } from '@mui/system';
 import React from 'react';
 import styles from '../styles/Home.module.css';
 
-const Blog = () => {
+const Blogs = () => {
     return (
         <Box className={styles.projects} id='projects'>
             <Typography variant="h4" sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
@@ -16,4 +16,4 @@ const Blog = () => {
     );
 };
 
-export default Blog;
+export default Blogs;

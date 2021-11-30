@@ -1,4 +1,4 @@
-import { Button, Card, CardActions, CardContent, CardMedia, Grid, Typography } from '@mui/material';
+import { Button, Card, CardActions, CardContent, Grid, Typography } from '@mui/material';
 import { Box } from '@mui/system';
 import React from 'react';
 import styles from '../styles/Home.module.css';
@@ -40,7 +40,10 @@ const Project = () => {
                                     Live Site &nbsp; <ArrowForwardIcon sx={{ fontSize: 16 }} />
                                 </Button>
                             </Link>
-                            <Button sx={{ color: '#282C34', fontWeight: 700 }}>Learn More &nbsp; <ArrowForwardIcon sx={{ fontSize: 16 }} /></Button>
+                            <Link href="/projects/project1" rel="noreferrer" target="_blank" passHref>
+                                <Button sx={{ color: '#282C34', fontWeight: 700 }}>
+                                    Learn More &nbsp; <ArrowForwardIcon sx={{ fontSize: 16 }} /></Button>
+                            </Link>
                         </CardActions>
                     </Card>
                 </Grid>
@@ -61,8 +64,16 @@ const Project = () => {
                             </Typography>
                         </CardContent>
                         <CardActions sx={{ display: 'flex', justifyContent: 'space-between' }}>
-                            <Link rel="noreferrer" target="_blank" href="https://alavia-airlines.web.app" passHref><Button sx={{ color: '#282C34', fontWeight: 700 }}>Live Site &nbsp; <ArrowForwardIcon sx={{ fontSize: 16 }} /></Button></Link>
-                            <Button sx={{ color: '#282C34', fontWeight: 700 }}>Learn More &nbsp; <ArrowForwardIcon sx={{ fontSize: 16 }} /></Button>
+                            <Link rel="noreferrer" target="_blank" href="https://alavia-airlines.web.app" passHref>
+                                <Button sx={{ color: '#282C34', fontWeight: 700 }}>
+                                    Live Site &nbsp; <ArrowForwardIcon sx={{ fontSize: 16 }} />
+                                </Button>
+                            </Link>
+                            <Link href="/projects/project2" rel="noreferrer" target="_blank" passHref>
+                                <Button sx={{ color: '#282C34', fontWeight: 700 }}>
+                                    Learn More &nbsp; <ArrowForwardIcon sx={{ fontSize: 16 }} />
+                                </Button>
+                            </Link>
                         </CardActions>
                     </Card>
                 </Grid>
@@ -83,8 +94,16 @@ const Project = () => {
                             </Typography>
                         </CardContent>
                         <CardActions sx={{ display: 'flex', justifyContent: 'space-between' }}>
-                            <Link rel="noreferrer" target="_blank" href="https://aayat-ambulance-service.netlify.app" passHref><Button sx={{ color: '#282C34', fontWeight: 700 }}>Live Site &nbsp; <ArrowForwardIcon sx={{ fontSize: 16 }} /></Button></Link>
-                            <Button sx={{ color: '#282C34', fontWeight: 700 }}>Learn More &nbsp; <ArrowForwardIcon sx={{ fontSize: 16 }} /></Button>
+                            <Link rel="noreferrer" target="_blank" href="https://aayat-ambulance-service.netlify.app" passHref>
+                                <Button sx={{ color: '#282C34', fontWeight: 700 }}>
+                                    Live Site &nbsp; <ArrowForwardIcon sx={{ fontSize: 16 }} />
+                                </Button>
+                            </Link>
+                            <Link href="/projects/project3" rel="noreferrer" target="_blank" passHref>
+                                <Button sx={{ color: '#282C34', fontWeight: 700 }}>
+                                    Learn More &nbsp; <ArrowForwardIcon sx={{ fontSize: 16 }} />
+                                </Button>
+                            </Link>
                         </CardActions>
                     </Card>
                 </Grid>

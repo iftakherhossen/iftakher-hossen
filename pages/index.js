@@ -3,15 +3,17 @@ import styles from '../styles/Home.module.css'
 import Home from './Home'
 import Footer from './Footer'
 import Contact from './Contact'
-import Project from './Project'
-import { useState, useEffect } from 'react'
-import { AppBar, Button, Container, IconButton, Menu, MenuItem, Toolbar, Tooltip, Typography } from '@mui/material';
+import Projects from './Projects'
+import { useState, useEffect } from 'react';
+import { Button, Tooltip } from '@mui/material';
 import ArrowCircleUpIcon from '@mui/icons-material/ArrowCircleUp';
-import Blog from './Blog';
+import Blogs from './Blogs';
+import Skills from './skills';
 import About from './About';
 import { Box } from '@mui/system';
 import React from 'react';
-import MenuIcon from '@mui/icons-material/Menu';
+
+import Navigation from './projects/Navigation'
 
 export default function Index() {
   const [showButton, setShowButton] = useState(false);
@@ -30,24 +32,6 @@ export default function Index() {
     window.scrollTo(0, 0);
   };
 
-  const [anchorElNav, setAnchorElNav] = React.useState(null);
-  const [anchorElUser, setAnchorElUser] = React.useState(null);
-
-  const handleOpenNavMenu = (event) => {
-    setAnchorElNav(event.currentTarget);
-  };
-  const handleOpenUserMenu = (event) => {
-    setAnchorElUser(event.currentTarget);
-  };
-
-  const handleCloseNavMenu = () => {
-    setAnchorElNav(null);
-  };
-
-  const handleCloseUserMenu = () => {
-    setAnchorElUser(null);
-  };
-
   return (
     <div className={styles.container}>
       <Head>
@@ -60,97 +44,15 @@ export default function Index() {
       </Head>
 
       <header>
-        <Box sx={{ flexGrow: 1 }}>
-          {/* <AppBar position="static" sx={{ bgcolor: 'transparent', boxShadow: 0, color: '#358DC8' }}>
-            <Toolbar>
-              <Typography sx={{ flexGrow: 1, fontSize: 22 }} component="div">
-                Iftakher Hossen
-              </Typography>
-              <Button color="inherit" sx={{ fontSize: 16 }} className={styles.hover}>About</Button>
-              <Button color="inherit" sx={{ fontSize: 16, mx: 1 }} className={styles.hover}>Skills</Button>
-              <Button color="inherit" sx={{ fontSize: 16 }} className={styles.hover}>Projects</Button>
-              <Button color="inherit" sx={{ fontSize: 16, mx: 1 }} className={styles.hover}>Blogs</Button>
-              <Button color="inherit" sx={{ fontSize: 16 }} className={styles.hover}>Contact</Button>
-            </Toolbar>
-          </AppBar> */}
-
-          <AppBar position="static" sx={{ bgcolor: 'transparent', boxShadow: 0, color: '#358DC8' }}>
-            <Container maxWidth="xl">
-              <Toolbar disableGutters>
-                <Typography
-                  noWrap
-                  component="div"
-                  sx={{ mr: 2, fontSize: 22, display: { xs: 'none', md: 'flex' } }}
-                >
-                  Iftakher Hossen
-                </Typography>
-
-                <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
-                  <IconButton
-                    size="large"
-                    aria-label="account of current user"
-                    aria-controls="menu-appbar"
-                    aria-haspopup="true"
-                    onClick={handleOpenNavMenu}
-                    color="inherit"
-                  >
-                    <MenuIcon />
-                  </IconButton>
-                  <Menu
-                    id="menu-appbar"
-                    anchorEl={anchorElNav}
-                    anchorOrigin={{
-                      vertical: 'bottom',
-                      horizontal: 'left',
-                    }}
-                    keepMounted
-                    transformOrigin={{
-                      vertical: 'top',
-                      horizontal: 'left',
-                    }}
-                    open={Boolean(anchorElNav)}
-                    onClose={handleCloseNavMenu}
-                    sx={{
-                      display: { xs: 'block', md: 'none' },
-                    }}
-                  >
-                    <MenuItem onClick={handleCloseNavMenu}>
-                      <Button color="inherit" sx={{ fontSize: 16 }} className={styles.hover}>About</Button>
-                      <Button color="inherit" sx={{ fontSize: 16, mx: 1 }} className={styles.hover}>Skills</Button>
-                      <Button color="inherit" sx={{ fontSize: 16 }} className={styles.hover}>Projects</Button>
-                      <Button color="inherit" sx={{ fontSize: 16, mx: 1 }} className={styles.hover}>Blogs</Button>
-                      <Button color="inherit" sx={{ fontSize: 16 }} className={styles.hover}>Contact</Button>
-                    </MenuItem>
-                  </Menu>
-                </Box>
-                <Typography
-                  variant="h6"
-                  noWrap
-                  component="div"
-                  sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}
-                >
-                  Iftakher Hossen
-                </Typography>
-                <Box sx={{ flexGrow: 1 }}></Box>
-
-                <Box sx={{ flexGrow: 0, display: { xs: 'none', md: 'flex' } }}>
-                  <Button color="inherit" sx={{ fontSize: 15 }} className={styles.hover}>About</Button>
-                  <Button color="inherit" sx={{ fontSize: 15, mx: 1 }} className={styles.hover}>Skills</Button>
-                  <Button color="inherit" sx={{ fontSize: 15 }} className={styles.hover}>Projects</Button>
-                  <Button color="inherit" sx={{ fontSize: 15, mx: 1 }} className={styles.hover}>Blogs</Button>
-                  <Button color="inherit" sx={{ fontSize: 15 }} className={styles.hover}>Contact</Button>
-                </Box>
-              </Toolbar>
-            </Container>
-          </AppBar>
-        </Box>
+        <Navigation />
       </header>
 
       <main className={styles.main}>
         <Home />
         <About />
-        <Project />
-        <Blog />
+        <Skills />
+        <Projects />
+        <Blogs />
         <Contact />
       </main>
 
