@@ -31,13 +31,13 @@ const project1 = () => {
                         </ul>
                         <Box>
                             <Button color="inherit" sx={{ mx: 1, fontSize: 15 }}>
-                                <Link href="https://oronno-opticals.web.app/" passHref><LanguageIcon /> Live Site</Link>
+                                <LanguageIcon /> Live Site
                             </Button>
                             <Button color="inherit" sx={{ mx: 1, fontSize: 15 }}>
-                                <Link href="https://github.com/iftakherhossen/oronno-opticals-client" passHref><GitHubIcon />Client Side Code</Link>
+                                <GitHubIcon />Client Side Code
                             </Button>
                             <Button color="inherit" sx={{ mx: 1, fontSize: 15 }}>
-                                <Link href="https://github.com/iftakherhossen/oronno-opticals-server" passHref><GitHubIcon />Server Side Code</Link>
+                                <GitHubIcon />Server Side Code
                             </Button>
                         </Box>
                     </Grid>
