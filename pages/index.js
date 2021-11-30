@@ -131,7 +131,9 @@ export default function Index() {
                 >
                   Iftakher Hossen
                 </Typography>
-                <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
+                <Box sx={{ flexGrow: 1 }}></Box>
+
+                <Box sx={{ flexGrow: 0, display: { xs: 'none', md: 'flex' } }}>
                   <Button color="inherit" sx={{ fontSize: 15 }} className={styles.hover}>About</Button>
                   <Button color="inherit" sx={{ fontSize: 15, mx: 1 }} className={styles.hover}>Skills</Button>
                   <Button color="inherit" sx={{ fontSize: 15 }} className={styles.hover}>Projects</Button>
