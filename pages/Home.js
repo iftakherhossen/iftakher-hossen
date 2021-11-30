@@ -11,27 +11,6 @@ import Link from 'next/link';
 const Home = () => {
     return (
         <Box>
-            <header>
-                <motion.div initial="hidden" animate="visible"
-                    variants={{
-                        hidden: {
-                            scale: .8,
-                            opacity: 0
-                        },
-                        visible: {
-                            scale: 1,
-                            opacity: 1,
-                            transition: {
-                                delay: .6
-                            }
-                        },
-                    }}>
-                    <Typography variant="h2" className={styles.title}>
-                        Iftakher Hossen
-                    </Typography>
-                </motion.div>
-            </header>
-
             <Box>
                 <Container>
                     <Box className={styles.wrapper}>
@@ -47,13 +26,30 @@ const Home = () => {
                             </Grid>
                             <Grid xs={12} sm={12} md={7} className={styles.sideBar2}>
                                 <Box className={styles.textWrapper}>
-                                    <Typography variant="h5" sx={{ fontSize: '2rem', fontWeight: 700 }} className={styles.designation}>
+                                    <Typography sx={{ fontSize: 22, color: '#358DC8' }}>Hello There,</Typography>
+                                    <Typography variant="h5" sx={{ fontSize: '1.8rem', fontWeight: 700, mb: '1.5rem' }} className={styles.designation}>
                                         Full-Stack Web Developer
                                     </Typography>
-                                    <Typography variant="body1" sx={{ fontSize: '1rem', lineHeight: '1.6', margin: '1em 0 2em' }} className={styles.description}>
-                                        I am a dedicated and hardworking person. I love to learn new technologies every day. I am familiar with React, Node.js, MongoDB, Material UI, Javascript, Data Structures, Bootstrap, Tailwind, Next.js, VS Code, Git. And learning more new technologies.
-                                    </Typography>
-                                    <Box className={styles.btnGroup} sx={{}}>
+                                    <Typography sx={{ fontSize: 22, color: '#358DC8' }}><code>Welcome to my Planet, I am</code></Typography>
+                                    <motion.div initial="hidden" animate="visible"
+                                        variants={{
+                                            hidden: {
+                                                scale: .8,
+                                                opacity: 0
+                                            },
+                                            visible: {
+                                                scale: 1,
+                                                opacity: 1,
+                                                transition: {
+                                                    delay: .6
+                                                }
+                                            },
+                                        }}>
+                                        <Typography sx={{ margin: 0, lineHeight: '1.15', fontSize: '4rem', fontWeight: 900 }} className={styles.title}>
+                                            Iftakher Hossen
+                                        </Typography>
+                                    </motion.div>
+                                    <Box className={styles.btnGroup} sx={{ mt: 3 }}>
                                         <a href="https://drive.google.com/file/d/1XFnyqeM_9yxzaj5qjMUEmPuAIL_0gSlq/view?usp=sharing" rel="noreferrer" target="_blank" download="Iftakher-Hossen-Resume">
                                             <Button color="inherit" className={styles.btn}>
                                                 RESUME <ArrowRightIcon />

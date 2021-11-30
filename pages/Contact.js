@@ -3,11 +3,18 @@ import { Box } from '@mui/system';
 import React from 'react';
 import styles from '../styles/Home.module.css';
 import SendIcon from '@mui/icons-material/Send';
+import EmailIcon from '@mui/icons-material/Email';
+import CallIcon from '@mui/icons-material/Call';
+import FmdGoodIcon from '@mui/icons-material/FmdGood';
+import FacebookIcon from '@mui/icons-material/Facebook';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import GitHubIcon from '@mui/icons-material/GitHub';
 
 const Contact = () => {
     async function handleSubmit(e) {
         e.preventDefault();
-        
+
         const formData = {};
 
         Array.from(e.currentTarget.elements).forEach(field => {
@@ -28,12 +35,48 @@ const Contact = () => {
             </Typography>
             <Box className={styles.divider}></Box>
             <Grid container>
-                <Grid xs={12} sm={12} md={6}>
+                <Grid xs={12} sm={12} md={5}>
                     <Box className={styles.wrapper}>
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3650.800470329842!2d90.35717906429774!3d23.790118543176252!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c0c1089c485f%3A0x646b6cc49f14a469!2sMiddle%20Paikpara%2C%20Dhaka!5e0!3m2!1sen!2sbd!4v1638200504643!5m2!1sen!2sbd" className={styles.map} allowFullScreen="" loading="lazy"></iframe>
+                        <Box className={styles.info}>
+                            <Typography variant="h4" sx={{ mb: 3 }}>Contact Info</Typography>
+                            <Box sx={{ display: 'flex', alignItems: 'center' }}>
+                                <FmdGoodIcon />
+                                <Typography variant="h6" sx={{ml: 2}}>Mirpur, Dhaka, Bangladesh</Typography>
+                            </Box>
+                            <Box sx={{ display: 'flex', alignItems: 'center', my: 1 }}>
+                                <EmailIcon />
+                                <Typography variant="h6" sx={{ml: 2}}><a href="mailto:iftakher.one@gmail.com">iftakher.one@gmail.com</a></Typography>
+                            </Box>
+                            <Box sx={{ display: 'flex', alignItems: 'center' }}>
+                                <CallIcon />
+                                <Typography variant="h6" sx={{ml: 2}}><a href="tel:+8801644985364">+8801644985364</a></Typography>
+                            </Box>
+                            <Box className={styles.smHolder}>
+                                <Box sx={{ mr: 1 }}>
+                                    <a href="https://www.facebook.com/hosseniftakher" rel="noreferrer" target="_blank">
+                                        <FacebookIcon />
+                                    </a>
+                                </Box>
+                                <Box sx={{ mx: 1 }}>
+                                    <a href="https://www.instagram.com/hossen_iftakher/" rel="noreferrer" target="_blank">
+                                        <InstagramIcon />
+                                    </a>
+                                </Box>
+                                <Box sx={{ mx: 1 }}>
+                                    <a href="https://www.linkedin.com/in/iftakher-hossen/" rel="noreferrer" target="_blank">
+                                        <LinkedInIcon />
+                                    </a>
+                                </Box>
+                                <Box sx={{ mx: 1 }}>
+                                    <a href="https://github.com/iftakherhossen" rel="noreferrer" target="_blank">
+                                        <GitHubIcon sx={{ fontSize: 20 }} />
+                                    </a>
+                                </Box>
+                            </Box>
+                        </Box>
                     </Box>
                 </Grid>
-                <Grid xs={12} sm={12} md={6}>
+                <Grid xs={12} sm={12} md={7}>
                     <Box className={styles.wrapper}>
                         <form method="post" onSubmit={handleSubmit} className={styles.formBg}>
                             <TextField

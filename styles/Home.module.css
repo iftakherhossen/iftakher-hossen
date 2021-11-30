@@ -12,7 +12,7 @@
 .title {
   margin: 0;
   line-height: 1.15;
-  font-size: 4rem;
+  font-size: 3.5rem;
   font-weight: 900;
 }
 
@@ -60,14 +60,9 @@
 }
 
 .designation {
-  font-size: 2rem;
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
   font-weight: 700;
-}
-
-.description {
-  font-size: 1rem;
-  line-height: 1.6;
-  margin: 1em 0 2em;
 }
 
 .btn {
@@ -82,6 +77,15 @@
 .btn:hover {
   border-top: 1px solid white;
   border-bottom: 1px solid white;
+}
+
+.hover {
+  border-bottom: 2px solid transparent;
+}
+
+.hover:hover {
+  color: white;
+  border-bottom: 2px solid white;
 }
 
 .contact, .projects {
@@ -104,18 +108,15 @@
   color: white !important;
 }
 
-.map {
-  border: 0;
-  width: 100%;
-  height: 404px;
-  border-radius: 25px 0 0 25px;
-  box-shadow: 0 2px 2px;
+.info {
+  padding: 4rem 0;
+  text-align: left;
 }
 
 .formBg {
   padding: 1rem;
   background-color: #cecfcf;
-  border-radius: 0 25px 25px 0;
+  border-radius: 0 15px 15px 15px;
   box-shadow: 0 2px 2px;
 }
 
@@ -139,10 +140,9 @@
 }
 
 .smHolder {
-  padding-top: 4rem;
-  padding-bottom: 6px;
+  margin-top: 1rem;
   color: #aaa;
-  justify-content: center;
+  justify-content: flex-start;
   display: flex;
   align-items: center;
 }
