@@ -11,7 +11,7 @@ const Blog = () => {
             </Typography>
             <Box className={styles.divider}></Box>
 
-            <Typography sx={{ pt: 6, fontSize: 28, color: '#358DC8'}}>Coming Soon!!!</Typography>
+            <Typography sx={{ pt: 6, fontSize: 28, color: '#358DC8'}} className={styles.marginBottomInMobile}>Coming Soon!!!</Typography>
         </Box>
     );
 };

@@ -64,7 +64,7 @@ const About = () => {
                 </Grid>
                 <Grid xs={12} sm={12} md={5}>
                     <Box sx={{ pt: 8, px: 4 }}>
-                        <Image src={iftakherImg} alt="Profile" style={{height: '100%'}} />
+                        <Image src={iftakherImg} alt="Profile" style={{ height: '100%' }} className={styles.marginBottomInMobile} />
                     </Box>
                 </Grid>
             </Grid>
