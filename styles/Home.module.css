@@ -61,7 +61,6 @@
 
 .designation {
   font-size: 1.8rem;
-  margin-bottom: 1.5rem;
   font-weight: 700;
 }
 
@@ -182,6 +181,7 @@
   text-align: left;
   padding-left: 10px;
   margin-bottom: -10px !important;
+  transition: width .6s ease;
 }
 
 .skillsBar {
@@ -189,9 +189,8 @@
   padding: 0 8px;
   color: black;
   border-radius: 15px !important;
-  font-weight: 600;
+  font-weight: 600;  
 }
-
 .html {
   width: 95%;
   background-color: #F06529;
@@ -304,6 +303,9 @@
     padding: 0;
     text-align: center;
   }
+  .flyUp {
+    margin-left: auto;
+  }
 }
 
 @media screen and (min-width: 600px) and (max-width: 1100px) {
@@ -346,5 +348,12 @@
   .map, .formBg {
     border-radius: 15px;
     width: 100%;
+  }
+  .info {
+    padding: 0;
+    text-align: center;
+  }
+  .flyUp {
+    margin-left: auto;
   }
 }

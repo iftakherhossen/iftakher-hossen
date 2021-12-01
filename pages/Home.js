@@ -7,6 +7,7 @@ import Image from 'next/image';
 import iftakherImg from '../public/iftakher5.png';
 import ArrowRightIcon from '@mui/icons-material/ArrowRight';
 import Link from 'next/link';
+import Typical from 'react-typical'
 
 const Home = () => {
     return (
@@ -26,8 +27,21 @@ const Home = () => {
                             </Grid>
                             <Grid item xs={12} sm={12} md={7} className={styles.sideBar2}>
                                 <Box className={styles.textWrapper}>
-                                    <Typography variant="h5" sx={{ fontSize: '1.8rem', fontWeight: 700, mb: '1.5rem' }} className={styles.designation}>
-                                        Full-Stack Web Developer
+                                    <Typography variant="h5" sx={{ fontSize: '1.8em', fontWeight: 700 }} className={styles.designation}>
+                                        <strong>
+                                            <Typical
+                                                steps={[
+                                                        'Front-end Web Developer',
+                                                        3000,
+                                                        'Full-Stack Web Developer',
+                                                        3000,
+                                                        'React Developer',
+                                                        3000
+                                                    ]}
+                                                    wrapper="p"
+                                                    loop={Infinity}
+                                            />
+                                    </strong>
                                     </Typography>
                                     <Typography sx={{ fontSize: 22, color: '#358DC8' }}>Hello There,</Typography>
                                     <Typography sx={{ fontSize: 22, color: '#358DC8', mb: 1 }}><code>Welcome to my Planet, I am</code></Typography>

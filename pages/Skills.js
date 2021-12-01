@@ -12,43 +12,43 @@ const Skills = () => {
             <Box className={styles.divider}></Box>
 
             <Box sx={{ pt: 5 }} className={styles.marginBottomInMobile}>
-                <Typography variant="body1" className={styles.skillsName}>HTML</Typography>
+                <Typography variant="body1" className={styles.skillsName} sx={{fontWeight: 600}}>HTML</Typography>
                 <Box className={styles.skillsWrapper}>
                     <Box className={styles["skillsBar"] + " " + styles["html"]}>95%</Box>
                 </Box>
-                <Typography variant="body1" className={styles.skillsName}>CSS</Typography>
+                <Typography variant="body1" className={styles.skillsName} sx={{fontWeight: 600}}>CSS</Typography>
                 <Box className={styles.skillsWrapper}>
                     <Box className={styles["skillsBar"] + " " + styles["css"]}>90%</Box>
                 </Box>
-                <Typography variant="body1" className={styles.skillsName}>Bootstrap</Typography>
+                <Typography variant="body1" className={styles.skillsName} sx={{fontWeight: 600}}>Bootstrap</Typography>
                 <Box className={styles.skillsWrapper}>
                     <Box className={styles["skillsBar"] + " " + styles["bootstrap"]}>85%</Box>
                 </Box>
-                <Typography variant="body1" className={styles.skillsName}>Tailwind CSS</Typography>
+                <Typography variant="body1" className={styles.skillsName} sx={{fontWeight: 600}}>Tailwind CSS</Typography>
                 <Box className={styles.skillsWrapper}>
                     <Box className={styles["skillsBar"] + " " + styles["tailwind"]}>60%</Box>
                 </Box>
-                <Typography variant="body1" className={styles.skillsName}>Material UI</Typography>
+                <Typography variant="body1" className={styles.skillsName} sx={{fontWeight: 600}}>Material UI</Typography>
                 <Box className={styles.skillsWrapper}>
                     <Box className={styles["skillsBar"] + " " + styles["materialUi"]}>65%</Box>
                 </Box>
-                <Typography variant="body1" className={styles.skillsName}>Javascript</Typography>
+                <Typography variant="body1" className={styles.skillsName} sx={{fontWeight: 600}}>Javascript</Typography>
                 <Box className={styles.skillsWrapper}>
                     <Box className={styles["skillsBar"] + " " + styles["javascript"]}>70%</Box>
                 </Box>
-                <Typography variant="body1" className={styles.skillsName}>React</Typography>
+                <Typography variant="body1" className={styles.skillsName} sx={{fontWeight: 600}}>React</Typography>
                 <Box className={styles.skillsWrapper}>
                     <Box className={styles["skillsBar"] + " " + styles["react"]}>70%</Box>
                 </Box>
-                <Typography variant="body1" className={styles.skillsName}>Node.js</Typography>
+                <Typography variant="body1" className={styles.skillsName} sx={{fontWeight: 600}}>Node.js</Typography>
                 <Box className={styles.skillsWrapper}>
                     <Box className={styles["skillsBar"] + " " + styles["nodeJs"]}>50%</Box>
                 </Box>
-                <Typography variant="body1" className={styles.skillsName}>Express.js</Typography>
+                <Typography variant="body1" className={styles.skillsName} sx={{fontWeight: 600}}>Express.js</Typography>
                 <Box className={styles.skillsWrapper}>
                     <Box className={styles["skillsBar"] + " " + styles["express"]}>50%</Box>
                 </Box>
-                <Typography variant="body1" className={styles.skillsName}>MongoDB</Typography>
+                <Typography variant="body1" className={styles.skillsName} sx={{fontWeight: 600}}>MongoDB</Typography>
                 <Box className={styles.skillsWrapper}>
                     <Box className={styles["skillsBar"] + " " + styles["mongoDb"]}>50%</Box>
                 </Box>

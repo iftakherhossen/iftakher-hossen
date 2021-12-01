@@ -16,7 +16,7 @@ const project1 = () => {
 
             <Box className={styles.projects}>
                 <Grid container>
-                    <Grid item xs={12} sm={6} md={5} sx={{ px: 2 }}>
+                    <Grid item xs={12} sm={6} md={5} sx={{ p: 2 }}>
                         <Image src={projectImg} alt="projectImg" />
                     </Grid>
                     <Grid item xs={12} sm={6} md={7} sx={{ px: 4 }}>
@@ -28,18 +28,18 @@ const project1 = () => {
                             <li>Using React Bootstrap.</li>
                             <li>Firebase Authentication.</li>
                         </ul>
-                        <Typography variant="body1" color="text.secondary">
+                        <Typography variant="body1" sx={{color: '#aaa', mb:2}}>
                             <span style={{ fontWeight: 600 }}>Technology: React, Material-UI, React Router, MongoDB, Express, Firebase.</span>
                         </Typography>
                         <Box>
                             <Button color="inherit" sx={{ mr: 1, fontSize: 15 }}>
-                                <LanguageIcon /> Live Site
+                                <LanguageIcon /> &nbsp; Live Site
                             </Button>
                             <Button color="inherit" sx={{ mx: 1, fontSize: 15 }}>
-                                <GitHubIcon /> Client Side Code
+                                <GitHubIcon /> &nbsp; Client Side Code
                             </Button>
                             <Button color="inherit" sx={{ ms: 1, fontSize: 15 }}>
-                                <GitHubIcon /> Server Side Code
+                                <GitHubIcon /> &nbsp; Server Side Code
                             </Button>
                         </Box>
                     </Grid>
