@@ -10,7 +10,7 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import Image from 'next/image';
-import iftakherImg from '../public/iftakher4.jpg';
+import iftakherImg from '../public/iftakher2.jpg';
 
 const About = () => {
     return (
