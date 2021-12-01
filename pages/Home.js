@@ -15,7 +15,7 @@ const Home = () => {
                 <Container>
                     <Box className={styles.wrapper}>
                         <Grid container>
-                            <Grid xs={12} sm={12} md={5} className={styles.sideBar1}>
+                            <Grid item xs={12} sm={12} md={5} className={styles.sideBar1}>
                                 <Box className={styles["frame"] + " " + styles["zoomAnimationWrapper"]}>
                                     <Image
                                         src={iftakherImg}
@@ -24,7 +24,7 @@ const Home = () => {
                                     />
                                 </Box>
                             </Grid>
-                            <Grid xs={12} sm={12} md={7} className={styles.sideBar2}>
+                            <Grid item xs={12} sm={12} md={7} className={styles.sideBar2}>
                                 <Box className={styles.textWrapper}>
                                     <Typography variant="h5" sx={{ fontSize: '1.8rem', fontWeight: 700, mb: '1.5rem' }} className={styles.designation}>
                                         Full-Stack Web Developer

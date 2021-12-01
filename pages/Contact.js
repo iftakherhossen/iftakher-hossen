@@ -35,7 +35,7 @@ const Contact = () => {
             </Typography>
             <Box className={styles.divider}></Box>
             <Grid container>
-                <Grid xs={12} sm={12} md={5}>
+                <Grid item xs={12} sm={12} md={5}>
                     <Box className={styles.wrapper}>
                         <Box className={styles.info}>
                             <Typography variant="h4" sx={{ mb: 3 }}>Contact Info</Typography>
@@ -76,7 +76,7 @@ const Contact = () => {
                         </Box>
                     </Box>
                 </Grid>
-                <Grid xs={12} sm={12} md={7}>
+                <Grid item xs={12} sm={12} md={7}>
                     <Box className={styles.wrapper}>
                         <form method="post" onSubmit={handleSubmit} className={styles.formBg}>
                             <TextField

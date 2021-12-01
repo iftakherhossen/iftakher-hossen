@@ -16,28 +16,30 @@ const project1 = () => {
 
             <Box className={styles.projects}>
                 <Grid container>
-                    <Grid xs={12} sm={6} md={5} sx={{ px: 2 }}>
+                    <Grid item xs={12} sm={6} md={5} sx={{ px: 2 }}>
                         <Image src={projectImg} alt="projectImg" />
                     </Grid>
-                    <Grid xs={12} sm={6} md={7} sx={{ px: 4 }}>
+                    <Grid item xs={12} sm={6} md={7} sx={{ px: 4 }}>
                         <Typography variant="h4">Oronno Opticals</Typography>
-                        <Typography variant="h6">Project Details</Typography>
+                        <Typography variant="h6">Project Details - </Typography>
                         <ul>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
+                            <li>React Application.</li>
+                            <li>Maintained express database.</li>
+                            <li>Using React Bootstrap.</li>
+                            <li>Firebase Authentication.</li>
                         </ul>
+                        <Typography variant="body1" color="text.secondary">
+                            <span style={{ fontWeight: 600 }}>Technology: React, Material-UI, React Router, MongoDB, Express, Firebase.</span>
+                        </Typography>
                         <Box>
-                            <Button color="inherit" sx={{ mx: 1, fontSize: 15 }}>
+                            <Button color="inherit" sx={{ mr: 1, fontSize: 15 }}>
                                 <LanguageIcon /> Live Site
                             </Button>
                             <Button color="inherit" sx={{ mx: 1, fontSize: 15 }}>
-                                <GitHubIcon />Client Side Code
+                                <GitHubIcon /> Client Side Code
                             </Button>
-                            <Button color="inherit" sx={{ mx: 1, fontSize: 15 }}>
-                                <GitHubIcon />Server Side Code
+                            <Button color="inherit" sx={{ ms: 1, fontSize: 15 }}>
+                                <GitHubIcon /> Server Side Code
                             </Button>
                         </Box>
                     </Grid>

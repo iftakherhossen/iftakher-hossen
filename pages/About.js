@@ -20,7 +20,7 @@ const About = () => {
             </Typography>
             <Box className={styles.divider}></Box>
             <Grid container sx={{ display: 'flex', alignItems: 'center' }}>
-                <Grid xs={12} sm={12} md={7}>
+                <Grid item xs={12} sm={12} md={7}>
                     <Box sx={{ pt: 8, px: 4, textAlign: 'left' }}>
                         <Typography sx={{ fontSize: 38, mb: 5 }}>I am a Full-stack Web Developer</Typography>
                         <Typography sx={{ fontSize: 17 }}>I am a dedicated and hardworking person. I love to learn new technologies every day. I am familiar with React, Node.js, MongoDB, Material UI, Javascript, Data Structures, Bootstrap, Tailwind, Next.js, VS Code, Git. And learning more new technologies.</Typography>
@@ -62,7 +62,7 @@ const About = () => {
                         </Box>
                     </Box>
                 </Grid>
-                <Grid xs={12} sm={12} md={5}>
+                <Grid item xs={12} sm={12} md={5}>
                     <Box sx={{ pt: 8, px: 4 }}>
                         <Image src={iftakherImg} alt="Profile" className={styles["marginBottomInMobile"] + " " + styles["aboutMeImg"]} />
                     </Box>
