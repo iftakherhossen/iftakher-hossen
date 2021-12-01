@@ -1,6 +1,6 @@
 import React from 'react';
 import MenuIcon from '@mui/icons-material/Menu';
-import Link from 'next/Link';
+import Link from 'next/link';
 import styles from '../styles/Home.module.css'
 import { Box } from '@mui/system';
 import { AppBar, Button, Container, IconButton, Menu, MenuItem, Toolbar, Typography } from '@mui/material';
