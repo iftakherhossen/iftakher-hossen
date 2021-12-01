@@ -8,7 +8,7 @@ import { useState, useEffect } from 'react';
 import { Button, Tooltip } from '@mui/material';
 import ArrowCircleUpIcon from '@mui/icons-material/ArrowCircleUp';
 import Blogs from './Blogs';
-import Skills from './skills';
+import Skills from './Skills';
 import About from './About';
 import { Box } from '@mui/system';
 import React from 'react';

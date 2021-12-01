@@ -1,8 +1,8 @@
 import { Button, Grid, Typography } from '@mui/material';
 import { Box } from '@mui/system';
 import React from 'react';
-import Image from 'next/Image'
-import Link from 'next/Link'
+import Image from 'next/image'
+import Link from 'next/link';
 import Navigation from '../Navigation';
 import projectImg from '../../public/project1.jpg';
 import styles from '../../styles/Home.module.css';
