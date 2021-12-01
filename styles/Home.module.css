@@ -227,12 +227,12 @@
 }
 
 .nodeJs {
-  width: 60%;
+  width: 50%;
   background-color: #3C873A;
 }
 
 .express {
-  width: 55%;
+  width: 50%;
   background-color: #83CD29;
 }
 
@@ -305,6 +305,10 @@
   }
   .flyUp {
     margin-left: auto;
+  }
+
+  .skillsContainer {
+    padding: 40px 20px 10px;
   }
 }
 
