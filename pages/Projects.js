@@ -18,7 +18,7 @@ const Project = () => {
             <Box className={styles.divider}></Box>
 
             <Grid container sx={{ mt: 8, mb: 0 }}>
-                <Grid item xs={12} md={6} lg={4} className={styles["projectCard"] + " " + styles["marginBottomInMobile"]}>
+                <Grid item xs={12} md={6} lg={4} className={styles["projectCard"] + " " + styles["marginBottomInMobile"]} sx={{mb: 2}}>
                     <Card className={styles.zoomAnimationWrapper}>
                         <Link rel="noreferrer" target="_blank" href="https://oronno-opticals.web.app" passHref style={{ cursor: 'pointer' }}><Image
                             height="650"
@@ -47,7 +47,7 @@ const Project = () => {
                         </CardActions>
                     </Card>
                 </Grid>
-                <Grid item xs={12} md={6} lg={4} className={styles["projectCard"] + " " + styles["marginBottomInMobile"]}>
+                <Grid item xs={12} md={6} lg={4} className={styles["projectCard"] + " " + styles["marginBottomInMobile"]} sx={{mb: 2}}>
                     <Card className={styles.zoomAnimationWrapper}>
                         <Link rel="noreferrer" target="_blank" href="https://alavia-airlines.web.app" passHref style={{ cursor: 'pointer' }}><Image
                             height="650"
@@ -77,7 +77,7 @@ const Project = () => {
                         </CardActions>
                     </Card>
                 </Grid>
-                <Grid item xs={12} md={6} lg={4} className={styles["projectCard"] + " " + styles["marginBottomInMobile"]}>
+                <Grid item xs={12} md={6} lg={4} className={styles["projectCard"] + " " + styles["marginBottomInMobile"]}sx={{mb:2}}>
                     <Card className={styles.zoomAnimationWrapper}>
                         <Link rel="noreferrer" target="_blank" href="https://aayat-ambulance-service.netlify.app" passHref style={{ cursor: 'pointer' }}><Image
                             height="650"
