@@ -263,6 +263,10 @@
     width: 100%;
   }
 
+  .designation {
+    height: 150px !important;
+  }
+
   .description {
     font-size: 1.4em;
     line-height: 1.3;

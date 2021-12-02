@@ -64,7 +64,7 @@ const Home = () => {
                                         </Typography>
                                     </motion.div>
                                     <Box className={styles.btnGroup} sx={{ mt: 3 }}>
-                                        <a href="https://drive.google.com/file/d/1XFnyqeM_9yxzaj5qjMUEmPuAIL_0gSlq/view?usp=sharing" rel="noreferrer" target="_blank" download="Iftakher-Hossen-Resume">
+                                        <a href="https://drive.google.com/uc?export=download&id=1XFnyqeM_9yxzaj5qjMUEmPuAIL_0gSlq" rel="noreferrer" target="_blank" download="Iftakher-Hossen-Resume">
                                             <Button color="inherit" className={styles.btn}>
                                                 RESUME <ArrowRightIcon />
                                             </Button>

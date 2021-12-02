@@ -1,10 +1,11 @@
 import { Button, Grid, Typography } from '@mui/material';
 import { Box } from '@mui/system';
 import React from 'react';
-import Image from 'next/image'
-import Link from 'next/link';
+import Image from 'next/image';
 import Navigation from '../Navigation';
-import projectImg from '../../public/project3.jpg';
+import projectImg1 from '../../public/project3.jpg';
+import projectImg2 from '../../public/project3.2.jpg';
+import projectImg3 from '../../public/project3.3.jpg';
 import styles from '../../styles/Home.module.css';
 import LanguageIcon from '@mui/icons-material/Language';
 import GitHubIcon from '@mui/icons-material/GitHub';
@@ -17,9 +18,9 @@ const project3 = () => {
             <Box sx={{px: 'auto', py: 3}}>
                 <Grid container>
                     <Grid item xs={12} sm={6} md={5} sx={{ p: 2 }}>
-                        <Image src={projectImg} alt="projectImg" style={{mb: 3}} />
-                        <Image src={projectImg} alt="projectImg" style={{mb: 3}} />
-                        <Image src={projectImg} alt="projectImg" style={{mb: 3}} />
+                        <Image src={projectImg1} alt="projectImg" style={{mb: 3}} />
+                        <Image src={projectImg2} alt="projectImg" style={{mb: 3}} />
+                        <Image src={projectImg3} alt="projectImg" style={{mb: 3}} />
                     </Grid>
                     <Grid item xs={12} sm={6} md={7} sx={{ px: 4 }}>
                         <Typography variant="h4">Aayat Ambulance Service</Typography>

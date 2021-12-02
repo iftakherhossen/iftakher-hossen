@@ -14,6 +14,7 @@
     "@mui/icons-material": "^5.2.0",
     "@mui/material": "^5.2.1",
     "@sendgrid/mail": "^7.6.0",
+    "aos": "^2.3.4",
     "framer-motion": "^5.3.3",
     "next": "12.0.4",
     "react": "17.0.2",
