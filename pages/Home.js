@@ -31,7 +31,7 @@ const Home = () => {
                                     <Typography variant="h5" sx={{ fontSize: '1.8em', mb: 1, fontWeight: 700 }} className={styles.designation}>
                                         <Typewriter
                                             options={{
-                                                strings: ['Frontend Web Developer', 'React Developer', 'Full Stack Wev Developer'],
+                                                strings: ['Frontend Web Developer', 'React Developer ●', 'Full Stack Web Developer'],
                                                 autoStart: true,
                                                 loop: true,
                                             }}
