@@ -7,7 +7,7 @@ import Image from 'next/image';
 import iftakherImg from '../public/iftakher5.png';
 import ArrowRightIcon from '@mui/icons-material/ArrowRight';
 import Link from 'next/link';
-import Typical from 'react-typical'
+import Typewriter from 'typewriter-effect/dist/core';
 
 const Home = () => {
     return (
@@ -27,21 +27,11 @@ const Home = () => {
                             </Grid>
                             <Grid item xs={12} sm={12} md={7} className={styles.sideBar2}>
                                 <Box className={styles.textWrapper}>
-                                    <Typography variant="h5" sx={{ fontSize: '1.8em', fontWeight: 700 }} className={styles.designation}>
-                                        <strong>
-                                            <Typical
-                                                steps={[
-                                                    'Front-end Web Developer',
-                                                    3000,
-                                                    'Full-Stack Web Developer',
-                                                    3000,
-                                                    'React Developer',
-                                                    3000
-                                                ]}
-                                                wrapper="p"
-                                                loop={Infinity}
-                                            />
-                                        </strong>
+                                    <Typography variant="h5" sx={{ fontSize: '1.8em', mb: 1, fontWeight: 700 }} className={styles.designation}>
+                                        new Typewriter('#typewriter', {
+                                            strings: ['Front-end Web Developer', 'React Developer', 'Full Stack Developer'],
+                                            autoStart: true,
+                                        });                                    
                                     </Typography>
                                     <Typography sx={{ fontSize: 22, color: '#358DC8' }}>Hello There,</Typography>
                                     <Typography sx={{ fontSize: 22, color: '#358DC8', mb: 1 }}><code>Welcome to my Planet, I am</code></Typography>
@@ -64,17 +54,17 @@ const Home = () => {
                                         </Typography>
                                     </motion.div>
                                     <Box className={styles.btnGroup} sx={{ mt: 3 }}>
-                                        <a href="https://drive.google.com/uc?export=download&id=1XFnyqeM_9yxzaj5qjMUEmPuAIL_0gSlq" download="Iftakher-Hossen-Resume" passhref>
+                                        <a href="https://drive.google.com/uc?export=download&id=1XFnyqeM_9yxzaj5qjMUEmPuAIL_0gSlq" download="Iftakher-Hossen-Resume">
                                             <Button color="inherit" className={styles.btn} sx={{ borderTop: '1px solid transparent', borderBottom: '1px solid transparent' }}>
                                                 RESUME <ArrowRightIcon />
                                             </Button>
                                         </a>
-                                        <Link href="#projects" passhref>
+                                        <Link href="#projects" passHref>
                                             <Button color="inherit" className={styles.btn} sx={{ borderTop: '1px solid transparent', borderBottom: '1px solid transparent' }}>
-                                                <span>Projects <ArrowRightIcon /></span>
+                                                Projects <ArrowRightIcon />
                                             </Button>
                                         </Link>
-                                        <Link href="#contact" passhref>
+                                        <Link href="#contact" passHref>
                                             <Button color="inherit" className={styles.btn} sx={{ borderTop: '1px solid transparent', borderBottom: '1px solid transparent' }}>
                                                 Contact <ArrowRightIcon />
                                             </Button>
