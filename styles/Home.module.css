@@ -317,6 +317,18 @@
   .skillsContainer {
     padding: 40px 20px 10px;
   }
+
+  .projectHolder {
+    padding: 1rem;
+  }
+
+  .projectBtn {
+    margin: 5px;
+  }
+
+  .goBackBtn {
+    padding: 0;
+  }
 }
 
 @media screen and (min-width: 600px) and (max-width: 1100px) {
@@ -368,5 +380,13 @@
 
   .flyUp {
     margin-left: auto;
+  }
+
+  .projectBtn {
+    margin: 5px 0;
+  }
+
+  .projectContent {
+    padding-top: 0;
   }
 }

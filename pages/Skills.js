@@ -11,7 +11,7 @@ const Skills = () => {
             </Typography>
             <Box className={styles.divider}></Box>
 
-            <Box sx={{ pt: 5 }} className={styles["marginBottomInMobile"] + " " + styles["skillsContainer"]}>
+            <Box sx={{ pt: 4 }} className={styles["marginBottomInMobile"] + " " + styles["skillsContainer"]}>
                 <Typography variant="body1" className={styles.skillsName} sx={{fontWeight: 600}}>HTML</Typography>
                 <Box className={styles.skillsWrapper}>
                     <Box className={styles["skillsBar"] + " " + styles["html"]}>95%</Box>

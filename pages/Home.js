@@ -7,7 +7,8 @@ import Image from 'next/image';
 import iftakherImg from '../public/iftakher5.png';
 import ArrowRightIcon from '@mui/icons-material/ArrowRight';
 import Link from 'next/link';
-import Typewriter from 'typewriter-effect/dist/core';
+import Typewriter from 'typewriter-effect';
+import Particles from "react-tsparticles";
 
 const Home = () => {
     return (
@@ -28,10 +29,13 @@ const Home = () => {
                             <Grid item xs={12} sm={12} md={7} className={styles.sideBar2}>
                                 <Box className={styles.textWrapper}>
                                     <Typography variant="h5" sx={{ fontSize: '1.8em', mb: 1, fontWeight: 700 }} className={styles.designation}>
-                                        new Typewriter('#typewriter', {
-                                            strings: ['Front-end Web Developer', 'React Developer', 'Full Stack Developer'],
-                                            autoStart: true,
-                                        });                                    
+                                        <Typewriter
+                                            options={{
+                                                strings: ['Frontend Web Developer', 'React Developer', 'Full Stack Wev Developer'],
+                                                autoStart: true,
+                                                loop: true,
+                                            }}
+                                        />
                                     </Typography>
                                     <Typography sx={{ fontSize: 22, color: '#358DC8' }}>Hello There,</Typography>
                                     <Typography sx={{ fontSize: 22, color: '#358DC8', mb: 1 }}><code>Welcome to my Planet, I am</code></Typography>
