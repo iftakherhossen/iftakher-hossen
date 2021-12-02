@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
-import Home from './home'
+import Home from './Home'
 import Footer from './Footer'
 import Contact from './Contact'
 import Projects from './Projects'
