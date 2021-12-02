@@ -31,7 +31,9 @@ const About = () => {
                             </Box>
                             <Box sx={{ display: 'flex', alignItems: 'center', my: 1 }}>
                                 <EmailIcon />
-                                <Typography sx={{ ml: 2, fontSize: 18 }}><a href="mailto:iftakher.one@gmail.com">iftakher.one@gmail.com</a></Typography>
+                                <Typography sx={{ ml: 2, fontSize: 18 }}>
+                                    <a href="mailto:iftakher.one@gmail.com">iftakher.one@gmail.com</a>
+                                </Typography>
                             </Box>
                             <Box sx={{ display: 'flex', alignItems: 'center' }}>
                                 <CallIcon />
@@ -64,7 +66,7 @@ const About = () => {
                 </Grid>
                 <Grid item xs={12} sm={12} md={5}>
                     <Box sx={{ pt: 8, px: 4 }}>
-                        <Image src={iftakherImg} alt="Profile" className={styles["marginBottomInMobile"] + " " + styles["aboutMeImg"]} />
+                        <Image src={iftakherImg} alt="Profile" priority className={styles["marginBottomInMobile"] + " " + styles["aboutMeImg"]} />
                     </Box>
                 </Grid>
             </Grid>

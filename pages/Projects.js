@@ -18,9 +18,9 @@ const Project = () => {
             <Box className={styles.divider}></Box>
 
             <Grid container sx={{ mt: 8, mb: 0 }}>
-                <Grid item xs={12} md={6} lg={4} className={styles["projectCard"] + " " + styles["marginBottomInMobile"]} sx={{mb: 2}}>
+                <Grid item xs={12} md={6} lg={4} className={styles["projectCard"] + " " + styles["marginBottomInMobile"]} sx={{ mb: 2 }}>
                     <Card className={styles.zoomAnimationWrapper}>
-                        <Link rel="noreferrer" target="_blank" href="https://oronno-opticals.web.app" passHref style={{ cursor: 'pointer' }}><Image
+                        <Link rel="noreferrer" target="_blank" href="https://oronno-opticals.web.app" passhref style={{ cursor: 'pointer' }}><Image
                             height="650"
                             src={projectImg1}
                             alt="Project Thumbnail"
@@ -35,21 +35,21 @@ const Project = () => {
                             </Typography>
                         </CardContent>
                         <CardActions sx={{ display: 'flex', justifyContent: 'space-between' }}>
-                            <Link href="https://oronno-opticals.web.app" rel="noreferrer" target="_blank" passHref>
+                            <Link href="https://oronno-opticals.web.app" rel="noreferrer" target="_blank" passhref>
                                 <Button sx={{ color: '#282C34', fontWeight: 700 }}>
                                     Live Site &nbsp; <ArrowForwardIcon sx={{ fontSize: 16 }} />
                                 </Button>
                             </Link>
-                            <Link href="/projects/project1" passHref>
+                            <Link href="/projects/project1" passhref>
                                 <Button sx={{ color: '#282C34', fontWeight: 700 }}>
                                     Learn More &nbsp; <ArrowForwardIcon sx={{ fontSize: 16 }} /></Button>
                             </Link>
                         </CardActions>
                     </Card>
                 </Grid>
-                <Grid item xs={12} md={6} lg={4} className={styles["projectCard"] + " " + styles["marginBottomInMobile"]} sx={{mb: 2}}>
+                <Grid item xs={12} md={6} lg={4} className={styles["projectCard"] + " " + styles["marginBottomInMobile"]} sx={{ mb: 2 }}>
                     <Card className={styles.zoomAnimationWrapper}>
-                        <Link rel="noreferrer" target="_blank" href="https://alavia-airlines.web.app" passHref style={{ cursor: 'pointer' }}><Image
+                        <Link rel="noreferrer" target="_blank" href="https://alavia-airlines.web.app" passhref style={{ cursor: 'pointer' }}><Image
                             height="650"
                             src={projectImg2}
                             alt="Project Thumbnail"
@@ -64,12 +64,12 @@ const Project = () => {
                             </Typography>
                         </CardContent>
                         <CardActions sx={{ display: 'flex', justifyContent: 'space-between' }}>
-                            <Link rel="noreferrer" target="_blank" href="https://alavia-airlines.web.app" passHref>
+                            <Link rel="noreferrer" target="_blank" href="https://alavia-airlines.web.app" passhref>
                                 <Button sx={{ color: '#282C34', fontWeight: 700 }}>
                                     Live Site &nbsp; <ArrowForwardIcon sx={{ fontSize: 16 }} />
                                 </Button>
                             </Link>
-                            <Link href="/projects/project2" passHref>
+                            <Link href="/projects/project2" passhref>
                                 <Button sx={{ color: '#282C34', fontWeight: 700 }}>
                                     Learn More &nbsp; <ArrowForwardIcon sx={{ fontSize: 16 }} />
                                 </Button>
@@ -77,9 +77,9 @@ const Project = () => {
                         </CardActions>
                     </Card>
                 </Grid>
-                <Grid item xs={12} md={6} lg={4} className={styles["projectCard"] + " " + styles["marginBottomInMobile"]}sx={{mb:2}}>
+                <Grid item xs={12} md={6} lg={4} className={styles["projectCard"] + " " + styles["marginBottomInMobile"]} sx={{ mb: 2 }}>
                     <Card className={styles.zoomAnimationWrapper}>
-                        <Link rel="noreferrer" target="_blank" href="https://aayat-ambulance-service.netlify.app" passHref style={{ cursor: 'pointer' }}><Image
+                        <Link rel="noreferrer" target="_blank" href="https://aayat-ambulance-service.netlify.app" passhref style={{ cursor: 'pointer' }}><Image
                             height="650"
                             src={projectImg3}
                             alt="Project Thumbnail"
@@ -94,12 +94,12 @@ const Project = () => {
                             </Typography>
                         </CardContent>
                         <CardActions sx={{ display: 'flex', justifyContent: 'space-between' }}>
-                            <Link rel="noreferrer" target="_blank" href="https://aayat-ambulance-service.netlify.app" passHref>
+                            <Link rel="noreferrer" target="_blank" href="https://aayat-ambulance-service.netlify.app" passhref>
                                 <Button sx={{ color: '#282C34', fontWeight: 700 }}>
                                     Live Site &nbsp; <ArrowForwardIcon sx={{ fontSize: 16 }} />
                                 </Button>
                             </Link>
-                            <Link href="/projects/project3" passHref>
+                            <Link href="/projects/project3" passhref>
                                 <Button sx={{ color: '#282C34', fontWeight: 700 }}>
                                     Learn More &nbsp; <ArrowForwardIcon sx={{ fontSize: 16 }} />
                                 </Button>

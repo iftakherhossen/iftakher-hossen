@@ -64,17 +64,17 @@ const Home = () => {
                                         </Typography>
                                     </motion.div>
                                     <Box className={styles.btnGroup} sx={{ mt: 3 }}>
-                                        <a href="https://drive.google.com/uc?export=download&id=1XFnyqeM_9yxzaj5qjMUEmPuAIL_0gSlq" download="Iftakher-Hossen-Resume" passHref>
+                                        <a href="https://drive.google.com/uc?export=download&id=1XFnyqeM_9yxzaj5qjMUEmPuAIL_0gSlq" download="Iftakher-Hossen-Resume" passhref>
                                             <Button color="inherit" className={styles.btn} sx={{ borderTop: '1px solid transparent', borderBottom: '1px solid transparent' }}>
                                                 RESUME <ArrowRightIcon />
                                             </Button>
                                         </a>
-                                        <Link href="#projects" passHref>
+                                        <Link href="#projects" passhref>
                                             <Button color="inherit" className={styles.btn} sx={{ borderTop: '1px solid transparent', borderBottom: '1px solid transparent' }}>
-                                                Projects <ArrowRightIcon />
+                                                <span>Projects <ArrowRightIcon /></span>
                                             </Button>
                                         </Link>
-                                        <Link href="#contact" passHref>
+                                        <Link href="#contact" passhref>
                                             <Button color="inherit" className={styles.btn} sx={{ borderTop: '1px solid transparent', borderBottom: '1px solid transparent' }}>
                                                 Contact <ArrowRightIcon />
                                             </Button>

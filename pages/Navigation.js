@@ -67,21 +67,23 @@ const Navigation = () => {
                                     display: { xs: 'block', md: 'none' },
                                 }}
                             >
-                                <MenuItem onClick={handleCloseNavMenu} sx={{display:'flex', flexDirection: 'column'}}>
-                                    <Button color="inherit" sx={{ fontSize: 18, fontWeight: 600, mx:1}} className={styles.hover}>
-                                        <Link href="\#about" passHref><code>About</code></Link>
+                                <MenuItem onClick={handleCloseNavMenu} sx={{ display: 'flex', flexDirection: 'column' }}>
+                                    <Button color="inherit" sx={{ fontSize: 18, fontWeight: 600, mx: 1 }} className={styles.hover}>
+                                        <code><Link href="#about" passhref>About</Link></code>
                                     </Button>
                                     <Button color="inherit" sx={{ fontSize: 18, fontWeight: 600, mx: 1 }} className={styles.hover}>
-                                        <Link href="\#skills" passHref><code>Skills</code></Link>
-                                    </Button>
-                                    <Button color="inherit" sx={{ fontSize: 18, fontWeight: 600, mx:1 }} className={styles.hover}>
-                                        <Link href="\#projects" passHref> <code>Projects</code></Link>
+                                        <code><Link href="#skills" passhref>Skills</Link></code>
                                     </Button>
                                     <Button color="inherit" sx={{ fontSize: 18, fontWeight: 600, mx: 1 }} className={styles.hover}>
-                                        <Link href="\#blogs" passHref><code>Blogs</code></Link>
+                                        <code>
+                                            <Link href="#projects" passhref>Projects</Link>
+                                        </code>
                                     </Button>
-                                    <Button color="inherit" sx={{ fontSize: 18, fontWeight: 600, mx:1 }} className={styles.hover}>
-                                        <Link href="\#contact" passHref><code>Contact</code></Link>
+                                    <Button color="inherit" sx={{ fontSize: 18, fontWeight: 600, mx: 1 }} className={styles.hover}>
+                                        <code><Link href="#blogs" passhref>Blogs</Link></code>
+                                    </Button>
+                                    <Button color="inherit" sx={{ fontSize: 18, fontWeight: 600, mx: 1 }} className={styles.hover}>
+                                        <code><Link href="#contact" passhref>Contact</Link></code>
                                     </Button>
                                 </MenuItem>
                             </Menu>
@@ -98,19 +100,25 @@ const Navigation = () => {
 
                         <Box sx={{ flexGrow: 0, display: { xs: 'none', md: 'flex' } }}>
                             <Button color="inherit" sx={{ fontSize: 18, fontWeight: 600 }} className={styles.hover}>
-                                <Link href="#about" passHref><code>About</code></Link>
+                                <code>
+                                    <Link href="#about" passhref>About</Link>
+                                </code>
                             </Button>
                             <Button color="inherit" sx={{ fontSize: 18, fontWeight: 600, mx: 1 }} className={styles.hover}>
-                                <Link href="#skills" passHref><code>Skills</code></Link>
+                                <code><Link href="#skills" passhref>
+                                    Skills
+                                </Link></code>
                             </Button>
                             <Button color="inherit" sx={{ fontSize: 18, fontWeight: 600 }} className={styles.hover}>
-                                <Link href="#projects" passHref><code>Projects</code></Link>
+                                <code>
+                                    <Link href="#projects" passhref>Projects</Link>
+                                </code>
                             </Button>
                             <Button color="inherit" sx={{ fontSize: 18, fontWeight: 600, mx: 1 }} className={styles.hover}>
-                                <Link href="#blogs" passHref><code>Blogs</code></Link>
+                                <code><Link href="#blogs" passhref>Blogs</Link></code>
                             </Button>
                             <Button color="inherit" sx={{ fontSize: 18, fontWeight: 600 }} className={styles.hover}>
-                                <Link href="#contact" passHref><code>Contact</code></Link>
+                                <code><Link href="#contact" passhref>Contact</Link></code>
                             </Button>
                         </Box>
                     </Toolbar>
