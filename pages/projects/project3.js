@@ -1,38 +1,37 @@
 import { Button, Grid, Typography } from '@mui/material';
 import { Box } from '@mui/system';
 import React from 'react';
-import Image from 'next/image';
+import Image from 'next/image'
+import Link from 'next/link';
 import Navigation from '../Navigation';
-import projectImg1 from '../../public/project1.jpg';
-import projectImg2 from '../../public/project1.2.jpg';
-import projectImg3 from '../../public/project1.3.jpg';
+import projectImg from '../../public/project3.jpg';
 import styles from '../../styles/Home.module.css';
 import LanguageIcon from '@mui/icons-material/Language';
 import GitHubIcon from '@mui/icons-material/GitHub';
 
-const project1 = () => {
+const project3 = () => {
     return (
         <Box sx={{ color: 'white' }}>
             <Navigation />
 
-            <Box className={styles.projectChild}>
+            <Box sx={{px: 'auto', py: 3}}>
                 <Grid container>
                     <Grid item xs={12} sm={6} md={5} sx={{ p: 2 }}>
-                        <Image src={projectImg1} alt="projectImg" />
-                        <Image src={projectImg2} alt="projectImg" />
-                        <Image src={projectImg3} alt="projectImg" />
+                        <Image src={projectImg} alt="projectImg" style={{mb: 3}} />
+                        <Image src={projectImg} alt="projectImg" style={{mb: 3}} />
+                        <Image src={projectImg} alt="projectImg" style={{mb: 3}} />
                     </Grid>
                     <Grid item xs={12} sm={6} md={7} sx={{ px: 4 }}>
-                        <Typography variant="h4">Oronno Opticals</Typography>
+                        <Typography variant="h4">Aayat Ambulance Service</Typography>
                         <Typography variant="h6">Project Details - </Typography>
                         <ul>
                             <li>React Application.</li>
-                            <li>Maintained express database.</li>
-                            <li>Using Material Ui.</li>
+                            <li>Using JSON Database.</li>
+                            <li>Using React Bootstrap.</li>
                             <li>Firebase Authentication.</li>
                         </ul>
                         <Typography variant="body1" sx={{color: '#aaa', mb:2}}>
-                            <span style={{ fontWeight: 600 }}>Technology: React, Material-UI, React Router, MongoDB, Express, Firebase.</span>
+                            <span style={{ fontWeight: 600 }}>Technology: React, React Router, React Bootstrap, Firebase.</span>
                         </Typography>
                         <Box>
                             <Button color="inherit" sx={{ mr: 1, fontSize: 15 }}>
@@ -52,4 +51,4 @@ const project1 = () => {
     );
 };
 
-export default project1;
+export default project3;

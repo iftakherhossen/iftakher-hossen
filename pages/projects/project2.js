@@ -18,17 +18,17 @@ const project1 = () => {
             <Box className={styles.projectChild}>
                 <Grid container>
                     <Grid item xs={12} sm={6} md={5} sx={{ p: 2 }}>
-                        <Image src={projectImg1} alt="projectImg" />
-                        <Image src={projectImg2} alt="projectImg" />
-                        <Image src={projectImg3} alt="projectImg" />
+                        <Image src={projectImg1} alt="projectImg" style={{ mb: 3 }} />
+                        <Image src={projectImg2} alt="projectImg" style={{ mb: 3 }} />
+                        <Image src={projectImg3} alt="projectImg" style={{ mb: 3 }} />
                     </Grid>
                     <Grid item xs={12} sm={6} md={7} sx={{ px: 4 }}>
-                        <Typography variant="h4">Oronno Opticals</Typography>
+                        <Typography variant="h4">Alavian Airlines</Typography>
                         <Typography variant="h6">Project Details - </Typography>
                         <ul>
                             <li>React Application.</li>
                             <li>Maintained express database.</li>
-                            <li>Using Material Ui.</li>
+                            <li>Using React Bootstrap.</li>
                             <li>Firebase Authentication.</li>
                         </ul>
                         <Typography variant="body1" sx={{color: '#aaa', mb:2}}>

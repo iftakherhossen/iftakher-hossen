@@ -189,8 +189,9 @@
   padding: 0 8px;
   color: black;
   border-radius: 15px !important;
-  font-weight: 600;  
+  font-weight: 600;
 }
+
 .html {
   width: 95%;
   background-color: #F06529;
@@ -240,6 +241,7 @@
   width: 50%;
   background-color: #4BB03E;
 }
+
 
 /* For Responsiveness */
 @media screen and (max-width: 599px) {
@@ -303,6 +305,7 @@
     padding: 0;
     text-align: center;
   }
+
   .flyUp {
     margin-left: auto;
   }
@@ -353,10 +356,12 @@
     border-radius: 15px;
     width: 100%;
   }
+
   .info {
     padding: 0;
     text-align: center;
   }
+
   .flyUp {
     margin-left: auto;
   }
