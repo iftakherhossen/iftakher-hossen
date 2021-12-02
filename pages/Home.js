@@ -31,17 +31,17 @@ const Home = () => {
                                         <strong>
                                             <Typical
                                                 steps={[
-                                                        'Front-end Web Developer',
-                                                        3000,
-                                                        'Full-Stack Web Developer',
-                                                        3000,
-                                                        'React Developer',
-                                                        3000
-                                                    ]}
-                                                    wrapper="p"
-                                                    loop={Infinity}
+                                                    'Front-end Web Developer',
+                                                    3000,
+                                                    'Full-Stack Web Developer',
+                                                    3000,
+                                                    'React Developer',
+                                                    3000
+                                                ]}
+                                                wrapper="p"
+                                                loop={Infinity}
                                             />
-                                    </strong>
+                                        </strong>
                                     </Typography>
                                     <Typography sx={{ fontSize: 22, color: '#358DC8' }}>Hello There,</Typography>
                                     <Typography sx={{ fontSize: 22, color: '#358DC8', mb: 1 }}><code>Welcome to my Planet, I am</code></Typography>
@@ -64,18 +64,18 @@ const Home = () => {
                                         </Typography>
                                     </motion.div>
                                     <Box className={styles.btnGroup} sx={{ mt: 3 }}>
-                                        <a href="https://drive.google.com/uc?export=download&id=1XFnyqeM_9yxzaj5qjMUEmPuAIL_0gSlq" rel="noreferrer" target="_blank" download="Iftakher-Hossen-Resume">
-                                            <Button color="inherit" className={styles.btn}>
+                                        <a href="https://drive.google.com/uc?export=download&id=1XFnyqeM_9yxzaj5qjMUEmPuAIL_0gSlq" download="Iftakher-Hossen-Resume" passHref>
+                                            <Button color="inherit" className={styles.btn} sx={{ borderTop: '1px solid transparent', borderBottom: '1px solid transparent' }}>
                                                 RESUME <ArrowRightIcon />
                                             </Button>
                                         </a>
                                         <Link href="#projects" passHref>
-                                            <Button color="inherit" className={styles.btn}>
+                                            <Button color="inherit" className={styles.btn} sx={{ borderTop: '1px solid transparent', borderBottom: '1px solid transparent' }}>
                                                 Projects <ArrowRightIcon />
                                             </Button>
                                         </Link>
                                         <Link href="#contact" passHref>
-                                            <Button color="inherit" className={styles.btn}>
+                                            <Button color="inherit" className={styles.btn} sx={{ borderTop: '1px solid transparent', borderBottom: '1px solid transparent' }}>
                                                 Contact <ArrowRightIcon />
                                             </Button>
                                         </Link>
