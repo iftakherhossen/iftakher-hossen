@@ -85,7 +85,7 @@ const Contact = () => {
                                 label="Name"
                                 name="name"
                                 autoComplete="off"
-                                sx={{ width: '100%', mb: 3 }}
+                                sx={{ width: '100%', mb: 2 }}
                             />
                             <TextField
                                 id="subject"
@@ -93,7 +93,7 @@ const Contact = () => {
                                 label="Subject"
                                 name="subject"
                                 autoComplete="off"
-                                sx={{ width: '100%', mb: 3 }}
+                                sx={{ width: '100%', mb: 2 }}
                             />
                             <TextField
                                 id="email"
@@ -101,15 +101,18 @@ const Contact = () => {
                                 label="Email"
                                 name="email"
                                 autoComplete="off"
-                                sx={{ width: '100%', mb: 3 }}
+                                sx={{ width: '100%', mb: 2 }}
                             />
-                            <textarea
-                                id="textarea"
-                                placeholder="Message"
+                            <TextField
+                                id="standard-multiline-static"
+                                label="Message"
+                                multiline
+                                rows={4}
                                 autoComplete="off"
                                 name="message"
-                                className={styles.textarea}
-                            ></textarea>
+                                sx={{ width: '100%', mb: 3 }}
+                                variant="standard"
+                            />
                             <Button
                                 type="submit"
                                 variant="contained"

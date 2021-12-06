@@ -38,7 +38,7 @@ const Skills = () => {
                 </Box>
                 <Typography variant="body1" className={styles.skillsName} sx={{fontWeight: 600}}>React</Typography>
                 <Box className={styles.skillsWrapper}>
-                    <Box className={styles["skillsBar"] + " " + styles["react"]}>70%</Box>
+                    <Box className={styles["skillsBar"] + " " + styles["react"]}>65%</Box>
                 </Box>
                 <Typography variant="body1" className={styles.skillsName} sx={{fontWeight: 600}}>Node.js</Typography>
                 <Box className={styles.skillsWrapper}>

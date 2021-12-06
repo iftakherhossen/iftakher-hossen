@@ -8,6 +8,7 @@ import iftakherImg from '../public/iftakher5.png';
 import ArrowRightIcon from '@mui/icons-material/ArrowRight';
 import Link from 'next/link';
 import Typewriter from 'typewriter-effect';
+import DownloadIcon from '@mui/icons-material/Download';
 import Particles from "react-tsparticles";
 
 const Home = () => {
@@ -31,7 +32,7 @@ const Home = () => {
                                     <Typography variant="h5" sx={{ fontSize: '1.8em', mb: 1, fontWeight: 700 }} className={styles.designation}>
                                         <Typewriter
                                             options={{
-                                                strings: ['Frontend Web Developer', 'React Developer ●', 'Full Stack Web Developer'],
+                                                strings: ['Frontend Developer', 'React Developer', 'Full Stack Web Developer'],
                                                 autoStart: true,
                                                 loop: true,
                                             }}
@@ -59,17 +60,17 @@ const Home = () => {
                                     </motion.div>
                                     <Box className={styles.btnGroup} sx={{ mt: 3 }}>
                                         <a href="https://drive.google.com/uc?export=download&id=1XFnyqeM_9yxzaj5qjMUEmPuAIL_0gSlq" download="Iftakher-Hossen-Resume">
-                                            <Button color="inherit" className={styles.btn} sx={{ borderTop: '1px solid transparent', borderBottom: '1px solid transparent' }}>
-                                                RESUME <ArrowRightIcon />
+                                            <Button color="inherit" className={styles.btn} sx={{ borderTop: '1px solid transparent', borderBottom: '1px solid transparent', ml: 1 }}>
+                                                <DownloadIcon /> &nbsp; RESUME
                                             </Button>
                                         </a>
                                         <Link href="#projects" passHref>
-                                            <Button color="inherit" className={styles.btn} sx={{ borderTop: '1px solid transparent', borderBottom: '1px solid transparent' }}>
+                                            <Button color="inherit" className={styles.btn} sx={{ borderTop: '1px solid transparent', borderBottom: '1px solid transparent', ml: 1 }}>
                                                 Projects <ArrowRightIcon />
                                             </Button>
                                         </Link>
                                         <Link href="#contact" passHref>
-                                            <Button color="inherit" className={styles.btn} sx={{ borderTop: '1px solid transparent', borderBottom: '1px solid transparent' }}>
+                                            <Button color="inherit" className={styles.btn} sx={{ borderTop: '1px solid transparent', borderBottom: '1px solid transparent', ml: 1 }}>
                                                 Contact <ArrowRightIcon />
                                             </Button>
                                         </Link>
