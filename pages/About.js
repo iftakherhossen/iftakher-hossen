@@ -42,22 +42,22 @@ const About = () => {
                             <Box className={styles.smHolder}>
                                 <Box sx={{ mr: 1 }}>
                                     <a href="https://www.facebook.com/hosseniftakher" rel="noreferrer" target="_blank">
-                                        <FacebookIcon />
+                                        <FacebookIcon sx={{fontSize: 27}} />
                                     </a>
                                 </Box>
                                 <Box sx={{ mx: 1 }}>
                                     <a href="https://www.instagram.com/hossen_iftakher/" rel="noreferrer" target="_blank">
-                                        <InstagramIcon />
+                                        <InstagramIcon sx={{ fontSize: 26 }} />
                                     </a>
                                 </Box>
                                 <Box sx={{ mx: 1 }}>
                                     <a href="https://www.linkedin.com/in/iftakher-hossen/" rel="noreferrer" target="_blank">
-                                        <LinkedInIcon />
+                                        <LinkedInIcon sx={{ fontSize: 27 }} />
                                     </a>
                                 </Box>
                                 <Box sx={{ mx: 1 }}>
                                     <a href="https://github.com/iftakherhossen" rel="noreferrer" target="_blank">
-                                        <GitHubIcon sx={{ fontSize: 20 }} />
+                                        <GitHubIcon sx={{ fontSize: 25 }} />
                                     </a>
                                 </Box>
                             </Box>

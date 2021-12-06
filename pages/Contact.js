@@ -1,6 +1,6 @@
 import { Button, Grid, TextField, Typography } from '@mui/material';
 import { Box } from '@mui/system';
-import React from 'react';
+import React, { useRef } from 'react';
 import styles from '../styles/Home.module.css';
 import SendIcon from '@mui/icons-material/Send';
 import EmailIcon from '@mui/icons-material/Email';
@@ -10,23 +10,22 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
+import emailjs from 'emailjs-com';
 
 const Contact = () => {
-    async function handleSubmit(e) {
+    const form = useRef();
+
+    const sendEmail = (e) => {
         e.preventDefault();
 
-        const formData = {};
-
-        Array.from(e.currentTarget.elements).forEach(field => {
-            if (!field.name) return;
-            formData[field.name] = field.value;
-        });
-
-        await fetch('/api/mail', {
-            method: 'POST',
-            body: JSON.stringify(formData)
-        });
-    }
+        emailjs.sendForm('mail-template', 'mail-template-iftakher', form.current, 'user_E3AjQo3AWXplLPqSzFb2c')
+            .then((result) => {
+                console.log(result.text);
+            }, (error) => {
+                console.log(error.text);
+            });
+        e.target.reset();
+    };
 
     return (
         <Box className={styles.contact} id="contact">
@@ -54,22 +53,22 @@ const Contact = () => {
                             <Box className={styles.smHolder}>
                                 <Box sx={{ mr: 1 }}>
                                     <a href="https://www.facebook.com/hosseniftakher" rel="noreferrer" target="_blank">
-                                        <FacebookIcon />
+                                        <FacebookIcon sx={{ fontSize: 27 }} />
                                     </a>
                                 </Box>
                                 <Box sx={{ mx: 1 }}>
                                     <a href="https://www.instagram.com/hossen_iftakher/" rel="noreferrer" target="_blank">
-                                        <InstagramIcon />
+                                        <InstagramIcon sx={{ fontSize: 26 }} />
                                     </a>
                                 </Box>
                                 <Box sx={{ mx: 1 }}>
                                     <a href="https://www.linkedin.com/in/iftakher-hossen/" rel="noreferrer" target="_blank">
-                                        <LinkedInIcon />
+                                        <LinkedInIcon sx={{ fontSize: 27 }} />
                                     </a>
                                 </Box>
                                 <Box sx={{ mx: 1 }}>
                                     <a href="https://github.com/iftakherhossen" rel="noreferrer" target="_blank">
-                                        <GitHubIcon sx={{ fontSize: 20 }} />
+                                        <GitHubIcon sx={{ fontSize: 25 }} className={styles.icon} />
                                     </a>
                                 </Box>
                             </Box>
@@ -78,7 +77,7 @@ const Contact = () => {
                 </Grid>
                 <Grid item xs={12} sm={12} md={7}>
                     <Box className={styles.wrapper}>
-                        <form method="post" onSubmit={handleSubmit} className={styles.formBg}>
+                        <form ref={form} onSubmit={sendEmail} className={styles.formBg}>
                             <TextField
                                 id="name"
                                 variant="standard"
