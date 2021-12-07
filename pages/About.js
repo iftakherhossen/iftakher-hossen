@@ -11,6 +11,7 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import Image from 'next/image';
 import iftakherImg from '../public/iftakher2.jpg';
+import TwitterIcon from '@mui/icons-material/Twitter';
 
 const About = () => {
     return (
@@ -48,6 +49,11 @@ const About = () => {
                                 <Box sx={{ mx: 1 }}>
                                     <a href="https://www.instagram.com/hossen_iftakher/" rel="noreferrer" target="_blank">
                                         <InstagramIcon sx={{ fontSize: 26 }} />
+                                    </a>
+                                </Box>
+                                <Box sx={{ mx: 1 }}>
+                                    <a href="https://twitter.com/iftakher_hossen" rel="noreferrer" target="_blank">
+                                        <TwitterIcon sx={{ fontSize: 26 }} />
                                     </a>
                                 </Box>
                                 <Box sx={{ mx: 1 }}>

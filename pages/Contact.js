@@ -10,6 +10,7 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
+import TwitterIcon from '@mui/icons-material/Twitter';
 import emailjs from 'emailjs-com';
 
 const Contact = () => {
@@ -59,6 +60,11 @@ const Contact = () => {
                                 <Box sx={{ mx: 1 }}>
                                     <a href="https://www.instagram.com/hossen_iftakher/" rel="noreferrer" target="_blank">
                                         <InstagramIcon sx={{ fontSize: 26 }} />
+                                    </a>
+                                </Box>
+                                <Box sx={{ mx: 1 }}>
+                                    <a href="https://twitter.com/iftakher_hossen" rel="noreferrer" target="_blank">
+                                        <TwitterIcon sx={{ fontSize: 26 }} />
                                     </a>
                                 </Box>
                                 <Box sx={{ mx: 1 }}>
