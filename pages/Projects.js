@@ -79,7 +79,7 @@ const Project = () => {
                 </Grid>
                 <Grid item xs={12} md={6} lg={4} className={styles["projectCard"] + " " + styles["marginBottomInMobile"]} sx={{ mb: 2 }}>
                     <Card className={styles.zoomAnimationWrapper}>
-                        <Link rel="noreferrer" target="_blank" href="https://aayat-ambulance-service.netlify.app" passHref style={{ cursor: 'pointer' }}><Image
+                        <Link rel="noreferrer" target="_blank" href="https://smart-it-firm.web.app/" passHref style={{ cursor: 'pointer' }}><Image
                             height="650"
                             src={projectImg3}
                             alt="Project Thumbnail"
@@ -87,14 +87,16 @@ const Project = () => {
                         /></Link>
                         <CardContent>
                             <Typography gutterBottom variant="h5" component="div" style={{ fontWeight: 600 }}>
-                                Aayat Ambulance Service
+                                Smart IT Firm
                             </Typography>
                             <Typography variant="body2" color="text.secondary">
-                                <span style={{ fontWeight: 600 }}>Technology: React, React Bootstrap, React Route, Firebase.</span>
+                                <span style={{ fontWeight: 600 }}>
+                                    Technologies: React, Node js, Express js, Firebase Authentication.
+                                </span>
                             </Typography>
                         </CardContent>
                         <CardActions sx={{ display: 'flex', justifyContent: 'space-between' }}>
-                            <Link rel="noreferrer" target="_blank" href="https://aayat-ambulance-service.netlify.app" passHref>
+                            <Link rel="noreferrer" target="_blank" href="https://smart-it-firm.web.app/" passHref>
                                 <Button sx={{ color: '#282C34', fontWeight: 700 }}>
                                     Live Site &nbsp; <ArrowForwardIcon sx={{ fontSize: 16 }} />
                                 </Button>

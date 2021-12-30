@@ -38,19 +38,25 @@ const project1 = () => {
                             <li>Using React Bootstrap.</li>
                             <li>Firebase Authentication.</li>
                         </ul>
-                        <Typography variant="body1" sx={{color: '#aaa', mb:2}}>
+                        <Typography variant="body1" sx={{ color: '#aaa', mb: 2 }}>
                             <span style={{ fontWeight: 600 }}>Technology: React, Material-UI, React Router, MongoDB, Express, Firebase.</span>
                         </Typography>
                         <Box>
-                            <Button color="inherit" sx={{ mr: 1, fontSize: 15 }} className={styles.projectBtn}>
-                                <LanguageIcon /> &nbsp; Live Site
-                            </Button>
-                            <Button color="inherit" sx={{ mx: 1, fontSize: 15 }} className={styles.projectBtn}>
-                                <GitHubIcon /> &nbsp; Client Side Code
-                            </Button>
-                            <Button color="inherit" sx={{ ms: 1, fontSize: 15 }} className={styles.projectBtn}>
-                                <GitHubIcon /> &nbsp; Server Side Code
-                            </Button>
+                            <Link rel="noreferrer" target="_blank" href="https://alavia-airlines.web.app/" passHref>
+                                <Button color="inherit" sx={{ mr: 1, fontSize: 15 }} className={styles.projectBtn}>
+                                    <LanguageIcon /> &nbsp; Live Site
+                                </Button>
+                            </Link>
+                            <Link rel="noreferrer" target="_blank" href="https://github.com/iftakherhossen/alavian-airlines-client" passHref>
+                                <Button color="inherit" sx={{ mx: 1, fontSize: 15 }} className={styles.projectBtn}>
+                                    <GitHubIcon /> &nbsp; Client Side Code
+                                </Button>
+                            </Link>
+                            <Link rel="noreferrer" target="_blank" href="https://github.com/iftakherhossen/alavian-airlines-server" passHref>
+                                <Button color="inherit" sx={{ ms: 1, fontSize: 15 }} className={styles.projectBtn}>
+                                    <GitHubIcon /> &nbsp; Server Side Code
+                                </Button>
+                            </Link>
                         </Box>
                     </Grid>
                 </Grid>

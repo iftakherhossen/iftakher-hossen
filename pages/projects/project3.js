@@ -30,27 +30,33 @@ const project3 = () => {
                         <Image src={projectImg3} alt="projectImg" style={{ mb: 3 }} />
                     </Grid>
                     <Grid item xs={12} sm={6} md={7} sx={{ px: 4, pt: 2 }} className={styles.projectContent}>
-                        <Typography variant="h4">Aayat Ambulance Service</Typography>
+                        <Typography variant="h4">Smart IT Firm</Typography>
                         <Typography variant="h6">Project Details - </Typography>
                         <ul>
                             <li>React Application.</li>
-                            <li>Using JSON Database.</li>
-                            <li>Using React Bootstrap.</li>
+                            <li>Maintained express database.</li>
+                            <li>Slider Library.</li>
                             <li>Firebase Authentication.</li>
                         </ul>
                         <Typography variant="body1" sx={{ color: '#aaa', mb: 2 }}>
-                            <span style={{ fontWeight: 600 }}>Technology: React, React Router, React Bootstrap, Firebase.</span>
+                            <span style={{ fontWeight: 600 }}>Technologies: React, Node js, Express js, Firebase Authentication.</span>
                         </Typography>
                         <Box>
-                            <Button color="inherit" sx={{ mr: 1, fontSize: 15 }} className={styles.projectBtn}>
-                                <LanguageIcon /> &nbsp; Live Site
-                            </Button>
-                            <Button color="inherit" sx={{ mx: 1, fontSize: 15 }} className={styles.projectBtn}>
-                                <GitHubIcon /> &nbsp; Client Side Code
-                            </Button>
-                            <Button color="inherit" sx={{ ms: 1, fontSize: 15 }} className={styles.projectBtn}>
-                                <GitHubIcon /> &nbsp; Server Side Code
-                            </Button>
+                            <Link rel="noreferrer" target="_blank" href="https://smart-it-firm.web.app/" passHref>
+                                <Button color="inherit" sx={{ mr: 1, fontSize: 15 }} className={styles.projectBtn}>
+                                    <LanguageIcon /> &nbsp; Live Site
+                                </Button>
+                            </Link>
+                            <Link rel="noreferrer" target="_blank" href="https://github.com/iftakherhossen/smart-it-firm-client" passHref>
+                                <Button color="inherit" sx={{ mx: 1, fontSize: 15 }} className={styles.projectBtn}>
+                                    <GitHubIcon /> &nbsp; Client Side Code
+                                </Button>
+                            </Link>
+                            <Link rel="noreferrer" target="_blank" href="https://github.com/iftakherhossen/smart-it-firm-server" passHref>
+                                <Button color="inherit" sx={{ ms: 1, fontSize: 15 }} className={styles.projectBtn}>
+                                    <GitHubIcon /> &nbsp; Server Side Code
+                                </Button>
+                            </Link>
                         </Box>
                     </Grid>
                 </Grid>
