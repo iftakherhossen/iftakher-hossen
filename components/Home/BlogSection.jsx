@@ -48,7 +48,7 @@ const Blogs = ({ blogsData }) => {
                     }
                 </Grid>
 
-                <Box sx={{ display: 'flex', justifyContent: 'center', mt: 5 }}>
+                <Box sx={{ display: 'flex', justifyContent: 'center', my: 5 }}>
                     {
                         show === false && <Button variant="outlined" sx={{ m: 1, color: '#aaa', borderColor: '#aaa' }} size="large" onClick={handleShow}>
                             Show More

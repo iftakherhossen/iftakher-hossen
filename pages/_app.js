@@ -1,4 +1,3 @@
-import Layout from "../components/Layout";
 import "../styles/globals.css";
 import { useEffect } from "react";
 import AOS from "aos";
@@ -13,11 +12,7 @@ function MyApp({ Component, pageProps }) {
     });
   }, []);
 
-  return (
-    <Layout>
-      <Component {...pageProps} />
-    </Layout>
-  );
+  return <Component {...pageProps} />;
 }
 
 export default MyApp;

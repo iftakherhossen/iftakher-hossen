@@ -1,7 +1,7 @@
 import React from 'react';
 import MenuIcon from '@mui/icons-material/Menu';
 import Link from 'next/link';
-import styles from '../styles/Home.module.css'
+import styles from '../../styles/Home.module.css'
 import { Box } from '@mui/system';
 import { AppBar, Button, Container, IconButton, Menu, MenuItem, Toolbar, Typography, Modal, Fade, Backdrop, TextField } from '@mui/material';
 import HomeIcon from '@mui/icons-material/Home';
@@ -98,16 +98,16 @@ const Navigation = () => {
                                     <Link href="/" passHref><HomeIcon /></Link>
                                 </Button>
                                 <Button color="inherit" sx={{ fontSize: 16, fontWeight: 500, mx: 1, letterSpacing: 2 }} className={styles.hover}>
-                                    <a href="#about">About</a>
+                                    <a href="#about" className='nav'>About</a>
                                 </Button>
-                                <Button color="inherit" sx={{ fontSize: 16, fontWeight: 500, mx: 1, letterSpacing: 2 }} className={styles.hover}>
-                                    <a href="#skills">Skills</a>
+                                <Button color="inherit" sx={{ fontSize: 16, fontWeight: 500, mx: 1, letterSpacing: 2 }} className={styles.hover} href="#skills">
+                                    Skills
                                 </Button>
-                                <Button color="inherit" sx={{ fontSize: 16, fontWeight: 500, mx: 1, letterSpacing: 2 }} className={styles.hover}>
-                                    <a href="#projects">Projects</a>
+                                <Button color="inherit" sx={{ fontSize: 16, fontWeight: 500, mx: 1, letterSpacing: 2 }} className={styles.hover} href="#projects">
+                                    Projects
                                 </Button>
-                                <Button color="inherit" sx={{ fontSize: 16, fontWeight: 500, mx: 1, letterSpacing: 2 }} className={styles.hover}>
-                                    <a href="#blogs">Blogs</a>
+                                <Button color="inherit" sx={{ fontSize: 16, fontWeight: 500, mx: 1, letterSpacing: 2 }} className={styles.hover} href="#blogs">
+                                    Blogs
                                 </Button>
                                 <Button color="inherit" sx={{ fontSize: 16, fontWeight: 500, px: 2, letterSpacing: 2 }} className={styles.hover} onClick={handleOpen}>
                                     Contact
@@ -120,17 +120,17 @@ const Navigation = () => {
                         <Button color="inherit" sx={{ fontSize: 16, fontWeight: 500, mx: 1 }} className={styles.hover}>
                             <Link href="/" passHref><HomeIcon /></Link>
                         </Button>
-                        <Button color="inherit" sx={{ fontSize: 16, fontWeight: 500, px: 2 }} className={styles.hover}>
-                            <a href="#about">About</a>
+                        <Button color="inherit" sx={{ fontSize: 16, fontWeight: 500, px: 2 }} className={styles.hover} href="#about">
+                            About
                         </Button>
-                        <Button color="inherit" sx={{ fontSize: 16, fontWeight: 500, px: 2, mx: 1, letterSpacing: 2 }} className={styles.hover}>
-                            <a href="#skills">Skills</a>
+                        <Button color="inherit" sx={{ fontSize: 16, fontWeight: 500, px: 2, mx: 1, letterSpacing: 2 }} className={styles.hover} href="#skills">
+                            Skills
                         </Button>
-                        <Button color="inherit" sx={{ fontSize: 16, fontWeight: 500, px: 2, letterSpacing: 2 }} className={styles.hover}>
-                            <a href="#projects">Projects</a>
+                        <Button color="inherit" sx={{ fontSize: 16, fontWeight: 500, px: 2, letterSpacing: 2 }} className={styles.hover} href="#projects">
+                            Projects
                         </Button>
-                        <Button color="inherit" sx={{ fontSize: 16, fontWeight: 500, mx: 2, px: 2, letterSpacing: 2 }} className={styles.hover}>
-                            <a href="#blogs">Blogs</a>
+                        <Button color="inherit" sx={{ fontSize: 16, fontWeight: 500, mx: 2, px: 2, letterSpacing: 2 }} className={styles.hover} href="#blogs">
+                            Blogs
                         </Button>
                         <Button color="inherit" sx={{ fontSize: 16, fontWeight: 500, px: 2, letterSpacing: 2 }} className={styles.hover} onClick={handleOpen}>
                             Contact

@@ -9,7 +9,7 @@
 
 .main {
   min-height: 100%;
-  padding: 4rem 0;
+  padding: 4rem 0 0;
   text-align: center;
   color: white !important;
 }
@@ -93,7 +93,8 @@
   border-bottom: 1px solid white;
 }
 
-.contact, .projects {
+.contact,
+.projects {
   margin: 7rem 5rem 0;
 }
 
@@ -135,7 +136,7 @@
   width: 90%;
   text-align: center;
   margin: auto;
-  padding: 8px 0;
+  padding: 1.5rem 0;
   color: #aaa;
   border-top: 1px solid #aaa;
 }
@@ -155,6 +156,37 @@
   font-size: 1.2em;
   font-family: monospace;
   letter-spacing: 1px;
+}
+
+.language ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.language ul li {
+  position: relative;
+  background-color: #252930;
+  margin-right: 15px;
+  padding: 0.5rem 1.2rem;
+  font-weight: 900;
+  border-radius: 4px;
+  list-style-type: none;
+}
+
+.language ul li p {
+  margin-bottom: 3px;
+  text-transform: uppercase;
+}
+
+.language ul li .fluency {
+  position: absolute;
+  content: "";
+  left: 0;
+  background-color: #00cf5d;
+  height: 3px;
+  width: 100%;
+  bottom: 0;
+  border-radius: 4px;
 }
 
 /* For Responsiveness */
@@ -186,7 +218,8 @@
     line-height: 1.3;
   }
 
-  .contact, .projects {
+  .contact,
+  .projects {
     margin: 0;
   }
 
@@ -206,7 +239,8 @@
     font-size: 1em;
   }
 
-  .map, .formBg {
+  .map,
+  .formBg {
     border-radius: 15px;
     width: 100%;
   }
@@ -270,7 +304,8 @@
     font-size: 1.2em;
   }
 
-  .map, .formBg {
+  .map,
+  .formBg {
     border-radius: 15px;
     width: 100%;
   }

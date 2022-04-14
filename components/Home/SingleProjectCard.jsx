@@ -5,6 +5,7 @@ import RemoveCircleOutlineIcon from '@mui/icons-material/RemoveCircleOutline';
 import { Box } from '@mui/system';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LanguageIcon from '@mui/icons-material/Language';
+import Image from 'next/image';
 
 const style = {
     position: 'absolute',
@@ -20,7 +21,7 @@ const style = {
 };
 
 const SingleProjectCard = ({ project }) => {
-    const { id, projectName, projectDescription, projectFeatures, projectImage, projectLink, projectTechnologies, clientGithub, serverGithub } = project;
+    const { id, projectName, projectDescription, projectFeatures, projectImage, projectLink, projectTechnologies, clientGithub, serverGithub, projectScreenshots } = project;
     const [open, setOpen] = useState(false);
     const handleOpen = () => setOpen(true);
     const handleClose = () => setOpen(false);
@@ -84,7 +85,7 @@ const SingleProjectCard = ({ project }) => {
                             <List>
                                 {
                                     projectFeatures.map(feature =>
-                                        <ul key={id} style={{ py: 0.5, textAlign: 'left' }}>
+                                        <ul key={projectName} style={{ py: 0.5, textAlign: 'left' }}>
                                             <li>
                                                 {feature}
                                             </li>
@@ -97,16 +98,27 @@ const SingleProjectCard = ({ project }) => {
                                     projectTechnologies.map(tech => <Chip label={tech} variant="outlined" key={tech} sx={{ fontWeight: 500, fontSize: 15, p: 0, m: 0.5 }} size="medium" color="primary" />)
                                 }
                             </Stack>
+                            <Box sx={{ mt: 1, display: 'flex', justifyContent: 'center', p: 2 }}>
+                                {
+                                    projectScreenshots.map(screenshot => <Image
+                                        src={screenshot}
+                                        key={screenshot}
+                                        alt="Project Screenshots"
+                                        width={300}
+                                        height={165}
+                                    />)
+                                }
+                            </Box>
                             <hr />
                             <Box>
-                                <Button variant='contained' sx={{ mx: 1 }} href={projectLink}>
+                                <Button variant='contained' sx={{ mx: 1 }} href={projectLink} style={{ color: 'white'}}>
                                     <LanguageIcon /> &nbsp; Live Site
                                 </Button>
-                                <Button variant='contained' sx={{ mx: 1 }} href={clientGithub}>
+                                <Button variant='contained' sx={{ mx: 1 }} href={clientGithub} style={{ color: 'white'}}>
                                     <GitHubIcon /> &nbsp; Client Side
                                 </Button>
                                 {
-                                    serverGithub && <Button variant='contained' sx={{ mx: 1 }} href={serverGithub}>
+                                    serverGithub && <Button variant='contained' sx={{ mx: 1 }} href={serverGithub} style={{ color: 'white'}}>
                                         <GitHubIcon /> &nbsp; Server Side
                                     </Button>
                                 }

@@ -6,27 +6,35 @@ import AboutSection from "../components/Home/AboutSection";
 import SkillSection from "../components/Home/SkillSection";
 import ProjectSection from "../components/Home/ProjectSection";
 import BlogSection from "../components/Home/BlogSection";
-import projects from "../public/projects.json";
+import projects from "../assets/data/projects.json";
+import skills from "../assets/data/skills.json";
+import languages from "../assets/data/languages.json";
+import Navigation from "../components/Common/Navigation";
+import Footer from "../components/Common/Footer";
+
 // fetching projects data with json-server & fetching blogs data from dev.to
-export const getServerSideProps = async () => {
+export const getStaticProps = async () => {
   const res = await fetch(
     "https://dev.to/api/articles?username=iftakher_hossen"
   );
   const blogsData = await res.json();
+
   return {
     props: {
+      languagesData: languages,
       blogsData,
       projectsData: projects,
+      skillsData: skills,      
     },
   };
 };
 
-export default function Home({ projectsData, blogsData }) {
+const Home = ({ projectsData, blogsData, skillsData, languagesData }) => {
   return (
     <div className={styles.container}>
       <Head>
         <title>Iftakher Hossen | Portfolio</title>
-        <meta name="description" content="Professional Portfolio by Next.js" />
+        <meta name="description" content="Professional Portfolio built in Next.js" />
         <link rel="icon" href="/favicon.ico" />
         {/* AOS Animation */}
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -46,12 +54,16 @@ export default function Home({ projectsData, blogsData }) {
         data-target="#navbar-example3"
         data-offset="0"
       >
+        <Navigation />
         <HeroSection />
         <AboutSection />
-        <SkillSection />
+        <SkillSection skillsData={skillsData} />
         <ProjectSection projectsData={projectsData} />
         <BlogSection blogsData={blogsData} />
+        <Footer languagesData={languagesData} />
       </main>
     </div>
   );
-}
+};
+
+export default Home;

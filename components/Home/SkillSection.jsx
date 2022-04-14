@@ -1,5 +1,4 @@
 import { Typography, Container, Grid } from '@mui/material';
-import { Box } from '@mui/system';
 import React from 'react';
 import styles from '../../styles/Home.module.css';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
@@ -16,7 +15,7 @@ const Skills = () => {
                 <Tabs className={styles["marginBottomInMobile"] + " " + styles["skillsContainer"]}>
                     <TabList>
                         <Tab style={{ backgroundColor: 'transparent', border: 0, color: 'white', fontSize: 20, fontWeight: 500 }}>Web</Tab>
-                        <Tab style={{ backgroundColor: 'transparent', border: 0, color: 'white', fontSize: 20, fontWeight: 500 }}>Others</Tab>
+                        {/* <Tab style={{ backgroundColor: 'transparent', border: 0, color: 'white', fontSize: 20, fontWeight: 500 }}>Others</Tab> */}
                         <Tab style={{ backgroundColor: 'transparent', border: 0, color: 'white', fontSize: 20, fontWeight: 500 }}>Programming</Tab>
                         <Tab style={{ backgroundColor: 'transparent', border: 0, color: 'white', fontSize: 20, fontWeight: 500 }}>Tools</Tab>
                     </TabList>
@@ -49,7 +48,7 @@ const Skills = () => {
                                     <div className="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style={{ width: '70%' }}></div>
                                 </div>
                             </Grid>
-                            <Grid xs={12} md={6} lg={6} sx={{px: 2}}>
+                            <Grid item xs={12} md={6} lg={6} sx={{px: 2}}>
                                 <Typography variant="body1" className={styles.skillsName} sx={{ fontWeight: 600 }}>React</Typography>
                                 <div className="progress">
                                     <div className="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style={{ width: '60%' }}></div>

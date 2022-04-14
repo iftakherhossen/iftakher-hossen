@@ -43,12 +43,12 @@
         "projectTechnologies": [
             "React", "Node.js", "Express.js", "Material-Ui", "JavaScript", "MongoDB", "Firebase", "Heroku"
         ],
-        "projectDate": [
-            "December, 2021"
-        ],
+        "projectDate": "December, 2021",
         "projectType": "Personal Project",
         "projectScreenshots": [
-
+            "https://i.ibb.co/PYCKhvS/smart-it-firm.png",
+            "https://i.ibb.co/qjvyTZX/radiant-academy.png",
+            "https://i.ibb.co/XtRPxqc/shabdokosh.png"
         ]
     },
     {
@@ -70,9 +70,7 @@
         "projectTechnologies": [
             "React", "Node.js", "Express.js", "Material-Ui", "Bootstrap", "JavaScript", "MongoDB", "Firebase", "Heroku", "Stripe.js", "Redux", "React-Redux"
         ],
-        "projectDate": [
-            "January, 2022"
-        ],
+        "projectDate": "January, 2022",
         "projectType": "Team Project",
         "projectScreenshots": [
 
@@ -97,9 +95,7 @@
         "projectTechnologies": [
             "React", "Node.js", "Express.js", "Material-Ui", "JavaScript", "MongoDB", "Firebase", "Heroku"
         ],
-        "projectDate": [
-            "January, 2022"
-        ],
+        "projectDate": "January, 2022",
         "projectType": "Personal Project",
         "projectScreenshots": [
 
@@ -123,9 +119,7 @@
         "projectTechnologies": [
             "React", "Node.js", "Express.js", "Material-Ui", "JavaScript", "MongoDB", "Firebase", "Heroku"
         ],
-        "projectDate": [
-            "November, 2021"
-        ],
+        "projectDate": "November, 2021",
         "projectType": "Personal Project",
         "projectScreenshots": [
 
@@ -148,9 +142,7 @@
         "projectTechnologies": [
             "React", "Node.js", "Express.js", "MongoDB", "Bootstrap", "JavaScript", "Firebase"
         ],
-        "projectDate": [
-            "November, 2021"
-        ],
+        "projectDate": "November, 2021",
         "projectType": "Personal Project",
         "projectScreenshots": [
 
@@ -172,9 +164,7 @@
         "projectTechnologies": [
             "HTML", "CSS", "Bootstrap"
         ],
-        "projectDate": [
-            "July, 2021"
-        ],
+        "projectDate": "July, 2021",
         "projectType": "Personal Project",
         "projectScreenshots": [
 
@@ -196,9 +186,7 @@
         "projectTechnologies": [
             "HTML", "CSS", "Bootstrap"
         ],
-        "projectDate": [
-            "July, 2021"
-        ],
+        "projectDate": "July, 2021",
         "projectType": "Personal Project",
         "projectScreenshots": [
 
