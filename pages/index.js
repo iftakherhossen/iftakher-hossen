@@ -1,19 +1,27 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
-import Home from './Home'
-import Footer from './Footer'
-import Contact from './Contact'
-import Projects from './Projects'
-import { useState, useEffect } from 'react';
-import { Button, Tooltip } from '@mui/material';
-import ArrowCircleUpIcon from '@mui/icons-material/ArrowCircleUp';
-import Blogs from './Blogs';
-import Skills from './Skills';
-import About from './About';
 import React from 'react';
-import Navigation from './Navigation';
+import Head from 'next/head';
+import styles from '../styles/Home.module.css';
+import HeroSection from '../components/Home/HeroSection';
+import AboutSection from '../components/Home/AboutSection';
+import SkillSection from '../components/Home/SkillSection';
+import ProjectSection from '../components/Home/ProjectSection';
+import BlogSection from '../components/Home/BlogSection';
+import projects from '../public/projects.json';
+// import { MessengerChat } from 'react-messenger-chat-plugin';
 
-export default function Index() {
+// fetching projects data with json-server & fetching blogs data from dev.to
+export const getServerSideProps = async () => {
+  const res = await fetch('https://dev.to/api/articles?username=iftakher_hossen')
+  const blogsData = await res.json()
+  return {
+    props: {
+      blogsData,
+      projectsData: projects,
+    }
+  }
+}
+
+export default function Home({ projectsData, blogsData }) {
   return (
     <div className={styles.container}>
       <Head>
@@ -22,24 +30,18 @@ export default function Index() {
         <link rel="icon" href="/favicon.ico" />
         {/* AOS Animation */}
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        {/* Bootstrap CSS for Skills Bar */}
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossOrigin="anonymous"></link>
       </Head>
 
-      <header>
-        <Navigation />
-      </header>
-
+      {/* HOMEPAGE CONTENT GOES HERE (WITHOUT NAVBAR & FOOTER) */}
       <main className={styles.main}>
-        <Home />
-        <About />
-        <Skills />
-        <Projects />
-        <Blogs />
-        <Contact />
+        <HeroSection />
+        <AboutSection />
+        <SkillSection />
+        <ProjectSection projectsData={projectsData} />
+        <BlogSection blogsData={blogsData} />
       </main>
-
-      <footer>
-        <Footer />
-      </footer>
     </div>
   )
 }

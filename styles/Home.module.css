@@ -22,7 +22,7 @@
 }
 
 .wrapper {
-  margin: 4.5rem 3rem 0;
+  margin: 10rem 3rem;
 }
 
 .sideBar1 {
@@ -72,10 +72,11 @@
 .btn {
   font-weight: 700 !important;
   font-size: 0.95rem;
-  padding: 6px 10px;
+  padding: 0.6rem 1rem !important;
   border-top: 1px solid transparent;
   border-bottom: 1px solid transparent;
-  margin-right: 15px;
+  margin-right: 10px;
+  text-align: center !important;
 }
 
 .btn:hover {
@@ -84,12 +85,12 @@
 }
 
 .hover {
-  border-bottom: 2px solid transparent;
+  border-bottom: 1px solid transparent;
 }
 
 .hover:hover {
   color: white;
-  border-bottom: 2px solid white;
+  border-bottom: 1px solid white;
 }
 
 .contact, .projects {
@@ -98,14 +99,6 @@
 
 .projectCard {
   padding: 0 1rem;
-}
-
-.circle {
-  width: 8px;
-  height: 8px;
-  background-color: white;
-  margin: 0 15px;
-  border-radius: 25px;
 }
 
 .wrapper {
@@ -124,20 +117,18 @@
   box-shadow: 0 2px 2px;
 }
 
-.divider {
-  width: 40%;
-  height: 1px;
-  margin: 0 auto;
-  background-color: black;
-  margin-top: 5px;
-}
-
 .smHolder {
-  margin-top: 1rem;
+  margin-top: 2.5rem;
   color: #aaa;
   justify-content: flex-start;
   display: flex;
   align-items: center;
+}
+
+.aboutMeImg {
+  border-radius: 100%;
+  width: 100% !important;
+  height: 100% !important;
 }
 
 .footer {
@@ -147,11 +138,6 @@
   padding: 8px 0;
   color: #aaa;
   border-top: 1px solid #aaa;
-}
-
-
-.aboutMeImg {
-  height: 100%;
 }
 
 .skillsWrapper {
@@ -164,66 +150,11 @@
 .skillsName {
   text-align: left;
   padding-left: 10px;
-  margin-bottom: -10px !important;
+  margin: 10px 0 8px !important;
   transition: width .6s ease;
-}
-
-.skillsBar {
-  text-align: right;
-  padding: 0 8px;
-  color: black;
-  border-radius: 15px !important;
-  font-weight: 600;
-}
-
-.html {
-  width: 95%;
-  background-color: #F06529;
-}
-
-.css {
-  width: 90%;
-  background-color: #2A65F1;
-}
-
-.bootstrap {
-  width: 85%;
-  background-color: #7952B3;
-}
-
-.tailwind {
-  width: 60%;
-  background-color: #06B6D4;
-}
-
-.materialUi {
-  width: 65%;
-  background-color: #3399FF;
-}
-
-.javascript {
-  width: 70%;
-  background-color: #F0DB4F;
-}
-
-.react {
-  width: 65%;
-  background-color: #53c1de;
-}
-
-.nodeJs {
-  width: 50%;
-  background-color: #3C873A;
-}
-
-.express {
-  width: 50%;
-  background-color: #83CD29;
-}
-
-.mongoDb {
-  width: 50%;
-  background-color: #4BB03E;
+  font-size: 1.2em;
+  font-family: monospace;
+  letter-spacing: 1px;
 }
 
 /* For Responsiveness */
@@ -273,10 +204,6 @@
   .btn {
     margin: 4px 0;
     font-size: 1em;
-  }
-
-  .divider {
-    width: 70%;
   }
 
   .map, .formBg {
@@ -341,10 +268,6 @@
   .btn {
     margin: 0;
     font-size: 1.2em;
-  }
-
-  .divider {
-    width: 70%;
   }
 
   .map, .formBg {

@@ -8,6 +8,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emailjs/browser": "^3.6.2",
     "@emotion/core": "^11.0.0",
     "@emotion/react": "^11.7.0",
     "@emotion/styled": "^11.6.0",
@@ -16,11 +17,15 @@
     "aos": "^2.3.4",
     "emailjs-com": "^3.2.0",
     "framer-motion": "^5.3.3",
+    "moment": "^2.29.2",
     "next": "^12.0.7",
     "react": "17.0.2",
     "react-devdotto": "^1.2.9",
     "react-dom": "17.0.2",
+    "react-hot-toast": "^2.2.0",
+    "react-messenger-chat-plugin": "^2.0.2",
     "react-tsparticles": "^1.37.5",
+    "sweetalert2": "^11.4.8",
     "typewriter-effect": "^2.18.2"
   },
   "devDependencies": {
