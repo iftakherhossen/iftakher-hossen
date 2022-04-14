@@ -28,14 +28,17 @@ const SingleProjectCard = ({ project }) => {
     return (
         <Grid item xs={12} md={6} lg={4}>
             <Card sx={{ m: 1 }}>
+                {/*  data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" */}
                 <CardActionArea href={projectLink} target="_blank">
-                    <CardMedia
-                        component="img"
-                        height="100%"
-                        image={projectImage}
-                        alt="Project Feature Photo"
-                        draggable="false"
-                    />
+                    {
+                        projectImage && <CardMedia
+                            component="img"
+                            height="100%"
+                            image={projectImage}
+                            alt="Project Feature Photo"
+                            draggable="false"
+                        />
+                    }
                     <CardContent>
                         <Typography gutterBottom variant="h5" component="div">
                             {projectName}

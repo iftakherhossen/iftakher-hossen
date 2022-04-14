@@ -14,7 +14,7 @@ import TwitterIcon from '@mui/icons-material/Twitter';
 
 const About = () => {
     return (
-        <Box className={styles.contact} id="about">
+        <div className={styles.contact} id="about">
             <Grid container sx={{ display: 'flex', alignItems: 'center' }}>
                 <Grid item xs={12} sm={12} md={6} sx={{ display: 'flex', alignItems: 'center' }}>
                     <Box sx={{ pl: 25, textAlign: 'left' }}>
@@ -42,7 +42,7 @@ const About = () => {
                                 <Typography sx={{ ml: 2, fontSize: 18 }}><a href="tel:+8801644985364">+8801644985364</a></Typography>
                             </Box>
                             <Box sx={{display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-                                <hr style={{ width: '100%', marginTop: '2.8rem', marginRight: '8px', borderColor: '#aaa' }}/>
+                                <hr style={{ width: '100%', marginTop: '2.5rem', marginRight: '8px', borderColor: '#aaa' }}/>
 
                                 <Box className={styles.smHolder}>
                                     <Box sx={{ mr: 1 }}>
@@ -90,7 +90,7 @@ const About = () => {
                     </Box>
                 </Grid>
             </Grid>
-        </Box>
+        </div>
     );
 };
 

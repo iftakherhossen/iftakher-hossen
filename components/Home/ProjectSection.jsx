@@ -23,13 +23,13 @@ const Project = ({ projectsData }) => {
     }
 
     return (
-        <Box className={styles.projects} id='projects'>
+        <div className={styles.projects} id='projects'>
             <Typography variant="h4" sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                 My Projects
             </Typography>
 
             <Container>
-                <Grid container sx={{ mt: 8, mb: 0 }}>
+                <Grid container sx={{ mt: 6, mb: 0 }}>
                     {
                         show === true && projectData.map(project => (
                             <SingleProjectCard
@@ -64,7 +64,7 @@ const Project = ({ projectsData }) => {
                     </Button>
                 </Box>
             </Container>
-        </Box>
+        </div>
     );
 };
 

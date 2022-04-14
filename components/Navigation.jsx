@@ -40,7 +40,7 @@ const Navigation = () => {
         emailjs.sendForm('service_a43ummk', 'mail-template-iftakher', e.target, 'user_E3AjQo3AWXplLPqSzFb2c')
             .then((result) => {
                 handleClose();
-                console.log(result.text);                
+                console.log(result.text);
                 Swal.fire({
                     title: 'Success!',
                     text: 'Message send successfully! Please wait for a reply.',
@@ -98,19 +98,19 @@ const Navigation = () => {
                                     <Link href="/" passHref><HomeIcon /></Link>
                                 </Button>
                                 <Button color="inherit" sx={{ fontSize: 16, fontWeight: 500, mx: 1, letterSpacing: 2 }} className={styles.hover}>
-                                    <Link href="#about" passHref>About</Link>
+                                    <a href="#about">About</a>
                                 </Button>
                                 <Button color="inherit" sx={{ fontSize: 16, fontWeight: 500, mx: 1, letterSpacing: 2 }} className={styles.hover}>
-                                    <Link href="#skills" passHref>Skills</Link>
+                                    <a href="#skills">Skills</a>
                                 </Button>
                                 <Button color="inherit" sx={{ fontSize: 16, fontWeight: 500, mx: 1, letterSpacing: 2 }} className={styles.hover}>
-                                    <Link href="#projects" passHref>Projects</Link>
+                                    <a href="#projects">Projects</a>
                                 </Button>
                                 <Button color="inherit" sx={{ fontSize: 16, fontWeight: 500, mx: 1, letterSpacing: 2 }} className={styles.hover}>
-                                    <Link href="#blogs" passHref>Blogs</Link>
+                                    <a href="#blogs">Blogs</a>
                                 </Button>
-                                <Button color="inherit" sx={{ fontSize: 16, fontWeight: 500, mx: 1, letterSpacing: 2 }} className={styles.hover}>
-                                    <Link href="#contact" passHref>Contact</Link>
+                                <Button color="inherit" sx={{ fontSize: 16, fontWeight: 500, px: 2, letterSpacing: 2 }} className={styles.hover} onClick={handleOpen}>
+                                    Contact
                                 </Button>
                             </MenuItem>
                         </Menu>
@@ -121,16 +121,16 @@ const Navigation = () => {
                             <Link href="/" passHref><HomeIcon /></Link>
                         </Button>
                         <Button color="inherit" sx={{ fontSize: 16, fontWeight: 500, px: 2 }} className={styles.hover}>
-                            <Link href="#about" passHref>About</Link>
+                            <a href="#about">About</a>
                         </Button>
                         <Button color="inherit" sx={{ fontSize: 16, fontWeight: 500, px: 2, mx: 1, letterSpacing: 2 }} className={styles.hover}>
-                            <Link href="#skills" passHref>Skills</Link>
+                            <a href="#skills">Skills</a>
                         </Button>
                         <Button color="inherit" sx={{ fontSize: 16, fontWeight: 500, px: 2, letterSpacing: 2 }} className={styles.hover}>
-                            <Link href="#projects" passHref>Projects</Link>
+                            <a href="#projects">Projects</a>
                         </Button>
-                        <Button color="inherit" sx={{ fontSize: 16, fontWeight: 500, mx: 2, px: 1, letterSpacing: 2 }} className={styles.hover}>
-                            <Link href="#blogs" passHref>Blogs</Link>
+                        <Button color="inherit" sx={{ fontSize: 16, fontWeight: 500, mx: 2, px: 2, letterSpacing: 2 }} className={styles.hover}>
+                            <a href="#blogs">Blogs</a>
                         </Button>
                         <Button color="inherit" sx={{ fontSize: 16, fontWeight: 500, px: 2, letterSpacing: 2 }} className={styles.hover} onClick={handleOpen}>
                             Contact

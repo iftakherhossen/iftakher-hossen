@@ -19,6 +19,7 @@ const SingleBlogCard = ({ blog }) => {
     return (
         <Grid item xs={12} md={6} lg={4}>
             <Card sx={{ m: 1 }}>
+                {/*  data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" */}
                 <CardActionArea href={url} target="_blank">
                     <CardMedia
                         component="img"

@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import styles from '../../styles/Home.module.css';
 import { motion } from 'framer-motion';
 import { Container, Grid, Button, Typography, Modal, Fade, Backdrop, TextField } from '@mui/material';
@@ -41,7 +41,7 @@ const HeroSection = () => {
                     text: 'Message send successfully! Please wait for a reply.',
                     icon: 'success',
                     confirmButtonText: 'OK'
-                  })
+                })
             }, (error) => {
                 console.log(error.text);
             });
@@ -49,85 +49,83 @@ const HeroSection = () => {
     };
 
     return (
-        <Box>
-            <Box>
-                <Container>
-                    <Box className={styles.wrapper}>
-                        <Grid container>
-                            <Grid item xs={12} sm={12} md={5} className={styles.sideBar1}>
-                                <Box className={styles["frame"] + " " + styles["zoomAnimationWrapper"]}>
-                                    <Image
-                                        src="https://i.ibb.co/nD1F9KJ/iftakher5.png"
-                                        alt="Profile"
-                                        className={styles.zoomAnimation}
-                                        draggable="false"
-                                        width={320}
-                                        height={415}
-                                    />
-                                </Box>
-                            </Grid>
-                            <Grid item xs={12} sm={12} md={7} className={styles.sideBar2}>
-                                <Box className={styles.textWrapper}>
-                                    <Typography sx={{ fontSize: 21, color: '#358DC8', mb: 1 }}>Hey There, I am</Typography>
-                                    <motion.div initial="hidden" animate="visible"
-                                        variants={{
-                                            hidden: {
-                                                scale: .8,
-                                                opacity: 0
-                                            },
-                                            visible: {
-                                                scale: 1,
-                                                opacity: 1,
-                                                transition: {
-                                                    delay: .6
-                                                }
-                                            },
-                                        }}>
-                                        <Typography sx={{ margin: 0, lineHeight: '1.15', fontSize: '4rem', fontWeight: 900 }} className={styles.title}>
-                                            Iftakher Hossen
-                                        </Typography>
-                                    </motion.div>
-                                    <Typography sx={{ fontSize: 21, color: '#358DC8', my: 1 }}>a Passionate</Typography>
-                                    <Typography variant="h5" sx={{ fontSize: '1.8em', mb: 1, fontWeight: 700 }} className={styles.designation}>
-                                        <Typewriter
-                                            options={{
-                                                strings: ['Frontend Developer', 'React Developer', 'Full Stack Web Developer'],
-                                                autoStart: true,
-                                                loop: true,
-                                            }}
-                                        />
-                                    </Typography>
-                                    <Box className={styles.btnGroup} sx={{ mt: 3 }}>
-                                        <a href="https://drive.google.com/uc?export=download&id=1XFnyqeM_9yxzaj5qjMUEmPuAIL_0gSlq" download="Iftakher-Hossen-Resume" style={{ color: 'white' }}>
-                                            <Button color="inherit" className={styles.btn} sx={{ borderTop: '1px solid transparent', borderBottom: '1px solid transparent', ml: 1 }}>
-                                                <DownloadIcon /> &nbsp; RESUME
-                                            </Button>
-                                        </a>
-                                        <Button
-                                            color="inherit"
-                                            className={styles.btn}
-                                            sx={{ borderTop: '1px solid transparent', borderBottom: '1px solid transparent', ml: 1 }}
-                                            href="#projects"
-                                            style={{ color: 'white' }}
-                                        >
-                                            <CollectionsIcon /> &nbsp; Projects
-                                        </Button>
-                                        <Button
-                                            color="inherit"
-                                            className={styles.btn}
-                                            sx={{ borderTop: '1px solid transparent', borderBottom: '1px solid transparent', ml: 1 }}
-                                            style={{ color: 'white' }}
-                                            onClick={handleOpen}
-                                        >
-                                            <ConnectWithoutContactIcon /> &nbsp; Hire Me
-                                        </Button>
-                                    </Box>
-                                </Box>
-                            </Grid>
+        <div id="home">
+            <Container>
+                <Box className={styles.wrapper}>
+                    <Grid container>
+                        <Grid item xs={12} sm={12} md={5} className={styles.sideBar1}>
+                            <Box className={styles["frame"] + " " + styles["zoomAnimationWrapper"]}>
+                                <Image
+                                    src="https://i.ibb.co/nD1F9KJ/iftakher5.png"
+                                    alt="Profile"
+                                    className={styles.zoomAnimation}
+                                    draggable="false"
+                                    width={320}
+                                    height={415}
+                                />
+                            </Box>
                         </Grid>
-                    </Box>
-                </Container>
-            </Box>
+                        <Grid item xs={12} sm={12} md={7} className={styles.sideBar2}>
+                            <Box className={styles.textWrapper}>
+                                <Typography sx={{ fontSize: 21, color: '#358DC8', mb: 1 }}>Hey There, I am</Typography>
+                                <motion.div initial="hidden" animate="visible"
+                                    variants={{
+                                        hidden: {
+                                            scale: .8,
+                                            opacity: 0
+                                        },
+                                        visible: {
+                                            scale: 1,
+                                            opacity: 1,
+                                            transition: {
+                                                delay: .6
+                                            }
+                                        },
+                                    }}>
+                                    <Typography sx={{ margin: 0, lineHeight: '1.15', fontSize: '4rem', fontWeight: 900 }} className={styles.title}>
+                                        Iftakher Hossen
+                                    </Typography>
+                                </motion.div>
+                                <Typography sx={{ fontSize: 21, color: '#358DC8', my: 1 }}>a Passionate</Typography>
+                                <Typography variant="h5" sx={{ fontSize: '1.8em', mb: 1, fontWeight: 700 }} className={styles.designation}>
+                                    <Typewriter
+                                        options={{
+                                            strings: ['Frontend Developer', 'React Developer', 'Full Stack Web Developer'],
+                                            autoStart: true,
+                                            loop: true,
+                                        }}
+                                    />
+                                </Typography>
+                                <Box className={styles.btnGroup} sx={{ mt: 3 }}>
+                                    <a href="https://drive.google.com/uc?export=download&id=1XFnyqeM_9yxzaj5qjMUEmPuAIL_0gSlq" download="Iftakher-Hossen-Resume" style={{ color: 'white' }}>
+                                        <Button color="inherit" className={styles.btn} sx={{ borderTop: '1px solid transparent', borderBottom: '1px solid transparent', ml: 1 }}>
+                                            <DownloadIcon /> &nbsp; RESUME
+                                        </Button>
+                                    </a>
+                                    <Button
+                                        color="inherit"
+                                        className={styles.btn}
+                                        sx={{ borderTop: '1px solid transparent', borderBottom: '1px solid transparent', ml: 1 }}
+                                        href="#projects"
+                                        style={{ color: 'white' }}
+                                    >
+                                        <CollectionsIcon /> &nbsp; Projects
+                                    </Button>
+                                    <Button
+                                        color="inherit"
+                                        className={styles.btn}
+                                        sx={{ borderTop: '1px solid transparent', borderBottom: '1px solid transparent', ml: 1 }}
+                                        style={{ color: 'white' }}
+                                        onClick={handleOpen}
+                                    >
+                                        <ConnectWithoutContactIcon /> &nbsp; Hire Me
+                                    </Button>
+                                </Box>
+                            </Box>
+                        </Grid>
+                    </Grid>
+                </Box>
+            </Container>
 
             {/* Modal Start */}
             <div>
@@ -199,7 +197,7 @@ const HeroSection = () => {
                 </Modal>
             </div>
             {/* Modal End */}
-        </Box>
+        </div>
     );
 };
 
