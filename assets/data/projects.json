@@ -15,14 +15,29 @@
         "clientGithub": "https://github.com/Nashtarin/Radiant-Academy",
         "projectCategory": "Ed-Tech",
         "projectTechnologies": [
-            "Next.js", "Mongoose", "TailwindCSS", "JavaScript", "MongoDB", "Redux", "Axios", "React-Redux", "Redux-Toolkit", "Socket.io", "Paypal", "Stripe", "Firebase", "Various NPM Packages"
+            "Next.js",
+            "Mongoose",
+            "TailwindCSS",
+            "JavaScript",
+            "MongoDB",
+            "Redux",
+            "Axios",
+            "React-Redux",
+            "Redux-Toolkit",
+            "Socket.io",
+            "Paypal",
+            "Stripe",
+            "Firebase",
+            "Various NPM Packages"
         ],
         "projectDate": [
             "February - March, 2022"
         ],
         "projectType": "Team Project",
         "projectScreenshots": [
-
+            "https://i.ibb.co/PYCKhvS/smart-it-firm.png",
+            "https://i.ibb.co/qjvyTZX/radiant-academy.png",
+            "https://i.ibb.co/XtRPxqc/shabdokosh.png"
         ]
     },
     {
@@ -41,7 +56,14 @@
         "serverGithub": "https://github.com/iftakherhossen/smart-it-firm-server",
         "projectCategory": "Company Website",
         "projectTechnologies": [
-            "React", "Node.js", "Express.js", "Material-Ui", "JavaScript", "MongoDB", "Firebase", "Heroku"
+            "React",
+            "Node.js",
+            "Express.js",
+            "Material-Ui",
+            "JavaScript",
+            "MongoDB",
+            "Firebase",
+            "Heroku"
         ],
         "projectDate": "December, 2021",
         "projectType": "Personal Project",
@@ -64,16 +86,29 @@
         ],
         "projectImage": "https://i.ibb.co/XtRPxqc/shabdokosh.png",
         "projectLink": "https://shabdakosh-49da5.web.app/",
-        "clientGithub":  "https://github.com/iftakherhossen/book-library-redux-project",
+        "clientGithub": "https://github.com/iftakherhossen/book-library-redux-project",
         "serverGithub": "https://github.com/iftakherhossen/book-librarry-server",
         "projectCategory": "Social Media",
         "projectTechnologies": [
-            "React", "Node.js", "Express.js", "Material-Ui", "Bootstrap", "JavaScript", "MongoDB", "Firebase", "Heroku", "Stripe.js", "Redux", "React-Redux"
+            "React",
+            "Node.js",
+            "Express.js",
+            "Material-Ui",
+            "Bootstrap",
+            "JavaScript",
+            "MongoDB",
+            "Firebase",
+            "Heroku",
+            "Stripe.js",
+            "Redux",
+            "React-Redux"
         ],
         "projectDate": "January, 2022",
         "projectType": "Team Project",
         "projectScreenshots": [
-
+            "https://i.ibb.co/PYCKhvS/smart-it-firm.png",
+            "https://i.ibb.co/qjvyTZX/radiant-academy.png",
+            "https://i.ibb.co/XtRPxqc/shabdokosh.png"
         ]
     },
     {
@@ -93,14 +128,19 @@
         "serverGithub": "https://github.com/iftakherhossen/micro-blogsite-server",
         "projectCategory": "Social Media",
         "projectTechnologies": [
-            "React", "Node.js", "Express.js", "Material-Ui", "JavaScript", "MongoDB", "Firebase", "Heroku"
+            "React",
+            "Node.js",
+            "Express.js",
+            "Material-Ui",
+            "JavaScript",
+            "MongoDB",
+            "Firebase",
+            "Heroku"
         ],
         "projectDate": "January, 2022",
         "projectType": "Personal Project",
-        "projectScreenshots": [
-
-        ]
-    },    
+        "projectScreenshots": []
+    },
     {
         "id": 5,
         "projectName": "Oronno Opticals",
@@ -114,16 +154,21 @@
         "projectImage": "https://i.ibb.co/2Sg0qGc/oronno-opticals.png",
         "projectLink": "https://oronno-opticals.web.app/",
         "clientGithub": "https://github.com/iftakherhossen/oronno-opticals-client",
-        "serverGithub" : "https://github.com/iftakherhossen/oronno-opticals-server",
+        "serverGithub": "https://github.com/iftakherhossen/oronno-opticals-server",
         "projectCategory": "Niche eCommerce Website",
         "projectTechnologies": [
-            "React", "Node.js", "Express.js", "Material-Ui", "JavaScript", "MongoDB", "Firebase", "Heroku"
+            "React",
+            "Node.js",
+            "Express.js",
+            "Material-Ui",
+            "JavaScript",
+            "MongoDB",
+            "Firebase",
+            "Heroku"
         ],
         "projectDate": "November, 2021",
         "projectType": "Personal Project",
-        "projectScreenshots": [
-
-        ]
+        "projectScreenshots": []
     },
     {
         "id": 6,
@@ -140,13 +185,17 @@
         "serverGithub": "https://github.com/iftakherhossen/oronno-opticals-server",
         "projectCategory": "Niche eCommerce Website",
         "projectTechnologies": [
-            "React", "Node.js", "Express.js", "MongoDB", "Bootstrap", "JavaScript", "Firebase"
+            "React",
+            "Node.js",
+            "Express.js",
+            "MongoDB",
+            "Bootstrap",
+            "JavaScript",
+            "Firebase"
         ],
         "projectDate": "November, 2021",
         "projectType": "Personal Project",
-        "projectScreenshots": [
-
-        ]
+        "projectScreenshots": []
     },
     {
         "id": 7,
@@ -155,20 +204,20 @@
         "projectFeatures": [
             "Simple HTML Templates.",
             "Users can halal animals at cheapest price for Qurbani.",
-            "They can also hire Butlers for their Qurbani."    
+            "They can also hire Butlers for their Qurbani."
         ],
         "projectImage": "https://i.ibb.co/hm1cCGF/digital-haat.png",
         "projectLink": "https://digital-haat-iftakher.netlify.app/",
         "clientGithub": "https://github.com/iftakherhossen/digitalhaat",
         "projectCategory": "eCommerce Website",
         "projectTechnologies": [
-            "HTML", "CSS", "Bootstrap"
+            "HTML",
+            "CSS",
+            "Bootstrap"
         ],
         "projectDate": "July, 2021",
         "projectType": "Personal Project",
-        "projectScreenshots": [
-
-        ]
+        "projectScreenshots": []
     },
     {
         "id": 8,
@@ -177,19 +226,19 @@
         "projectFeatures": [
             "Simple HTML Templates.",
             "Users can halal animals at cheapest price for Qurbani.",
-            "They can also hire Butlers for their Qurbani."            
+            "They can also hire Butlers for their Qurbani."
         ],
         "projectImage": "https://i.ibb.co/2gVfFg2/honda-cbr.png",
         "projectLink": "https://honda-cbr-bootstrap-iftakher.netlify.app/",
         "clientGithub": "https://github.com/iftakherhossen/honda-cbr",
         "projectCategory": "Niche eCommerce Website",
         "projectTechnologies": [
-            "HTML", "CSS", "Bootstrap"
+            "HTML",
+            "CSS",
+            "Bootstrap"
         ],
         "projectDate": "July, 2021",
         "projectType": "Personal Project",
-        "projectScreenshots": [
-
-        ]
+        "projectScreenshots": []
     }
 ]

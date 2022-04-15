@@ -3218,6 +3218,11 @@
     "get-intrinsic" "^1.0.2"
     "object-inspect" "^1.9.0"
 
+"simplelightbox@^2.10.3":
+  "integrity" "sha512-EvBmxVG5YQGKsaYijyky5J22h4OsOKnv8kWJxUZR9fxWTpxkTj0rbbflZiFJ61F+OEb6cPUFzxUjLoOZF8W2gg=="
+  "resolved" "https://registry.npmjs.org/simplelightbox/-/simplelightbox-2.10.3.tgz"
+  "version" "2.10.3"
+
 "slash@^3.0.0":
   "integrity" "sha512-g9Q1haeby36OSStwb4ntCGGGaKsaVSjQ68fBxoQcutl5fS1vuY18H3wSt3jFyFtrkx+Kz0V1G85A4MyAdDMi2Q=="
   "resolved" "https://registry.npmjs.org/slash/-/slash-3.0.0.tgz"

@@ -12,7 +12,9 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import Image from 'next/image';
 import TwitterIcon from '@mui/icons-material/Twitter';
 
-const About = () => {
+const About = (aboutMyself) => {
+    console.log(aboutMyself);
+
     return (
         <div className={styles.contact} id="about">
             <Grid container sx={{ display: 'flex', alignItems: 'center' }}>

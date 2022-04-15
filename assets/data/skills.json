@@ -1,5 +1,99 @@
-[
-    {
-        
-    }
-]
+{
+    "web": [
+        {
+            "id": 1,
+            "name": "HTML5",
+            "growth": 95,
+            "color": "bg-primary"
+        },
+        {
+            "id": 2,
+            "name": "CSS3",
+            "growth": 95,
+            "color": "bg-primary"
+            
+        },
+        {
+            "id": 3,
+            "name": "Bootstrap",
+            "growth": 95,
+            "color": "bg-success"
+        },
+        {
+            "id": 4,
+            "name": "TailwindCSS",
+            "growth": 95,
+            "color": "bg-success"
+            
+        },
+        {
+            "id": 5,
+            "name": "Material-Ui",
+            "growth": 70,
+            "color": "bg-info"
+        },
+        {
+            "id": 6,
+            "name": "React",
+            "growth": 60,
+            "color": "bg-info"
+            
+        },
+        {
+            "id": 7,
+            "name": "Node.js",
+            "growth": 40,
+            "color": "bg-secondary"
+        },
+        {
+            "id": 8,
+            "name": "Express.js",
+            "growth": 40,
+            "color": "bg-secondary"
+            
+        },
+        {
+            "id": 9,
+            "name": "Node.js",
+            "growth": 40,
+            "color": "bg-danger"
+        },
+        {
+            "id": 10,
+            "name": "Next.js",
+            "growth": 40,
+            "color": "bg-danger"
+        }
+    ],
+    "others": [
+        {
+            "id": 1,
+            "name": "",
+            "growth": 0,
+            "color": "bg-warning"
+        }
+    ],
+    "programming": [
+        {
+            "id": 1,
+            "name": "JavaScript",
+            "growth": 70,
+            "color": "bg-secondary"
+        },
+        {
+            "id": 2,
+            "name": "C#",
+            "growth": 20,
+            "color": "bg-danger",
+            "isNew": true
+        }
+    ],
+    "tools": [
+        {
+            "id": 1,
+            "name": "Git",
+            "growth": 50,
+            "color": "bg-success"
+        }
+    ]
+}

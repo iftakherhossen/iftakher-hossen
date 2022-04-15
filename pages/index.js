@@ -9,6 +9,7 @@ import BlogSection from "../components/Home/BlogSection";
 import projects from "../assets/data/projects.json";
 import skills from "../assets/data/skills.json";
 import languages from "../assets/data/languages.json";
+import aboutMyself from "../assets/data/aboutMyself.json";
 import Navigation from "../components/Common/Navigation";
 import Footer from "../components/Common/Footer";
 
@@ -24,12 +25,13 @@ export const getStaticProps = async () => {
       languagesData: languages,
       blogsData,
       projectsData: projects,
-      skillsData: skills,      
+      skillsData: skills,
+      aboutMyself: aboutMyself      
     },
   };
 };
 
-const Home = ({ projectsData, blogsData, skillsData, languagesData }) => {
+const Home = ({ projectsData, blogsData, skillsData, languagesData, aboutMyself }) => {
   return (
     <div className={styles.container}>
       <Head>
@@ -56,7 +58,7 @@ const Home = ({ projectsData, blogsData, skillsData, languagesData }) => {
       >
         <Navigation />
         <HeroSection />
-        <AboutSection />
+        <AboutSection socialMedia={socialMedia} />
         <SkillSection skillsData={skillsData} />
         <ProjectSection projectsData={projectsData} />
         <BlogSection blogsData={blogsData} />

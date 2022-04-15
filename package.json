@@ -26,6 +26,7 @@
     "react-messenger-chat-plugin": "^2.0.2",
     "react-tabs": "^4.2.0",
     "react-tsparticles": "^1.37.5",
+    "simplelightbox": "^2.10.3",
     "sweetalert2": "^11.4.8",
     "typewriter-effect": "^2.18.2"
   },
