@@ -24,9 +24,9 @@ export const getStaticProps = async () => {
     props: {
       aboutMyself,
       skills,
-      projectsData: projects,   
+      projectsData: projects,
       blogsData,
-      languages,   
+      languages,
     },
   };
 };
@@ -36,7 +36,10 @@ const Home = ({ projectsData, blogsData, skills, languages, aboutMyself }) => {
     <div className={styles.container}>
       <Head>
         <title>Iftakher Hossen | Portfolio</title>
-        <meta name="description" content="Professional Portfolio built in Next.js" />
+        <meta
+          name="description"
+          content="Professional Portfolio built in Next.js"
+        />
         <link rel="icon" href="/favicon.ico" />
         {/* AOS Animation */}
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -48,8 +51,7 @@ const Home = ({ projectsData, blogsData, skills, languages, aboutMyself }) => {
           crossOrigin="anonymous"
         />
       </Head>
-
-      {/* HOMEPAGE CONTENT GOES HERE (WITHOUT NAVBAR & FOOTER) */}
+      
       <main
         className={styles.main}
         data-spy="scroll"

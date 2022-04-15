@@ -5,7 +5,7 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 import { Box } from '@mui/system';
 
-const Skills = ({ skills }) => {
+const SkillSection = ({ skills }) => {
     return (
         <div className={styles.projects} id='skills'>
             <Typography variant="h4" sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center', pb: 4 }}>
@@ -84,4 +84,4 @@ const Skills = ({ skills }) => {
     );
 };
 
-export default Skills;
+export default SkillSection;

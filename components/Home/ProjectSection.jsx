@@ -5,7 +5,7 @@ import styles from '../../styles/Home.module.css';
 import SingleProjectCard from './SingleProjectCard';
 import GitHubIcon from '@mui/icons-material/GitHub';
 
-const Project = ({ projectsData }) => {
+const ProjectSection = ({ projectsData }) => {
     const [projectData, setProjectData] = useState([]);
     const [show, setShow] = useState(false);
 
@@ -68,4 +68,4 @@ const Project = ({ projectsData }) => {
     );
 };
 
-export default Project;
+export default ProjectSection;

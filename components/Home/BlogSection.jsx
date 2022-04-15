@@ -5,7 +5,7 @@ import styles from '../../styles/Home.module.css';
 import SingleBlogCard from './SingleBlogCard';
 import LogoDevIcon from '@mui/icons-material/LogoDev';
 
-const Blogs = ({ blogsData }) => {
+const BlogSection = ({ blogsData }) => {
     const [blogData, setBlogData] = useState([]);
     const [show, setShow] = useState(false);
 
@@ -68,4 +68,4 @@ const Blogs = ({ blogsData }) => {
     );
 };
 
-export default Blogs;
+export default BlogSection;

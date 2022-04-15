@@ -3,6 +3,7 @@
     "location": "Mirpur, Dhaka, Bangladesh",
     "email": "iftakher.one@gmail.com",
     "phone": "+8801644985364",
+    "portfolio": "https://iftakher-hossen.vercel.app/",
     "socialMedia": [
         {
             "id": 1,
@@ -28,6 +29,37 @@
             "id": 5,
             "name": "Github",
             "url": "https://github.com/iftakherhossen"
+        }
+    ],
+    "education": [
+        {
+            "id": 1,
+            "degree": "Diploma-in-Engineering",
+            "institute": "Shyamoli Ideal Polytechnic Institute",
+            "department": "Computer Technology",
+            "passingYear": "2022",
+            "result": "",
+            "certificate": "https://i.ibb.co/ftGBvn6/5ea30f71-b2f8-4805-8615-d09592f509f1-1.jpg"
+        },
+        {
+            "id": 2,
+            "degree": "SSC",
+            "institute": "Bashir Uddin Ideal School & College",
+            "department": "Science",
+            "passingYear": "2018",
+            "result": "4.11",
+            "certificate": "https://i.ibb.co/ftGBvn6/5ea30f71-b2f8-4805-8615-d09592f509f1-1.jpg"
+        }
+    ],
+    "course": [
+        {
+            "id": 1,
+            "name": "Complete Web Development Course",
+            "institute": "Programming Hero",
+            "duration": "6 Months",
+            "speciality": "MERN Stack Development",
+            "medium" : "Online",
+            "certificate": "https://i.ibb.co/ftGBvn6/5ea30f71-b2f8-4805-8615-d09592f509f1-1.jpg"
         }
     ]
 }

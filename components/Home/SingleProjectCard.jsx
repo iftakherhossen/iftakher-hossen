@@ -10,7 +10,7 @@ import Styles from '../../styles/Styles';
 import OpenInNewIcon from '@mui/icons-material/OpenInNew';
 
 const SingleProjectCard = ({ project }) => {
-    const { id, projectName, projectDescription, projectFeatures, projectImage, projectLink, projectTechnologies, clientGithub, serverGithub, projectScreenshots } = project;
+    const { projectName, projectDescription, projectFeatures, projectImage, projectLink, projectTechnologies, clientGithub, serverGithub, projectScreenshots } = project;
     const [openProject, setOpenProject] = useState(false);
     const [openImage, setOpenImage] = useState(false);
     const { projectModalStyle, imageModalStyle } = Styles();
@@ -53,12 +53,12 @@ const SingleProjectCard = ({ project }) => {
                 </CardActionArea>
                 <CardActions sx={{ display: 'flex', justifyContent: 'center' }}>
                     <Tooltip title="Explore More!">
-                    <IconButton sx={{ color: '#282C34', fontWeight: 700 }} onClick={handleOpenProjectModal}>
-                        {
-                            openProject === false ? <AddCircleOutlineIcon sx={{ fontSize: 25 }} />
-                                : <RemoveCircleOutlineIcon sx={{ fontSize: 25 }} />
-                        }
-                    </IconButton>
+                        <IconButton sx={{ color: '#282C34', fontWeight: 700 }} onClick={handleOpenProjectModal}>
+                            {
+                                openProject === false ? <AddCircleOutlineIcon sx={{ fontSize: 25 }} />
+                                    : <RemoveCircleOutlineIcon sx={{ fontSize: 25 }} />
+                            }
+                        </IconButton>
                     </Tooltip>
                 </CardActions>
             </Card>

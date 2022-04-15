@@ -12,8 +12,7 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import Image from 'next/image';
 import TwitterIcon from '@mui/icons-material/Twitter';
 
-const About = ({ aboutMyself }) => {
-    console.log(aboutMyself);
+const AboutSection = ({ aboutMyself }) => {
     const { aboutText, location, email, phone, socialMedia } = aboutMyself;
 
     return (
@@ -121,4 +120,4 @@ const About = ({ aboutMyself }) => {
     );
 };
 
-export default About;
+export default AboutSection;
