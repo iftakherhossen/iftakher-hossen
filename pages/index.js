@@ -22,16 +22,16 @@ export const getStaticProps = async () => {
 
   return {
     props: {
-      languagesData: languages,
+      aboutMyself,
+      skills,
+      projectsData: projects,   
       blogsData,
-      projectsData: projects,
-      skillsData: skills,
-      aboutMyself: aboutMyself      
+      languages,   
     },
   };
 };
 
-const Home = ({ projectsData, blogsData, skillsData, languagesData, aboutMyself }) => {
+const Home = ({ projectsData, blogsData, skills, languages, aboutMyself }) => {
   return (
     <div className={styles.container}>
       <Head>
@@ -58,11 +58,11 @@ const Home = ({ projectsData, blogsData, skillsData, languagesData, aboutMyself 
       >
         <Navigation />
         <HeroSection />
-        <AboutSection socialMedia={socialMedia} />
-        <SkillSection skillsData={skillsData} />
+        <AboutSection aboutMyself={aboutMyself} />
+        <SkillSection skills={skills} />
         <ProjectSection projectsData={projectsData} />
         <BlogSection blogsData={blogsData} />
-        <Footer languagesData={languagesData} />
+        <Footer languages={languages} />
       </main>
     </div>
   );

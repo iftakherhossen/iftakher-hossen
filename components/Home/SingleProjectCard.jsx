@@ -52,12 +52,14 @@ const SingleProjectCard = ({ project }) => {
                     </CardContent>
                 </CardActionArea>
                 <CardActions sx={{ display: 'flex', justifyContent: 'center' }}>
+                    <Tooltip title="Explore More!">
                     <IconButton sx={{ color: '#282C34', fontWeight: 700 }} onClick={handleOpenProjectModal}>
                         {
                             openProject === false ? <AddCircleOutlineIcon sx={{ fontSize: 25 }} />
                                 : <RemoveCircleOutlineIcon sx={{ fontSize: 25 }} />
                         }
                     </IconButton>
+                    </Tooltip>
                 </CardActions>
             </Card>
 

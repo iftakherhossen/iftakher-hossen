@@ -1,58 +1,33 @@
 {
-    "aboutMyself": [
-        {
-            "id": 1,
-            "text": "I am Iftakher Hossen. I&apos;m from Dhaka, Bangladesh. I&apos;m doing a Diploma-in-Engineering in Computer Science. I am a dedicated and hardworking person. Learning something different is my habit. I am familiar with React, Node.js, Next.js, MongoDB, Material UI, Javascript, Data Structures, Bootstrap, Tailwind, Next.js, VS Code, Git. And learning more new technologies. I love to spend my time with my family."
-        }
-    ],
+    "aboutText": "I am Iftakher Hossen. I'm from Dhaka, Bangladesh. I'm doing a Diploma-in-Engineering in Computer Science. I am a dedicated and hardworking person. Learning something different is my habit. I am familiar with React, Node.js, Next.js, MongoDB, Material UI, Javascript, Data Structures, Bootstrap, Tailwind, Next.js, VS Code, Git. And learning more new technologies. I love to spend my time with my family.",
+    "location": "Mirpur, Dhaka, Bangladesh",
+    "email": "iftakher.one@gmail.com",
+    "phone": "+8801644985364",
     "socialMedia": [
         {
             "id": 1,
-            "name": "Email",
-            "url": "iftakher.one@gmail.com",
-            "icon": "EmailIcon"
+            "name": "Facebook",
+            "url": "https://www.facebook.com/hosseniftakher"
         },
         {
             "id": 2,
-            "name": "Phone",
-            "url": "+8801644985364",
-            "icon": "CallIcon"
+            "name": "Instagram",
+            "url": "https://www.instagram.com/hossen_iftakher/"
         },
         {
             "id": 3,
-            "name": "Address",
-            "url": "Mirpur, Dhaka, Bangladesh",
-            "icon": "FmdGoodIcon"
+            "name": "Twitter",
+            "url": "https://twitter.com/iftakher_hossen"
         },
         {
             "id": 4,
-            "name": "Facebook",
-            "url": "https://www.facebook.com/hosseniftakher",
-            "icon": "FacebookIcon"
+            "name": "LinkedIn",
+            "url": "https://www.linkedin.com/in/iftakher-hossen/"
         },
         {
             "id": 5,
-            "name": "Instagram",
-            "url": "https://www.instagram.com/hossen_iftakher/",
-            "icon": "InstagramIcon"
-        },
-        {
-            "id": 6,
-            "name": "Twitter",
-            "url": "https://twitter.com/iftakher_hossen",
-            "icon": "TwitterIcon"
-        },
-        {
-            "id": 7,
-            "name": "LinkedIn",
-            "url": "https://www.linkedin.com/in/iftakher-hossen/",
-            "icon": "LinkedInIcon"
-        },
-        {
-            "id": 8,
             "name": "Github",
-            "url": "https://github.com/iftakherhossen",
-            "icon": "GitHubIcon"
+            "url": "https://github.com/iftakherhossen"
         }
     ]
 }

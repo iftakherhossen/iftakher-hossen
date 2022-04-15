@@ -5,7 +5,7 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 import { Box } from '@mui/system';
 
-const Skills = ({ skillsData }) => {
+const Skills = ({ skills }) => {
     return (
         <div className={styles.projects} id='skills'>
             <Typography variant="h4" sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center', pb: 4 }}>
@@ -24,7 +24,7 @@ const Skills = ({ skillsData }) => {
                     <TabPanel>
                         <Grid container sx={{ p: 2 }}>
                             {
-                                skillsData.web.map(({ id, name, growth, color }) => <Grid item xs={12} md={6} lg={6} sx={{ px: 2 }} key={id}>
+                                skills.web.map(({ id, name, growth, color }) => <Grid item xs={12} md={6} lg={6} sx={{ px: 2 }} key={id}>
                                     <Typography variant="body1" className={styles.skillsName} sx={{ fontWeight: 600 }}>{name}</Typography>
                                     <Tooltip title={`${growth}%`}>
                                         <div className="progress">
@@ -37,7 +37,7 @@ const Skills = ({ skillsData }) => {
                     </TabPanel>
                     {/* <TabPanel>
                         <Grid container  sx={{p: 2}}>
-                            skillsData.others.map(({ id, name, growth, color }) => <Grid item xs={12} md={6} lg={6} sx={{ px: 2 }} key={id}>
+                            skills.others.map(({ id, name, growth, color }) => <Grid item xs={12} md={6} lg={6} sx={{ px: 2 }} key={id}>
                                     <Typography variant="body1" className={styles.skillsName} sx={{ fontWeight: 600 }}>{name}</Typography>
                                     <Tooltip title={`${growth}%`}>
                                         <div className="progress">
@@ -50,7 +50,7 @@ const Skills = ({ skillsData }) => {
                     <TabPanel>
                         <Grid container sx={{ p: 2 }}>
                             {
-                                skillsData.programming.map(({ id, name, growth, color, isNew }) => <Grid item xs={12} md={6} lg={6} sx={{ px: 2 }} key={id}>
+                                skills.programming.map(({ id, name, growth, color, isNew }) => <Grid item xs={12} md={6} lg={6} sx={{ px: 2 }} key={id}>
                                     <Typography variant="body1" className={styles.skillsName} sx={{ fontWeight: 600 }}>
                                         {name} 
                                         {isNew === true && <small style={{color: '#aaa'}}>&nbsp;(Started Exploring)</small>}
@@ -67,7 +67,7 @@ const Skills = ({ skillsData }) => {
                     <TabPanel>
                         <Grid container sx={{ p: 2 }}>
                             {
-                                skillsData.tools.map(({ id, name, growth, color }) => <Grid item xs={12} md={6} lg={6} sx={{ px: 2 }} key={id}>
+                                skills.tools.map(({ id, name, growth, color }) => <Grid item xs={12} md={6} lg={6} sx={{ px: 2 }} key={id}>
                                     <Typography variant="body1" className={styles.skillsName} sx={{ fontWeight: 600 }}>{name}</Typography>
                                     <Tooltip title={`${growth}%`}>
                                         <div className="progress">

@@ -1,10 +1,5 @@
 .container {
   padding: 0 2rem;
-  user-select: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
 }
 
 .main {
@@ -126,6 +121,10 @@
   align-items: center;
 }
 
+.smHolder a:hover {
+  color: white;
+}
+
 .aboutMeImg {
   border-radius: 100%;
   width: 100% !important;
@@ -169,7 +168,7 @@
   margin-right: 15px;
   padding: 0.5rem 1.2rem;
   font-weight: 900;
-  border-radius: 4px;
+  border-radius: 10px;
   list-style-type: none;
 }
 
@@ -186,7 +185,7 @@
   height: 3px;
   width: 100%;
   bottom: 0;
-  border-radius: 4px;
+  border-radius: 10px;
 }
 
 /* For Responsiveness */
