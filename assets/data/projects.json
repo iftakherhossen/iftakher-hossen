@@ -2,7 +2,7 @@
     {
         "id": 1,
         "projectName": "Radiant Academy",
-        "projectDescription": "It's a team project, I'm working here as a front-end developer. I developed Almost 65% of the front-end in this project. I also work on some functionality.",
+        "projectDescription": "It's a team project, I'm working here as a front-end developer. I developed Almost 80% of the front-end in this project. I also work on some functionality.",
         "projectFeatures": [
             "We have core features like Forum, Quiz & Course.",
             "You can make a Video Call & can Code on Playground.",
@@ -30,9 +30,7 @@
             "Firebase",
             "Various NPM Packages"
         ],
-        "projectDate": [
-            "February - March, 2022"
-        ],
+        "projectDate": "February - March, 2022",
         "projectType": "Team Project",
         "projectScreenshots": [
             "https://i.ibb.co/PYCKhvS/smart-it-firm.png",
@@ -43,7 +41,7 @@
     {
         "id": 2,
         "projectName": "Smart IT Firm",
-        "projectDescription": "It's a team project, I'm working here as a front-end developer. I developed Almost 65% of the front-end in this project. I also work on some functionality.",
+        "projectDescription": "Smart IT Firm is company website that provide IT related services. A user can get the desired services and admins can manage content from dashboard.",
         "projectFeatures": [
             "Maintained a secure specific dashboard for customers and admin.",
             "Using MongoDB and Nodejs, created admin-specific roles to allow administration.",

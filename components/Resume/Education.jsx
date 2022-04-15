@@ -6,21 +6,7 @@ import Styles from '../../styles/Styles'
 
 const Education = ({ aboutMyself }) => {
     const { education, course } = aboutMyself;
-    const [openCertificate, setOpenCertificate] = useState(false);
-    const [certificateImage, setCertificateImages] = useState();
-    const { certificateModalStyle } = Styles;
-
-    const handleOpenCertificateModal = (certificate) => {
-        setOpenCertificate(true);
-        setCertificateImages(certificate);
-    };
-
-    const handleCloseCertificateModal = () => setOpenCertificate(false);
-
-    const handleZoom = (screenshot) => {
-        handleOpenCertificateModal(screenshot);
-    }
-
+    
     return (
         <div>
             <Box sx={{ py: 2 }}>
@@ -47,19 +33,19 @@ const Education = ({ aboutMyself }) => {
                                             key={id}
                                             sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
                                         >
-                                            <TableCell component="th" scope="row" sx={{ color: 'white', fontSize: 17 }}>
+                                            <TableCell component="th" scope="row" sx={{ color: 'white', fontSize: 17, py: 0.5 }}>
                                                 {degree}
                                             </TableCell>
-                                            <TableCell align="center" sx={{ color: 'white', fontSize: 17 }}>{institute}</TableCell>
-                                            <TableCell align="center" sx={{ color: 'white', fontSize: 17 }}>{department}</TableCell>
-                                            <TableCell align="center" sx={{ color: 'white', fontSize: 17 }}>
+                                            <TableCell align="center" sx={{ color: 'white', fontSize: 17, py: 0.8 }}>{institute}</TableCell>
+                                            <TableCell align="center" sx={{ color: 'white', fontSize: 17, py: 0.8 }}>{department}</TableCell>
+                                            <TableCell align="center" sx={{ color: 'white', fontSize: 17, py: 0.8 }}>
                                                 {
                                                     result === '' ? <span>Running</span> : result
                                                 }
                                             </TableCell>
-                                            <TableCell align="center" sx={{ color: 'white', fontSize: 17 }}>{passingYear}</TableCell>
-                                            <TableCell align="right" sx={{ color: 'white', fontSize: 17 }}>
-                                                <Button sx={{ color: 'white' }} onClick={() => handleZoom(certificate)} size="small">View</Button>
+                                            <TableCell align="center" sx={{ color: 'white', fontSize: 17, py: 0.8 }}>{passingYear}</TableCell>
+                                            <TableCell align="right" sx={{ color: 'white', fontSize: 17, py: 0.8 }}>
+                                                <Button sx={{ color: 'white' }} size="small" href={certificate}>View</Button>
                                             </TableCell>
                                         </TableRow>
                                     ))}
@@ -67,7 +53,7 @@ const Education = ({ aboutMyself }) => {
                                     {course.map(({ id, name, institute, duration, medium, speciality, certificate }) => (
                                         <TableRow
                                             key={id}
-                                            sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
+                                            sx={{ '&:last-child td, &:last-child th': { border: 0, py: 0.8 } }}
                                         >
                                             <TableCell component="th" scope="row" sx={{ color: 'white', fontSize: 17 }}>
                                                 {name}
@@ -77,7 +63,7 @@ const Education = ({ aboutMyself }) => {
                                             <TableCell align="center" sx={{ color: 'white', fontSize: 17 }}>{medium}</TableCell>
                                             <TableCell align="center" sx={{ color: 'white', fontSize: 17 }}>{duration}</TableCell>
                                             <TableCell align="right" sx={{ color: 'white', fontSize: 17 }}>
-                                                <Button sx={{ color: 'white' }} onClick={() => handleZoom(certificate)} size="small">View</Button>
+                                                <Button sx={{ color: 'white' }} size="small" href={certificate}>View</Button>
                                             </TableCell>
                                         </TableRow>
                                     ))}
@@ -87,32 +73,6 @@ const Education = ({ aboutMyself }) => {
                     </Box>
                 </Box>
             </Box>
-
-            {/* The Certificate Modal Start */}
-            <div>
-                <Modal
-                    open={openCertificate}
-                    onClose={handleCloseCertificateModal}
-                    aria-labelledby="modal-modal-title"
-                    aria-describedby="modal-modal-description"
-                >
-                    <Box sx={certificateModalStyle}>
-                        <Image
-                            src={certificateImage}
-                            alt="Certificate"
-                            width={750}
-                            height={450}
-                            draggable="false"
-                        />
-                        <Tooltip title="Click to view this image clearly!" placement="top">
-                            <Fab color="primary" aria-label="add" href={certificateImage} target="_blank" sx={{ position: 'absolute', right: 35, bottom: 35 }} style={{ color: 'white' }}>
-                                <OpenInNewIcon />
-                            </Fab>
-                        </Tooltip>
-                    </Box>
-                </Modal>
-            </div>
-            {/* The Certificate Modal Start */}
         </div>
     );
 };

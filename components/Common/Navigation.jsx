@@ -109,10 +109,10 @@ const Navigation = () => {
                                 <Button color="inherit" sx={{ fontSize: 16, fontWeight: 500, mx: 1, letterSpacing: 2 }} className={styles.hover} href="#blogs">
                                     Blogs
                                 </Button>
-                                <Button color="inherit" sx={{ fontSize: 16, fontWeight: 500, px: 2, letterSpacing: 2 }} className={styles.hover} href="/resume">
+                                <Button color="inherit" sx={{ fontSize: 16, fontWeight: 500, mx: 1, px: 2, letterSpacing: 2 }} className={styles.hover} href="/resume">
                                     Resume
                                 </Button>
-                                <Button color="inherit" sx={{ fontSize: 16, fontWeight: 500, px: 2, letterSpacing: 2 }} className={styles.hover} onClick={handleOpen}>
+                                <Button color="inherit" sx={{ fontSize: 16, fontWeight: 500, mx: 1, px: 2, letterSpacing: 2 }} className={styles.hover} onClick={handleOpen}>
                                     Contact
                                 </Button>
                             </MenuItem>
@@ -132,13 +132,13 @@ const Navigation = () => {
                         <Button color="inherit" sx={{ fontSize: 16, fontWeight: 500, px: 2, letterSpacing: 2 }} className={styles.hover} href="#projects">
                             Projects
                         </Button>
-                        <Button color="inherit" sx={{ fontSize: 16, fontWeight: 500, mx: 2, px: 2, letterSpacing: 2 }} className={styles.hover} href="#blogs">
+                        <Button color="inherit" sx={{ fontSize: 16, fontWeight: 500, mx: 1, px: 2, letterSpacing: 2 }} className={styles.hover} href="#blogs">
                             Blogs
                         </Button>
                         <Button color="inherit" sx={{ fontSize: 16, fontWeight: 500, px: 2, letterSpacing: 2 }} className={styles.hover} href="/resume">
                             Resume
                         </Button>
-                        <Button color="inherit" sx={{ fontSize: 16, fontWeight: 500, px: 2, letterSpacing: 2 }} className={styles.hover} onClick={handleOpen}>
+                        <Button color="inherit" sx={{ fontSize: 16, fontWeight: 500, px: 2, mx: 1, letterSpacing: 2 }} className={styles.hover} onClick={handleOpen}>
                             Contact
                         </Button>
                     </Box>

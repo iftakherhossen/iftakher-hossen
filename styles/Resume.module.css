@@ -3,6 +3,6 @@
     color: white
 }
 
-.header {
-
+.anchor a:hover {
+    color: white !important;
 }
