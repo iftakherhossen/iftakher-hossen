@@ -6,3 +6,56 @@
 .anchor a:hover {
     color: white !important;
 }
+
+/* For Responsiveness */
+@media screen and (max-width: 599px) {
+    /* Common */
+    .container {
+        padding: 2rem 0;
+    }
+
+    /* Header.jsx */
+    .header .heading {
+        margin-bottom: 1rem;
+    }
+    .header .heading h1 {
+        font-size: 2.8em;
+    }
+
+    .header .heading h3 {
+        font-size: 1.2em;
+    }
+
+    .header .picture {
+        display: flex;
+        justify-content: center;
+        margin: 1rem 0;
+        display: none;
+    }
+
+    /* Skills.jsx */
+    .skillsWrapper {
+        padding: 0 0 0 5px;
+    }
+    .skillsWrapper .skillLevel {
+        height: 40%;
+        font-size: 1em;
+    }
+
+    /* Language.jsx */
+    .languageLevel {
+        height: 35%;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 1100px) {
+    .container {
+        padding: 4rem 4rem;
+    }
+}
+
+@media screen and (min-width: 1101px) and (max-width: 1450px) {
+    .container {
+        padding: 4rem 8rem;
+    }
+}

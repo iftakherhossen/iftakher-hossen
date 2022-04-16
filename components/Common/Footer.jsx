@@ -1,8 +1,8 @@
-import { Tooltip, Typography } from '@mui/material';
+import { IconButton, Tooltip, Typography } from '@mui/material';
 import { Box } from '@mui/system';
 import React from 'react';
 import styles from '../../styles/Home.module.css';
-
+import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
 
 const Footer = ({ languages }) => {
     return (
@@ -24,8 +24,13 @@ const Footer = ({ languages }) => {
                 </Box>
             </Box>
 
-            <footer className={styles.footer}>
-                <Typography variant="body1">Iftakher Hossen © 2022, All rights reserved.</Typography>
+            <footer>
+                <IconButton aria-label="Scroll to top" href="/" style={{ color: 'white' }} sx={{ position: 'absolute', right: 50, p: 1.5 }}>
+                    <ArrowUpwardIcon sx={{ fontSize: 30 }} />
+                </IconButton>
+                <Box className={styles.footer}>
+                    <Typography variant="body1">Iftakher Hossen © 2022, All rights reserved.</Typography>
+                </Box>
             </footer>
         </Box >
     );
