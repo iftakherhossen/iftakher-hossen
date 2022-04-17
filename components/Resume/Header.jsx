@@ -2,7 +2,6 @@ import { Divider, Grid, Typography } from '@mui/material';
 import { Box } from '@mui/system';
 import React from 'react';
 import Image from 'next/image';
-import Iftakher from '../../public/iftakher.jpg';
 import Styles from '../../styles/Resume.module.css';
 
 const HeaderSection = ({ aboutMyself }) => {
@@ -28,7 +27,7 @@ const HeaderSection = ({ aboutMyself }) => {
                     </Grid>
                     <Grid item xs={12} sm={12} md={2} className={Styles.picture}>
                         <Box sx={{ display: 'flex', justifyContent: 'flex-end' }}>
-                            <Image src={Iftakher} alt="Iftakher Hossen" width={150} height={160} draggable="false" className={Styles.image} />
+                            <Image src="https://i.ibb.co/PtV41md/iftakher1002.jpg" alt="Iftakher Hossen Professional Picture" width={150} height={160} draggable="false" className={Styles.image} />
                         </Box>
                     </Grid>
                 </Grid>

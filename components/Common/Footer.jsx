@@ -25,7 +25,7 @@ const Footer = ({ languages }) => {
             </Box>
 
             <footer>
-                <IconButton aria-label="Scroll to top" href="/" style={{ color: 'white' }} sx={{ position: 'absolute', right: 50, p: 1.5 }}>
+                <IconButton aria-label="Scroll to top" href="/" style={{ color: 'white' }} sx={{ position: 'absolute', right: 100, p: 1.5 }}>
                     <ArrowUpwardIcon sx={{ fontSize: 30 }} />
                 </IconButton>
                 <Box className={styles.footer}>
