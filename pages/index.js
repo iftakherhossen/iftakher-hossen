@@ -12,6 +12,7 @@ import languages from "../assets/data/languages.json";
 import aboutMyself from "../assets/data/aboutMyself.json";
 import Navigation from "../components/Common/Navigation";
 import Footer from "../components/Common/Footer";
+import MessengerCustomerChat from "react-messenger-customer-chat";
 
 // fetching projects data with json-server & fetching blogs data from dev.to
 export const getStaticProps = async () => {
@@ -51,7 +52,6 @@ const Home = ({ projectsData, blogsData, skills, languages, aboutMyself }) => {
           crossOrigin="anonymous"
         />
       </Head>
-      
       <main
         className={styles.main}
         data-spy="scroll"
@@ -66,6 +66,9 @@ const Home = ({ projectsData, blogsData, skills, languages, aboutMyself }) => {
         <BlogSection blogsData={blogsData} />
         <Footer languages={languages} />
       </main>
+
+      <MessengerCustomerChat pageId="105104175511987" appId="313493657405238" />
+      , ;
     </div>
   );
 };

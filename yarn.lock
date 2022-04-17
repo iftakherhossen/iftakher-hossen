@@ -2885,7 +2885,7 @@
   "resolved" "https://registry.npmjs.org/progress/-/progress-2.0.3.tgz"
   "version" "2.0.3"
 
-"prop-types@^15.5.0", "prop-types@^15.6.2", "prop-types@^15.7.2":
+"prop-types@^15.5.0", "prop-types@^15.6.0", "prop-types@^15.6.2", "prop-types@^15.7.2":
   "integrity" "sha512-8QQikdH7//R2vurIJSutZ1smHYTcLpRWEOlHnzcWHmBYrOGUysKwSsrC89BCiFj3CbrfJ/nXFdJepOVrY1GCHQ=="
   "resolved" "https://registry.npmjs.org/prop-types/-/prop-types-15.7.2.tgz"
   "version" "15.7.2"
@@ -2996,10 +2996,12 @@
   "resolved" "https://registry.npmjs.org/react-is/-/react-is-17.0.2.tgz"
   "version" "17.0.2"
 
-"react-messenger-chat-plugin@^2.0.2":
-  "integrity" "sha512-esLOsb9Uq4AzPX1SREfOB0+jMlIu9OdHWNmDFMToPheaNFJXR81/Y8RIaTmIMpZGTHhT1h7LamVurDVwDw9Aqw=="
-  "resolved" "https://registry.npmjs.org/react-messenger-chat-plugin/-/react-messenger-chat-plugin-2.0.2.tgz"
-  "version" "2.0.2"
+"react-messenger-customer-chat@^0.8.0":
+  "integrity" "sha512-7HItF+2nElXCBLi1q5eccgE9X4P86BmjmzF5nBcok+hJNWVjdKJTdWxl9VZTQnjkp3GHB7WwTwN2l3d/RKmFuQ=="
+  "resolved" "https://registry.npmjs.org/react-messenger-customer-chat/-/react-messenger-customer-chat-0.8.0.tgz"
+  "version" "0.8.0"
+  dependencies:
+    "prop-types" "^15.6.0"
 
 "react-refresh@0.8.3":
   "integrity" "sha512-X8jZHc7nCMjaCqoU+V2I0cOhNW+QMBwSUkeXnTi8IPe6zaRWfn60ZzvFDZqWPfmSJfjub7dDW1SP0jaHWLu/hg=="
@@ -3032,7 +3034,7 @@
     "fast-deep-equal" "^3.1.3"
     "tsparticles" "^1.37.5"
 
-"react@^16.8.0 || ^17.0.0", "react@^16.8.0 || ^17.0.0-0 || ^18.0.0", "react@^17.0.2", "react@^17.0.2 || ^18.0.0-0", "react@>= 16.8.0 || 17.x.x || 18.x.x", "react@>=16", "react@>=16.6.0", "react@>=16.8 || ^17.0.0", "react@>=16.8.0", "react@17.0.2", "react@17.x":
+"react@^0.14.0 || ^15.0.0-0 || ^16.0.0-0", "react@^16.8.0 || ^17.0.0", "react@^16.8.0 || ^17.0.0-0 || ^18.0.0", "react@^17.0.2", "react@^17.0.2 || ^18.0.0-0", "react@>= 16.8.0 || 17.x.x || 18.x.x", "react@>=16", "react@>=16.6.0", "react@>=16.8 || ^17.0.0", "react@>=16.8.0", "react@17.0.2", "react@17.x":
   "integrity" "sha512-gnhPt75i/dq/z3/6q/0asP78D0u592D5L1pd7M8P+dck6Fu/jJeL6iVVK23fptSUZj8Vjf++7wXA8UNclGQcbA=="
   "resolved" "https://registry.npmjs.org/react/-/react-17.0.2.tgz"
   "version" "17.0.2"
