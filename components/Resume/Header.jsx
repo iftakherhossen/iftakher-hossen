@@ -2,7 +2,7 @@ import { Divider, Grid, Typography } from '@mui/material';
 import { Box } from '@mui/system';
 import React from 'react';
 import Image from 'next/image';
-import Iftakher from '../../assets/images/Iftakher.jpg';
+import Iftakher from '../../public/iftakher.jpg';
 import Styles from '../../styles/Resume.module.css';
 
 const HeaderSection = ({ aboutMyself }) => {
