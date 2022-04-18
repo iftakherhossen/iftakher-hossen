@@ -79,13 +79,6 @@
             "name": "JavaScript",
             "growth": 70,
             "color": "bg-secondary"
-        },
-        {
-            "id": 2,
-            "name": "C#",
-            "growth": 20,
-            "color": "bg-danger",
-            "isNew": true
         }
     ],
     "tools": [

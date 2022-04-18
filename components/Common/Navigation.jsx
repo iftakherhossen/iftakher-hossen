@@ -1,6 +1,5 @@
-import React from 'react';
+import React, { useState } from 'react';
 import MenuIcon from '@mui/icons-material/Menu';
-import Link from 'next/link';
 import styles from '../../styles/Home.module.css'
 import { Box } from '@mui/system';
 import { AppBar, Button, Container, IconButton, Menu, MenuItem, Toolbar, Typography, Modal, Fade, Backdrop, TextField } from '@mui/material';
@@ -8,24 +7,14 @@ import HomeIcon from '@mui/icons-material/Home';
 import SendIcon from '@mui/icons-material/Send';
 import emailjs from '@emailjs/browser';
 import Swal from 'sweetalert2';
-
-const style = {
-    position: 'absolute',
-    top: '50%',
-    left: '50%',
-    transform: 'translate(-50%, -50%)',
-    width: 600,
-    bgcolor: '#eee',
-    boxShadow: 24,
-    p: 5,
-    borderRadius: 2,
-};
+import Styles from '../../styles/Styles';
 
 const Navigation = () => {
-    const [anchorElNav, setAnchorElNav] = React.useState(null);
-    const [open, setOpen] = React.useState(false);
+    const [anchorElNav, setAnchorElNav] = useState(null);
+    const [open, setOpen] = useState(false);
     const handleOpen = () => setOpen(true);
     const handleClose = () => setOpen(false);
+    const { contactModalStyle } = Styles();
 
     const handleOpenNavMenu = (event) => {
         setAnchorElNav(event.currentTarget);
@@ -64,7 +53,7 @@ const Navigation = () => {
         <AppBar position="fixed" sx={{ bgcolor: '#282C34', boxShadow: 0, color: '#358DC8' }}>
             <Container maxWidth="xl">
                 <Toolbar disableGutters>
-                    <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' }, justifyContent: 'center' }}>
+                    <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' }, justifyContent: 'flex-end' }}>
                         <IconButton
                             size="large"
                             aria-label="account of current user"
@@ -94,8 +83,8 @@ const Navigation = () => {
                             }}
                         >
                             <MenuItem onClick={handleCloseNavMenu} sx={{ display: 'flex', flexDirection: 'column' }}>
-                                <Button color="inherit" sx={{ fontSize: 16, fontWeight: 500, mx: 1, letterSpacing: 2 }} className={styles.hover}>
-                                    <a href="#about" className='nav'>About</a>
+                                <Button color="inherit" sx={{ fontSize: 16, fontWeight: 500, mx: 1, letterSpacing: 2 }} className={styles.hover} href="#about">
+                                    About
                                 </Button>
                                 <Button color="inherit" sx={{ fontSize: 16, fontWeight: 500, mx: 1, letterSpacing: 2 }} className={styles.hover} href="#skills">
                                     Skills
@@ -153,7 +142,7 @@ const Navigation = () => {
                     }}
                 >
                     <Fade in={open}>
-                        <Box sx={style}>
+                        <Box sx={contactModalStyle}>
                             <Typography id="transition-modal-title" variant="h5" component="h1" sx={{ fontSize: 29, fontWeight: 600, textAlign: 'center' }}>
                                 Hire Me | Contact
                             </Typography>

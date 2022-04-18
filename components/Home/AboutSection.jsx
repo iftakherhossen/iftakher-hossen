@@ -1,6 +1,7 @@
 import { Grid, Tooltip, Typography } from '@mui/material';
 import { Box } from '@mui/system';
 import React from 'react';
+import Image from 'next/image';
 import styles from '../../styles/Home.module.css';
 import EmailIcon from '@mui/icons-material/Email';
 import CallIcon from '@mui/icons-material/Call';
@@ -9,17 +10,26 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
-import Image from 'next/image';
 import TwitterIcon from '@mui/icons-material/Twitter';
+import Slider from "react-slick";
 
 const AboutSection = ({ aboutMyself }) => {
     const { aboutText, location, email, phone, socialMedia } = aboutMyself;
+
+    const settings = {
+        dots: true,
+        arrows: false,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1
+    };
 
     return (
         <div className={styles.contact} id="about">
             <Grid container sx={{ display: 'flex', alignItems: 'center' }}>
                 <Grid item xs={12} sm={12} md={6} sx={{ display: 'flex', alignItems: 'center' }}>
-                    <Box sx={{ px: { xs: 4, sm: 0 }, pl: { xs: 4, sm: 20 }, textAlign: 'left' }}>
+                    <Box sx={{ px: { xs: 4, sm: 0 }, pl: { xs: 4, md: 6, xl: 20 }, textAlign: 'left' }}>
                         <Typography sx={{ fontSize: 36, mb: 1.5, fontWeight: 500 }}>
                             About Myself
                         </Typography>
@@ -49,7 +59,7 @@ const AboutSection = ({ aboutMyself }) => {
                                     </a>
                                 </Typography>
                             </Box>
-                            <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+                            <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', mb: { xs: 5, sm: 0 } }}>
                                 <hr style={{ width: '100%', marginTop: '2.5rem', marginRight: '8px', borderColor: '#aaa' }} />
 
                                 <Box className={styles.smHolder}>
@@ -82,15 +92,29 @@ const AboutSection = ({ aboutMyself }) => {
                     </Box>
                 </Grid>
                 <Grid item xs={12} sm={12} md={6}>
-                    <Box sx={{ pt: { xs: 6, sm: 8 }, px: 4, mb: { xs: 5, sm: 0 }  }}>
-                        <Image
-                            src="https://i.ibb.co/ySJJM8H/iftakher2.jpg"
-                            alt="Profile"
-                            priority
-                            height={530}
-                            width={430}
-                            sx={{ boxShadow: 24, minWidth: '100%', minHeight: '100%' }}
-                        />
+                    <Box sx={{ pt: { xs: 6, sm: 8 }, px: 4, mb: { xs: 5, sm: 0 }, display: {xs: 'none', md: 'block'} }}>
+                        <Slider {...settings}>
+                            <div>
+                                <Image
+                                    src="https://i.ibb.co/ySJJM8H/iftakher2.jpg"
+                                    alt="Iftakher Hossen"
+                                    priority
+                                    height={530}
+                                    width={430}
+                                    sx={{ boxShadow: 24, minWidth: '380px', minHeight: '480px' }}
+                                />
+                            </div>
+                            <div>
+                                <Image
+                                    src="https://i.ibb.co/PtV41md/iftakher1002.jpg"
+                                    alt="Iftakher Hossen"
+                                    priority
+                                    height={530}
+                                    width={430}
+                                    sx={{ boxShadow: 24, minWidth: '380px', minHeight: '480px' }}
+                                />
+                            </div>
+                        </Slider>
                     </Box>
                 </Grid>
             </Grid>
