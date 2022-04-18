@@ -25,7 +25,7 @@ const Footer = ({ languages }) => {
                 </Box>
             </Box>
 
-            <ScrollToTop smooth color="white" className={styles.scrollToTop} style={{ backgroundColor: '#252930', border: 0, width: 50, height: 50, right: 150, borderRadius: '50%' }} />
+            <ScrollToTop smooth color="white" style={{ backgroundColor: '#252930', border: 0, width: 45,  height: 45, right: 100, bottom: 25, borderRadius: '50%' }} />
 
             <footer>
                 <Box className={styles.footer}>

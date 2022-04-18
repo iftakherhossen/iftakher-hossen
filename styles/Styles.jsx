@@ -1,4 +1,16 @@
 const Styles = () => {
+    const contactModalStyle = {
+        position: 'absolute',
+        top: '50%',
+        left: '50%',
+        transform: 'translate(-50%, -50%)',
+        width: 600,
+        bgcolor: '#eee',
+        boxShadow: 24,
+        p: 5,
+        borderRadius: 2,
+    }
+
     const projectModalStyle = {
         position: 'absolute',
         top: '50%',
@@ -42,8 +54,9 @@ const Styles = () => {
         alignItems: 'center',
         border: 0
     };
-    
+
     return {
+        contactModalStyle,
         projectModalStyle,
         imageModalStyle,
         certificateModalStyle

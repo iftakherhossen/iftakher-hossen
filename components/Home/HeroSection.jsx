@@ -11,28 +11,18 @@ import ConnectWithoutContactIcon from '@mui/icons-material/ConnectWithoutContact
 import SendIcon from '@mui/icons-material/Send';
 import emailjs from '@emailjs/browser';
 import Swal from 'sweetalert2';
-
-const style = {
-    position: 'absolute',
-    top: '50%',
-    left: '50%',
-    transform: 'translate(-50%, -50%)',
-    width: 600,
-    bgcolor: '#eee',
-    boxShadow: 24,
-    p: 5,
-    borderRadius: 2,
-};
+import Styles from '../../styles/Styles';
 
 const HeroSection = () => {
     const [open, setOpen] = useState(false);
     const handleOpen = () => setOpen(true);
     const handleClose = () => setOpen(false);
+    const {contactModalStyle} = Styles;
 
     const sendEmail = (e) => {
         e.preventDefault();
 
-        emailjs.sendForm('service_a43ummk', 'mail-template-iftakher', e.target, 'user_E3AjQo3AWXplLPqSzFb2c')
+        emailjs.sendForm(process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID, process.env.NEXT_PUBLIC_EMAILJS_MAIL_TEMPLATE, e.target, process.env.NEXT_PUBLIC_EMAILJS_USER_ID)
             .then((result) => {
                 console.log(result.text);
                 handleClose();
@@ -90,18 +80,23 @@ const HeroSection = () => {
                                 <Typography variant="h5" sx={{ fontSize: '1.8em', mb: 1, fontWeight: 700 }} className={styles.designation}>
                                     <Typewriter
                                         options={{
-                                            strings: ['Frontend Developer', 'React Developer', 'Full Stack Web Developer'],
+                                            strings: ['Frontend Developer', 'React Developer', 'Full-Stack Developer'],
                                             autoStart: true,
                                             loop: true,
                                         }}
                                     />
                                 </Typography>
-                                <Box className={styles.btnGroup} sx={{ mt: 3 }}>
-                                    <a href="https://drive.google.com/uc?export=download&id=1XFnyqeM_9yxzaj5qjMUEmPuAIL_0gSlq" download="Iftakher-Hossen-Resume" style={{ color: 'white' }}>
-                                        <Button color="inherit" className={styles.btn} sx={{ borderTop: '1px solid transparent', borderBottom: '1px solid transparent', ml: 1 }}>
-                                            <DownloadIcon /> &nbsp; RESUME
-                                        </Button>
-                                    </a>
+                                <Box className={styles.btnGroup} sx={{ mt: { xs: 0, sm: 3 }, mb: 0 }}>
+                                    <Button
+                                        color="inherit"
+                                        className={styles.btn}
+                                        sx={{ borderTop: '1px solid transparent', borderBottom: '1px solid transparent', ml: 1 }}
+                                        href="https://drive.google.com/uc?export=download&id=1XFnyqeM_9yxzaj5qjMUEmPuAIL_0gSlq"
+                                        download="Iftakher-Hossen-Resume"
+                                        style={{ color: 'white' }}
+                                    >
+                                        <DownloadIcon /> &nbsp; Resume
+                                    </Button>
                                     <Button
                                         color="inherit"
                                         className={styles.btn}
@@ -141,7 +136,7 @@ const HeroSection = () => {
                     }}
                 >
                     <Fade in={open}>
-                        <Box sx={style}>
+                        <Box sx={contactModalStyle}>
                             <Typography id="transition-modal-title" variant="h5" component="h1" sx={{ fontSize: 29, fontWeight: 600, textAlign: 'center' }}>
                                 Hire Me | Contact
                             </Typography>
