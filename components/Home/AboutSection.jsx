@@ -19,7 +19,7 @@ const AboutSection = ({ aboutMyself }) => {
         <div className={styles.contact} id="about">
             <Grid container sx={{ display: 'flex', alignItems: 'center' }}>
                 <Grid item xs={12} sm={12} md={6} sx={{ display: 'flex', alignItems: 'center' }}>
-                    <Box sx={{ pl: 20, textAlign: 'left' }}>
+                    <Box sx={{ px: { xs: 4, sm: 0 }, pl: { xs: 4, sm: 20 }, textAlign: 'left' }}>
                         <Typography sx={{ fontSize: 36, mb: 1.5, fontWeight: 500 }}>
                             About Myself
                         </Typography>
@@ -54,7 +54,7 @@ const AboutSection = ({ aboutMyself }) => {
 
                                 <Box className={styles.smHolder}>
                                     {
-                                        socialMedia.map(({ id, name, url, icon }) => <Box sx={{ mr: 1 }} key={id}>
+                                        socialMedia.map(({ id, name, url }) => <Box sx={{ mr: 1 }} key={id}>
                                             <Tooltip title={`Follow me on ${name}`}>
                                                 <a href={url} rel="noreferrer" target="_blank" className={styles.smIcon}>
                                                     {
@@ -76,42 +76,20 @@ const AboutSection = ({ aboutMyself }) => {
                                             </Tooltip>
                                         </Box>)
                                     }
-                                    {/* <Box sx={{ mx: 1 }}>
-                                        <a href="https://www.instagram.com/hossen_iftakher/" rel="noreferrer" target="_blank">
-                                            <InstagramIcon sx={{ fontSize: 26 }} />
-                                        </a>
-                                    </Box>
-                                    <Box sx={{ mx: 1 }}>
-                                        <a href="https://twitter.com/iftakher_hossen" rel="noreferrer" target="_blank">
-                                            <TwitterIcon sx={{ fontSize: 26 }} />
-                                        </a>
-                                    </Box>
-                                    <Box sx={{ mx: 1 }}>
-                                        <a href="https://www.linkedin.com/in/iftakher-hossen/" rel="noreferrer" target="_blank">
-                                            <LinkedInIcon sx={{ fontSize: 27 }} />
-                                        </a>
-                                    </Box>
-                                    <Box sx={{ mx: 1 }}>
-                                        <a href="https://github.com/iftakherhossen" rel="noreferrer" target="_blank">
-                                            <GitHubIcon sx={{ fontSize: 25 }} />
-                                        </a>
-                                    </Box> */}
                                 </Box>
                             </Box>
                         </Box>
                     </Box>
                 </Grid>
                 <Grid item xs={12} sm={12} md={6}>
-                    <Box sx={{ pt: 8, px: 4 }}>
+                    <Box sx={{ pt: { xs: 6, sm: 8 }, px: 4, mb: { xs: 5, sm: 0 }  }}>
                         <Image
                             src="https://i.ibb.co/ySJJM8H/iftakher2.jpg"
                             alt="Profile"
                             priority
-                            className={styles["marginBottomInMobile"] + " " + styles["aboutMeImg"]}
                             height={530}
-                            width={450}
-                            sx={{ boxShadow: 1 }}
-                            draggable="false"
+                            width={430}
+                            sx={{ boxShadow: 24, minWidth: '100%', minHeight: '100%' }}
                         />
                     </Box>
                 </Grid>

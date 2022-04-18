@@ -24,7 +24,7 @@ const SkillSection = ({ skills }) => {
                     <TabPanel>
                         <Grid container sx={{ p: 2 }}>
                             {
-                                skills.web.map(({ id, name, growth, color }) => <Grid item xs={12} md={6} lg={6} sx={{ px: 2 }} key={id}>
+                                skills.web.map(({ id, name, growth, color }) => <Grid item xs={12} md={6} lg={6} sx={{ px: { xs: 0, sm: 2} }} key={id}>
                                     <Typography variant="body1" className={styles.skillsName} sx={{ fontWeight: 600 }}>{name}</Typography>
                                     <Tooltip title={`${growth}%`}>
                                         <div className="progress">

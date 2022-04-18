@@ -13,6 +13,7 @@ import aboutMyself from "../assets/data/aboutMyself.json";
 import Navigation from "../components/Common/Navigation";
 import Footer from "../components/Common/Footer";
 import MessengerCustomerChat from "react-messenger-customer-chat";
+import toast, { Toaster } from 'react-hot-toast';
 
 // fetching projects data with json-server & fetching blogs data from dev.to
 export const getStaticProps = async () => {
@@ -33,6 +34,8 @@ export const getStaticProps = async () => {
 };
 
 const Home = ({ projectsData, blogsData, skills, languages, aboutMyself }) => {
+  toast.error("This site is not Responsive yet. Please use a desktop device.")
+
   return (
     <div className={styles.container}>
       <Head>
@@ -68,7 +71,8 @@ const Home = ({ projectsData, blogsData, skills, languages, aboutMyself }) => {
       </main>
 
       <MessengerCustomerChat pageId="105104175511987" appId="313493657405238" />
-      , ;
+
+      <Toaster position="bottom-center" reverseOrder={true} />
     </div>
   );
 };

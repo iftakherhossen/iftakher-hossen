@@ -3,6 +3,7 @@ import { Box } from '@mui/system';
 import React from 'react';
 import styles from '../../styles/Home.module.css';
 import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
+import ScrollToTop from "react-scroll-to-top";
 
 const Footer = ({ languages }) => {
     return (
@@ -24,10 +25,9 @@ const Footer = ({ languages }) => {
                 </Box>
             </Box>
 
+            <ScrollToTop smooth color="white" className={styles.scrollToTop} style={{ backgroundColor: '#252930', border: 0, width: 50, height: 50, right: 150, borderRadius: '50%' }} />
+
             <footer>
-                <IconButton aria-label="Scroll to top" href="/" style={{ color: 'white' }} sx={{ position: 'absolute', right: 100, p: 1.5 }}>
-                    <ArrowUpwardIcon sx={{ fontSize: 30 }} />
-                </IconButton>
                 <Box className={styles.footer}>
                     <Typography variant="body1">Iftakher Hossen © 2022, All rights reserved.</Typography>
                 </Box>

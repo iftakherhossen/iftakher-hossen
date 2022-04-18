@@ -24,7 +24,7 @@ const BlogSection = ({ blogsData }) => {
 
     return (
         <div className={styles.projects} id='projects'>
-            <Typography variant="h4" sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+            <Typography variant="h4" sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center', mt: 5 }}>
                 My Blogs
             </Typography>
 

@@ -94,9 +94,6 @@ const Navigation = () => {
                             }}
                         >
                             <MenuItem onClick={handleCloseNavMenu} sx={{ display: 'flex', flexDirection: 'column' }}>
-                                <Button color="inherit" sx={{ fontSize: 16, fontWeight: 500 }} className={styles.hover}>
-                                    <Link href="/" passHref><HomeIcon /></Link>
-                                </Button>
                                 <Button color="inherit" sx={{ fontSize: 16, fontWeight: 500, mx: 1, letterSpacing: 2 }} className={styles.hover}>
                                     <a href="#about" className='nav'>About</a>
                                 </Button>
@@ -120,9 +117,6 @@ const Navigation = () => {
                     </Box>
 
                     <Box sx={{ flexGrow: 0, display: { xs: 'none', md: 'flex' }, mx: 'auto' }}>
-                        <Button color="inherit" sx={{ fontSize: 16, fontWeight: 500, mx: 1 }} className={styles.hover}>
-                            <Link href="/" passHref><HomeIcon /></Link>
-                        </Button>
                         <Button color="inherit" sx={{ fontSize: 16, fontWeight: 500, px: 2 }} className={styles.hover} href="#about">
                             About
                         </Button>
