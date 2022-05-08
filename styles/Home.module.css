@@ -125,11 +125,11 @@
   color: white;
 }
 
-.footer {
+.footerTxt {
   width: 90%;
   text-align: center;
   margin: auto;
-  padding: 1rem 0 1.1rem;
+  padding: 1rem 0 1.5rem;
   color: #aaa;
   border-top: 1px solid #aaa;
 }

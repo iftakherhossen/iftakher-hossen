@@ -1,8 +1,7 @@
-import { IconButton, Tooltip, Typography } from '@mui/material';
+import { Tooltip, Typography } from '@mui/material';
 import { Box } from '@mui/system';
 import React from 'react';
 import styles from '../../styles/Home.module.css';
-import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
 import ScrollToTop from "react-scroll-to-top";
 
 const Footer = ({ languages }) => {
@@ -28,7 +27,7 @@ const Footer = ({ languages }) => {
             <ScrollToTop smooth color="white" style={{ backgroundColor: '#252930', border: 0, width: 45,  height: 45, right: 100, bottom: 25, borderRadius: '50%' }} />
 
             <footer>
-                <Box className={styles.footer}>
+                <Box className={styles.footerTxt}>
                     <Typography variant="body1">Iftakher Hossen © 2022, All rights reserved.</Typography>
                 </Box>
             </footer>
