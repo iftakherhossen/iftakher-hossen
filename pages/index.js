@@ -8,13 +8,14 @@ import ProjectSection from "../components/Home/ProjectSection";
 import BlogSection from "../components/Home/BlogSection";
 import projects from "../assets/data/projects.json";
 import skills from "../assets/data/skills.json";
+import experienceData from "../assets/data/experience.json";
 import languages from "../assets/data/languages.json";
 import aboutMyself from "../assets/data/aboutMyself.json";
 import Navigation from "../components/Common/Navigation";
 import Footer from "../components/Common/Footer";
 import MessengerCustomerChat from "react-messenger-customer-chat";
 import toast, { Toaster } from "react-hot-toast";
-import Particles from "react-particles-js";
+import ExperienceSection from "../components/Home/ExperienceSection";
 
 // fetching projects data with json-server & fetching blogs data from dev.to
 export const getStaticProps = async () => {
@@ -30,11 +31,12 @@ export const getStaticProps = async () => {
       projectsData: projects,
       blogsData,
       languages,
+      experienceData,
     },
   };
 };
 
-const Home = ({ projectsData, blogsData, skills, languages, aboutMyself }) => {
+const Home = ({ projectsData, blogsData, skills, languages, aboutMyself, experienceData }) => {
   toast("Hey User, Welcome to my website!");
 
   return (
@@ -69,52 +71,6 @@ const Home = ({ projectsData, blogsData, skills, languages, aboutMyself }) => {
         />
       </Head>
 
-      {/* <Particles
-        params={{
-          particles: {
-            number: {
-              value: 60,
-              density: {
-                enable: true,
-                value_area: 1500,
-              },
-            },
-            line_linked: {
-              enable: true,
-              opacity: 0.02,
-            },
-            move: {
-              direction: "right",
-              speed: 1,
-            },
-            size: {
-              value: 1,
-            },
-            opacity: {
-              anim: {
-                enable: true,
-                speed: 1,
-                opacity_min: 0.08,
-              },
-            },
-          },
-          interactivity: {
-            events: {
-              onclick: {
-                enable: true,
-                mode: "push",
-              },
-            },
-            modes: {
-              push: {
-                particles_nb: 1,
-              },
-            },
-          },
-          retina_detect: true,
-        }}
-      /> */}
-
       <main
         className={styles.main}
         data-spy="scroll"
@@ -127,6 +83,7 @@ const Home = ({ projectsData, blogsData, skills, languages, aboutMyself }) => {
         <SkillSection skills={skills} />
         <ProjectSection projectsData={projectsData} />
         <BlogSection blogsData={blogsData} />
+        <ExperienceSection experienceData={experienceData} />
         <Footer languages={languages} />
       </main>
 
