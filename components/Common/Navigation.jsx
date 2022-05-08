@@ -3,7 +3,6 @@ import MenuIcon from '@mui/icons-material/Menu';
 import styles from '../../styles/Home.module.css'
 import { Box } from '@mui/system';
 import { AppBar, Button, Container, IconButton, Menu, MenuItem, Toolbar, Typography, Modal, Fade, Backdrop, TextField } from '@mui/material';
-import HomeIcon from '@mui/icons-material/Home';
 import SendIcon from '@mui/icons-material/Send';
 import emailjs from '@emailjs/browser';
 import Swal from 'sweetalert2';

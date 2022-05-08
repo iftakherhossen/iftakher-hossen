@@ -129,7 +129,7 @@
   width: 90%;
   text-align: center;
   margin: auto;
-  padding: 1rem 0 1.5rem;
+  padding: 1rem 0 1rem;
   color: #aaa;
   border-top: 1px solid #aaa;
 }
@@ -180,6 +180,10 @@
   width: 100%;
   bottom: 0;
   border-radius: 10px;
+}
+
+.date {
+  font-size: 1.3rem !important;
 }
 
 /* For Responsiveness */

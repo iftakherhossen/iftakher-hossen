@@ -6,14 +6,22 @@ import CommentIcon from '@mui/icons-material/Comment';
 import ShareIcon from '@mui/icons-material/Share';
 import AccessTimeIcon from '@mui/icons-material/AccessTime';
 import { Box } from '@mui/system';
-import toast, { Toaster } from 'react-hot-toast';
+import toast from 'react-hot-toast';
 
 const SingleBlogCard = ({ blog }) => {
     const { title, description, created_at, social_image, url, public_reactions_count, comments_count, tag_list } = blog;
 
     const handleCopyLink = () => {
         navigator.clipboard.writeText(url);
-        toast.success('Link copied successfully!')
+        toast.success('Link copied successfully!', 
+        {
+            style: {
+              borderRadius: '10px',
+              background: '#333',
+              color: '#fff',
+            },
+          }
+        )
     }
 
     return (
@@ -43,7 +51,7 @@ const SingleBlogCard = ({ blog }) => {
                         </Stack>
                     </CardContent>
                 </CardActionArea>
-                <CardActions disableSpacing sx={{ display: 'flex', justifyContent: 'space-between' }}>
+                <CardActions disableSpacing sx={{ display: 'flex', justifyContent: 'space-between', px: 2 }}>
                     <Box sx={{ display: 'flex', alignItems: 'center' }}>
                         <Box sx={{ display: 'flex', alignItems: 'center', fontWeight: 500 }}>
                             <FavoriteIcon sx={{ color: '#707070', fontSize: 23, mr: 1 }} /> {public_reactions_count}

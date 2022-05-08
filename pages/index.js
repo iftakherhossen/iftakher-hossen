@@ -37,7 +37,16 @@ export const getStaticProps = async () => {
 };
 
 const Home = ({ projectsData, blogsData, skills, languages, aboutMyself, experienceData }) => {
-  toast("Hey User, Welcome to my website!");
+  toast("Hey User, Welcome to my website!",
+    {
+      icon: '👏',
+      style: {
+        borderRadius: '10px',
+        background: '#333',
+        color: '#fff',
+      },
+    }
+  );
 
   return (
     <div className={styles.container}>
