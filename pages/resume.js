@@ -1,16 +1,15 @@
 import Head from "next/head";
 import React, { useState } from "react";
 import Styles from "../styles/Resume.module.css";
-import { Document, Page } from 'react-pdf';
-
+import { Document, Page, pdfjs } from "react-pdf";
 const Resume = () => {
+  const file= "./Iftakher-Resume.pdf";
   const [numPages, setNumPages] = useState(null);
-  const [pageNumber, setPageNumber] = useState(1);
 
-  function onDocumentLoadSuccess({ numPages }) {
-    setNumPages(numPages);
+  function onDocumentLoadSuccess({ numPages: nextNumPages }) {
+    setNumPages(nextNumPages);
   }
-  
+
   return (
     <div>
       <Head>
@@ -19,18 +18,16 @@ const Resume = () => {
       </Head>
 
       <main className={Styles.container}>
-        {/* <HeaderSection aboutMyself={aboutMyself} />
-        <Skills />
-        <Projects projectsData={projectsData} />
-        <Education aboutMyself={aboutMyself} />
-        <Languages />
-        <Footer /> */}
-        <Document file="../public/Iftakher-Resume.pdf" onLoadSuccess={onDocumentLoadSuccess}>
-          <Page pageNumber={pageNumber} />
+        <Document file={file} onLoadSuccess={onDocumentLoadSuccess}>
+          {Array.from({ length: numPages }, (_, index) => (
+            <Page
+              key={`page_${index + 1}`}
+              pageNumber={index + 1}
+              renderAnnotationLayer={false}
+              renderTextLayer={false}
+            />
+          ))}
         </Document>
-        <p>
-          Page {pageNumber} of {numPages}
-        </p>
       </main>
     </div>
   );

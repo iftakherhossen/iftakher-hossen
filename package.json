@@ -5,7 +5,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "postinstall": "npm run download-webviewer",
+    "download-webviewer": "npx @pdftron/webviewer-downloader"
   },
   "dependencies": {
     "@emailjs/browser": "^3.6.2",
@@ -14,13 +16,13 @@
     "@emotion/styled": "^11.6.0",
     "@mui/icons-material": "^5.2.0",
     "@mui/material": "^5.2.1",
-    "@react-pdf-viewer/core": "^3.3.2",
+    "@pdftron/webviewer": "^8.5.0",
+    "@react-pdf/renderer": "^2.1.1",
     "aos": "^2.3.4",
     "emailjs-com": "^3.2.0",
     "framer-motion": "^5.3.3",
     "moment": "^2.29.2",
     "next": "^12.0.7",
-    "pdfjs-dist": "^2.13.216",
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "react-hot-toast": "^2.2.0",
@@ -31,10 +33,12 @@
     "react-tabs": "^4.2.0",
     "react-vertical-timeline-component": "^3.5.2",
     "sweetalert2": "^11.4.8",
-    "typewriter-effect": "^2.18.2"
+    "typewriter-effect": "^2.18.2",
+    "use-pdf": "^0.1.2"
   },
   "devDependencies": {
     "eslint": "7",
-    "eslint-config-next": "12.0.4"
+    "eslint-config-next": "12.0.4",
+    "precise-ui": "^2.1.13"
   }
 }

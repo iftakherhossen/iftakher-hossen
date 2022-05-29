@@ -4,8 +4,6 @@ import styles from '../../styles/Home.module.css';
 import SingleExperience from './SingleExperience';
 
 const ExperienceSection = ({ experienceData }) => {
-     console.log(experienceData);
-
      return (
           <div className={styles.projects} id='experience'>
                <Typography variant="h4" sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center', mt: 5 }}>
