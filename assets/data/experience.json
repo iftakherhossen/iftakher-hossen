@@ -10,7 +10,8 @@
           "website": "https://www.programming-hero.com/",
           "recommendationLetter": "https://drive.google.com/file/d/13RQ0_SfUjIFo-ICXbj_e_VpwG6OLCVYP/view?usp=sharing",
           "direction": "left",
-          "completed": true
+          "completed": true,
+          "running": false
      },
      {
           "id": 2,
@@ -23,6 +24,7 @@
           "website": "",
           "recommendationLetter": "",
           "direction": "right",
-          "completed": false
+          "completed": false,
+          "running": true
      }
 ]

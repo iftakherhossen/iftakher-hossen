@@ -34,13 +34,15 @@ const SingleProjectCard = ({ project }) => {
                 {/*  data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" */}
                 <CardActionArea href={projectLink} target="_blank">
                     {
-                        projectImage && <CardMedia
+                        projectImage ? <CardMedia
                             component="img"
                             height="100%"
                             image={projectImage}
                             alt="Project Feature Photo"
                             draggable="false"
-                        />
+                        /> : <Box sx={{ height: 178 }}>
+
+                        </Box>
                     }
                     <CardContent>
                         <Typography gutterBottom variant="h5" component="div">

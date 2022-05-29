@@ -101,7 +101,7 @@ const AboutSection = ({ aboutMyself }) => {
                                     priority
                                     height={530}
                                     width={430}
-                                    sx={{ boxShadow: 24, minWidth: '380px', minHeight: '480px' }}
+                                    sx={{ boxShadow: 24, minWidth: '380px', minHeight: '480px', pointer: 'grab' }}
                                 />
                             </div>
                             <div>
@@ -111,7 +111,7 @@ const AboutSection = ({ aboutMyself }) => {
                                     priority
                                     height={530}
                                     width={430}
-                                    sx={{ boxShadow: 24, minWidth: '380px', minHeight: '480px' }}
+                                    sx={{ boxShadow: 24, minWidth: '380px', minHeight: '480px', pointer: 'grab' }}
                                 />
                             </div>
                         </Slider>

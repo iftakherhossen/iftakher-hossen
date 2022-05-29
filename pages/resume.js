@@ -1,28 +1,16 @@
 import Head from "next/head";
-import React from "react";
-import Education from "../components/Resume/Education";
-import HeaderSection from "../components/Resume/Header";
-import Projects from "../components/Resume/Projects";
-import Skills from "../components/Resume/Skills";
+import React, { useState } from "react";
 import Styles from "../styles/Resume.module.css";
-import aboutMyself from "../assets/data/aboutMyself.json";
-import projectsData from "../assets/data/projects.json";
-import skillsData from "../assets/data/skills.json";
-import Languages from "../components/Resume/Languages";
-import Footer from "../components/Resume/Footer";
-
-// fetching projects data with json-server & fetching blogs data from dev.to
-export const getStaticProps = async () => {
-    return {
-      props: {
-        aboutMyself,
-        skillsData,
-        projectsData
-      },
-    };
-  };
+import { Document, Page } from 'react-pdf';
 
 const Resume = () => {
+  const [numPages, setNumPages] = useState(null);
+  const [pageNumber, setPageNumber] = useState(1);
+
+  function onDocumentLoadSuccess({ numPages }) {
+    setNumPages(numPages);
+  }
+  
   return (
     <div>
       <Head>
@@ -31,12 +19,18 @@ const Resume = () => {
       </Head>
 
       <main className={Styles.container}>
-        <HeaderSection aboutMyself={aboutMyself} />
+        {/* <HeaderSection aboutMyself={aboutMyself} />
         <Skills />
         <Projects projectsData={projectsData} />
         <Education aboutMyself={aboutMyself} />
         <Languages />
-        <Footer />
+        <Footer /> */}
+        <Document file="../public/Iftakher-Resume.pdf" onLoadSuccess={onDocumentLoadSuccess}>
+          <Page pageNumber={pageNumber} />
+        </Document>
+        <p>
+          Page {pageNumber} of {numPages}
+        </p>
       </main>
     </div>
   );

@@ -32,14 +32,42 @@
         ],
         "projectDate": "February - March, 2022",
         "projectType": "Team Project",
-        "projectScreenshots": [
-            "https://i.ibb.co/PYCKhvS/smart-it-firm.png",
-            "https://i.ibb.co/qjvyTZX/radiant-academy.png",
-            "https://i.ibb.co/XtRPxqc/shabdokosh.png"
-        ]
+        "projectScreenshots": [],
+        "display": true
     },
+    
     {
         "id": 2,
+        "projectName": "Oronno Opticals",
+        "projectDescription": "Oronno Opticals is a company that provides optical services to the customers. With Dashboard, Login System and Basic Features.",
+        "projectFeatures": [
+            "Maintained a secure specific dashboard for customers and admin.",
+            "Using MongoDB and Nodejs, created admin-specific roles to allow administration.",
+            "Implemented special features like add, delete, update services, and update order status.",
+            "Developed a secure login system by firebase authentication."
+        ],
+        "projectImage": "https://i.ibb.co/2Sg0qGc/oronno-opticals.png",
+        "projectLink": "https://oronno-opticals.web.app/",
+        "clientGithub": "https://github.com/iftakherhossen/oronno-opticals-client",
+        "serverGithub": "https://github.com/iftakherhossen/oronno-opticals-server",
+        "projectCategory": "Niche eCommerce Website",
+        "projectTechnologies": [
+            "React",
+            "Node.js",
+            "Express.js",
+            "Material-Ui",
+            "JavaScript",
+            "MongoDB",
+            "Firebase",
+            "Heroku"
+        ],
+        "projectDate": "November, 2021",
+        "projectType": "Personal Project",
+        "projectScreenshots": [],
+        "display": true
+    },
+    {
+        "id": 3,
         "projectName": "Smart IT Firm",
         "projectDescription": "Smart IT Firm is company website that provide IT related services. A user can get the desired services and admins can manage content from dashboard.",
         "projectFeatures": [
@@ -65,14 +93,11 @@
         ],
         "projectDate": "December, 2021",
         "projectType": "Personal Project",
-        "projectScreenshots": [
-            "https://i.ibb.co/PYCKhvS/smart-it-firm.png",
-            "https://i.ibb.co/qjvyTZX/radiant-academy.png",
-            "https://i.ibb.co/XtRPxqc/shabdokosh.png"
-        ]
+        "projectScreenshots": [],
+        "display": true
     },
     {
-        "id": 3,
+        "id": 4,
         "projectName": "Shabdokosh - Online Library",
         "projectDescription": "Shabdokosh is a Online Library where users can buy and read books. I designed the Books Section along with database and Implemented Redux.",
         "projectFeatures": [
@@ -103,14 +128,11 @@
         ],
         "projectDate": "January, 2022",
         "projectType": "Team Project",
-        "projectScreenshots": [
-            "https://i.ibb.co/PYCKhvS/smart-it-firm.png",
-            "https://i.ibb.co/qjvyTZX/radiant-academy.png",
-            "https://i.ibb.co/XtRPxqc/shabdokosh.png"
-        ]
+        "projectScreenshots": [],
+        "display": true
     },
     {
-        "id": 4,
+        "id": 5,
         "projectName": "Bloom - Micro Blogsite",
         "projectDescription": "Bloom - Micro Blogsite is a social website where users can make a post and with secure login system. They can also play built-in games here.",
         "projectFeatures": [
@@ -137,36 +159,8 @@
         ],
         "projectDate": "January, 2022",
         "projectType": "Personal Project",
-        "projectScreenshots": []
-    },
-    {
-        "id": 5,
-        "projectName": "Oronno Opticals",
-        "projectDescription": "Oronno Opticals is a company that provides optical services to the customers. With Dashboard, Login System and Basic Features.",
-        "projectFeatures": [
-            "Maintained a secure specific dashboard for customers and admin.",
-            "Using MongoDB and Nodejs, created admin-specific roles to allow administration.",
-            "Implemented special features like add, delete, update services, and update order status.",
-            "Developed a secure login system by firebase authentication."
-        ],
-        "projectImage": "https://i.ibb.co/2Sg0qGc/oronno-opticals.png",
-        "projectLink": "https://oronno-opticals.web.app/",
-        "clientGithub": "https://github.com/iftakherhossen/oronno-opticals-client",
-        "serverGithub": "https://github.com/iftakherhossen/oronno-opticals-server",
-        "projectCategory": "Niche eCommerce Website",
-        "projectTechnologies": [
-            "React",
-            "Node.js",
-            "Express.js",
-            "Material-Ui",
-            "JavaScript",
-            "MongoDB",
-            "Firebase",
-            "Heroku"
-        ],
-        "projectDate": "November, 2021",
-        "projectType": "Personal Project",
-        "projectScreenshots": []
+        "projectScreenshots": [],
+        "display": true
     },
     {
         "id": 6,
@@ -193,7 +187,8 @@
         ],
         "projectDate": "November, 2021",
         "projectType": "Personal Project",
-        "projectScreenshots": []
+        "projectScreenshots": [],
+        "display": true
     },
     {
         "id": 7,
@@ -215,7 +210,8 @@
         ],
         "projectDate": "July, 2021",
         "projectType": "Personal Project",
-        "projectScreenshots": []
+        "projectScreenshots": [],
+        "display": true
     },
     {
         "id": 8,
@@ -237,6 +233,7 @@
         ],
         "projectDate": "July, 2021",
         "projectType": "Personal Project",
-        "projectScreenshots": []
+        "projectScreenshots": [],
+        "display": true
     }
 ]
