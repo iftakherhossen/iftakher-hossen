@@ -137,7 +137,7 @@
         "projectDescription": "Tunexa-Music - It's music streaming website here you can listen your favorite musics and cutomised playlist.",
         "projectFeatures": [
             "Listen musics while working.",
-            "Users can use playlist to listen categorised music",
+            "Users can use playlist to listen categorised music"
         ],
         "projectImage": "",
         "projectLink": "https://tunexa-music.web.app/",
@@ -147,7 +147,7 @@
             "React",
             "Material-Ui",
             "JavaScript",
-            "Firebase",
+            "Firebase"
         ],
         "projectDate": "May, 2022",
         "projectType": "Personal Project",
