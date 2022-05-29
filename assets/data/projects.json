@@ -134,12 +134,12 @@
     {
         "id": 5,
         "projectName": "Tunexa-Music",
-        "projectDescription": "Tunexa-Music - It's music streaming website here you can listen your favorite musics and cutomised playlist.",
+        "projectDescription": "Tunexa-Music - It's music streaming website here you can listen your favorite musics and cutomised playlist. ",
         "projectFeatures": [
             "Listen musics while working.",
             "Users can use playlist to listen categorised music"
         ],
-        "projectImage": "",
+        "projectImage": "https://i.ibb.co/tz7WR5G/tunexa-bg-img.png",
         "projectLink": "https://tunexa-music.web.app/",
         "clientGithub": "https://github.com/iftakherhossen/tunexa-music",
         "projectCategory": "Music Streaming Website",
