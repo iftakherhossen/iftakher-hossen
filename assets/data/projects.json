@@ -133,6 +133,29 @@
     },
     {
         "id": 5,
+        "projectName": "Tunexa-Music",
+        "projectDescription": "Tunexa-Music - It's music streaming website here you can listen your favorite musics and cutomised playlist.",
+        "projectFeatures": [
+            "Listen musics while working.",
+            "Users can use playlist to listen categorised music",
+        ],
+        "projectImage": "",
+        "projectLink": "https://tunexa-music.web.app/",
+        "clientGithub": "https://github.com/iftakherhossen/tunexa-music",
+        "projectCategory": "Music Streaming Website",
+        "projectTechnologies": [
+            "React",
+            "Material-Ui",
+            "JavaScript",
+            "Firebase",
+        ],
+        "projectDate": "May, 2022",
+        "projectType": "Personal Project",
+        "projectScreenshots": [],
+        "display": true
+    },
+    {
+        "id": 6,
         "projectName": "Bloom - Micro Blogsite",
         "projectDescription": "Bloom - Micro Blogsite is a social website where users can make a post and with secure login system. They can also play built-in games here.",
         "projectFeatures": [
@@ -163,7 +186,7 @@
         "display": true
     },
     {
-        "id": 6,
+        "id": 7,
         "projectName": "Alavian Airlines",
         "projectDescription": "Alavian Airlines is a company that provides Airplane Tickets at the cheapest price to the customers. With Dashboard, Login System and Basic Features.",
         "projectFeatures": [
@@ -191,7 +214,7 @@
         "display": true
     },
     {
-        "id": 7,
+        "id": 8,
         "projectName": "Digital Haat",
         "projectDescription": "Digital Haat is a company that provides halal animals at the cheapest price for Qurbani to the customers. We have different categories. They can also hire Butlers for their Qurbani.",
         "projectFeatures": [
