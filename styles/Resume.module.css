@@ -1,6 +1,10 @@
 .container {
     padding: 4rem 15rem;
-    color: white
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .anchor a:hover {
@@ -12,39 +16,6 @@
     /* Common */
     .container {
         padding: 2rem 0;
-    }
-
-    /* Header.jsx */
-    .header .heading {
-        margin-bottom: 1rem;
-    }
-    .header .heading h1 {
-        font-size: 2.8em;
-    }
-
-    .header .heading h3 {
-        font-size: 1.2em;
-    }
-
-    .header .picture {
-        display: flex;
-        justify-content: center;
-        margin: 1rem 0;
-        display: none;
-    }
-
-    /* Skills.jsx */
-    .skillsWrapper {
-        padding: 0 0 0 5px;
-    }
-    .skillsWrapper .skillLevel {
-        height: 40%;
-        font-size: 1em;
-    }
-
-    /* Language.jsx */
-    .languageLevel {
-        height: 35%;
     }
 }
 

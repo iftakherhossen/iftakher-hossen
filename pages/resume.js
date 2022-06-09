@@ -1,5 +1,8 @@
+import { Button } from "@mui/material";
+import { Box } from "@mui/system";
 import Head from "next/head";
 import Image from "next/image";
+import Link from "next/link";
 import React, { useState } from "react";
 import Styles from "../styles/Resume.module.css";
 const Resume = () => {
@@ -11,13 +14,20 @@ const Resume = () => {
       </Head>
 
       <main className={Styles.container}>
-        <Image
-          src="https://i.ibb.co/6XjycJT/Iftakher-Hossen.png"
-          alt="Resume in Image Format"
-          width="1000px"
-          height="1000px"
-          draggable="false"
-        />
+        <Box sx={{ mb: 4 }}>
+          <Link href="https://drive.google.com/file/d/1ovRImUlYxBj-QsglW7Y3EJ-d2850fdqA/view?usp=sharing" passHref>
+            <Button variant="contained">Resume PDF Version</Button>
+          </Link>
+        </Box>
+        <Box>
+          <Image
+            src="https://i.ibb.co/6XjycJT/Iftakher-Hossen.png"
+            alt="Resume in Image Format"
+            width="1000px"
+            height="1350px"
+            draggable="false"
+          />
+        </Box>
       </main>
     </div>
   );
