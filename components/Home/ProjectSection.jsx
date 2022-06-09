@@ -24,12 +24,12 @@ const ProjectSection = ({ projectsData }) => {
 
     return (
         <div className={styles.projects} id='projects'>
-            <Typography variant="h4" sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+            <Typography variant="h4" sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center', mb: 6 }}>
                 My Projects
             </Typography>
 
             <Container>
-                <Grid container sx={{ mt: 6, mb: 0 }}>
+                <Grid container spacing={{ xs: 1.5, md: 2.5 }} sx={{ mb: 0 }}>
                     {
                         show === true && projectData.map(project => (
                             <SingleProjectCard

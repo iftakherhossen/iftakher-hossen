@@ -29,7 +29,7 @@
         {
             "id": 5,
             "name": "Material-Ui",
-            "growth": 70,
+            "growth": 80,
             "color": "bg-info"
         },
         {
@@ -53,12 +53,6 @@
             
         },
         {
-            "id": 9,
-            "name": "Node.js",
-            "growth": 40,
-            "color": "bg-danger"
-        },
-        {
             "id": 10,
             "name": "Next.js",
             "growth": 40,
@@ -68,8 +62,8 @@
     "others": [
         {
             "id": 1,
-            "name": "",
-            "growth": 0,
+            "name": "React Native",
+            "growth": 10,
             "color": "bg-warning"
         }
     ],
@@ -79,6 +73,12 @@
             "name": "JavaScript",
             "growth": 70,
             "color": "bg-secondary"
+        },
+        {
+            "id": 1,
+            "name": "Python",
+            "growth": 20,
+            "color": "bg-warning"
         }
     ],
     "tools": [

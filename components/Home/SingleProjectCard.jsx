@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Backdrop, Button, Card, CardActionArea, CardActions, CardContent, CardMedia, Chip, Fab, Fade, Grid, IconButton, List, ListItem, ListItemText, Modal, Stack, Tooltip, Typography } from '@mui/material';
+import { Backdrop, Button, Card, CardActionArea, CardActions, CardContent, CardMedia, Chip, Divider, Fab, Fade, Grid, IconButton, List, ListItem, ListItemText, Modal, Stack, Tooltip, Typography } from '@mui/material';
 import AddCircleOutlineIcon from '@mui/icons-material/AddCircleOutline';
 import RemoveCircleOutlineIcon from '@mui/icons-material/RemoveCircleOutline';
 import { Box } from '@mui/system';
@@ -24,24 +24,19 @@ const SingleProjectCard = ({ project }) => {
     };
     const handleCloseImageModal = () => setOpenImage(false);
 
-    const handleZoom = (screenshot) => {
-        handleOpenImageModal(screenshot);
-    }
-
     return (
-        <Grid item xs={12} md={6} lg={4}>
-            <Card sx={{ m: { xs: 2, sm: 1 } }}>
-                {/*  data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" */}
+        <Grid item xs={12} md={6} lg={4} sx={{ mt: { xs: 1, sm: 0 } }}>
+            <Card sx={{ display: 'flex', flexDirection: 'column', alignContent: 'space-between', height: '100%' }}>
                 <CardActionArea href={projectLink} target="_blank">
                     {
                         projectImage ? <CardMedia
                             component="img"
-                            height="100%"
+                            height="178px"
                             image={projectImage}
                             alt="Project Feature Photo"
                             draggable="false"
-                        /> : <Box sx={{ height: 178 }}>
-
+                        /> : <Box sx={{ height: 180,  }}>
+                            <Typography variant="h6">Image Not Found</Typography>
                         </Box>
                     }
                     <CardContent>
@@ -104,23 +99,8 @@ const SingleProjectCard = ({ project }) => {
                                     {
                                         projectTechnologies.map(tech => <Chip label={tech} variant="outlined" key={tech} sx={{ fontWeight: 500, fontSize: 15, p: 0, m: 0.5 }} size="medium" color="primary" />)
                                     }
-                                </Stack>
-                                <Box sx={{ mt: 1, display: 'flex', justifyContent: 'center', p: 2 }} className="gallery">
-                                    {
-                                        projectScreenshots.map(screenshot => <Image
-                                            src={screenshot}
-                                            key={screenshot}
-                                            alt="Project Screenshots"
-                                            width={300}
-                                            height={165}
-                                            id="projectImages"
-                                            onClick={() => handleZoom(screenshot)}
-                                            draggable="false"
-                                        />
-                                        )
-                                    }
-                                </Box>
-                                <hr />
+                                </Stack>                                
+                                <Divider sx={{ mt: 2, mb: 3 }} />
                                 <Box>
                                     <Button variant='contained' sx={{ mx: 1 }} href={projectLink} style={{ color: 'white' }}>
                                         <LanguageIcon /> &nbsp; Live Site

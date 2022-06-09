@@ -16,7 +16,7 @@ const SkillSection = ({ skills }) => {
                 <Tabs className={styles["marginBottomInMobile"] + " " + styles["skillsContainer"]}>
                     <TabList>
                         <Tab style={{ backgroundColor: 'transparent', border: 0, color: 'white', fontSize: 20, fontWeight: 500 }}>Web</Tab>
-                        {/* <Tab style={{ backgroundColor: 'transparent', border: 0, color: 'white', fontSize: 20, fontWeight: 500 }}>Others</Tab> */}
+                        <Tab style={{ backgroundColor: 'transparent', border: 0, color: 'white', fontSize: 20, fontWeight: 500 }}>Others</Tab>
                         <Tab style={{ backgroundColor: 'transparent', border: 0, color: 'white', fontSize: 20, fontWeight: 500 }}>Programming</Tab>
                         <Tab style={{ backgroundColor: 'transparent', border: 0, color: 'white', fontSize: 20, fontWeight: 500 }}>Tools</Tab>
                     </TabList>
@@ -35,9 +35,10 @@ const SkillSection = ({ skills }) => {
                             }
                         </Grid>
                     </TabPanel>
-                    {/* <TabPanel>
+                    <TabPanel>
                         <Grid container  sx={{p: 2}}>
-                            skills.others.map(({ id, name, growth, color }) => <Grid item xs={12} md={6} lg={6} sx={{ px: 2 }} key={id}>
+                            {
+                                skills.others.map(({ id, name, growth, color }) => <Grid item xs={12} md={6} lg={6} sx={{ px: 2 }} key={id}>
                                     <Typography variant="body1" className={styles.skillsName} sx={{ fontWeight: 600 }}>{name}</Typography>
                                     <Tooltip title={`${growth}%`}>
                                         <div className="progress">
@@ -45,8 +46,9 @@ const SkillSection = ({ skills }) => {
                                         </div>
                                     </Tooltip>
                                 </Grid>)
+                            }
                         </Grid>
-                    </TabPanel> */}
+                    </TabPanel>
                     <TabPanel>
                         <Grid container sx={{ p: 2 }}>
                             {

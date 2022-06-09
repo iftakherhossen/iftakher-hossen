@@ -14,9 +14,12 @@ const Resume = () => {
       </Head>
 
       <main className={Styles.container}>
-        <Box sx={{ mb: 4 }}>
+        <Box sx={{ mb: 4, display: 'flex', justifyContent: 'center' }}>
+          <Link href="/" passHref>
+            <Button variant="contained" sx={{ mx: 2 }}>Back to Home</Button>
+          </Link>
           <Link href="https://drive.google.com/file/d/1ovRImUlYxBj-QsglW7Y3EJ-d2850fdqA/view?usp=sharing" passHref>
-            <Button variant="contained">Resume PDF Version</Button>
+            <Button variant="contained" sx={{ mx: 2 }}>Resume PDF Version</Button>
           </Link>
         </Box>
         <Box>
