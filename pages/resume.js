@@ -1,15 +1,8 @@
 import Head from "next/head";
+import Image from "next/image";
 import React, { useState } from "react";
 import Styles from "../styles/Resume.module.css";
-import { Document, Page, pdfjs } from "react-pdf";
 const Resume = () => {
-  const file= "./Iftakher-Resume.pdf";
-  const [numPages, setNumPages] = useState(null);
-
-  function onDocumentLoadSuccess({ numPages: nextNumPages }) {
-    setNumPages(nextNumPages);
-  }
-
   return (
     <div>
       <Head>
@@ -18,16 +11,13 @@ const Resume = () => {
       </Head>
 
       <main className={Styles.container}>
-        <Document file={file} onLoadSuccess={onDocumentLoadSuccess}>
-          {Array.from({ length: numPages }, (_, index) => (
-            <Page
-              key={`page_${index + 1}`}
-              pageNumber={index + 1}
-              renderAnnotationLayer={false}
-              renderTextLayer={false}
-            />
-          ))}
-        </Document>
+        <Image
+          src="https://i.ibb.co/6XjycJT/Iftakher-Hossen.png"
+          alt="Resume in Image Format"
+          width="1000px"
+          height="1000px"
+          draggable="false"
+        />
       </main>
     </div>
   );

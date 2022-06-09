@@ -91,7 +91,7 @@ const HeroSection = () => {
                                         color="inherit"
                                         className={styles.btn}
                                         sx={{ borderTop: '1px solid transparent', borderBottom: '1px solid transparent', ml: 1 }}
-                                        href="https://drive.google.com/uc?export=download&id=1XFnyqeM_9yxzaj5qjMUEmPuAIL_0gSlq"
+                                        href="https://drive.google.com/uc?export=download&id=1ovRImUlYxBj-QsglW7Y3EJ-d2850fdqA"
                                         download="Iftakher-Hossen-Resume"
                                         style={{ color: 'white' }}
                                     >
