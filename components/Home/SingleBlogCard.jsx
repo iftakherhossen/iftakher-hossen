@@ -60,9 +60,6 @@ const SingleBlogCard = ({ blog }) => {
                         <Box sx={{ display: 'flex', alignItems: 'center', mx: 1, fontWeight: 500 }}>
                             <CommentIcon sx={{ color: '#707070', fontSize: 22, mr: 1 }} /> {comments_count}
                         </Box>
-                        <Box sx={{ display: 'flex', alignItems: 'center', mx: 1, fontWeight: 500 }}>
-                            <VisibilityIcon sx={{ color: '#707070', fontSize: 22, mr: 1 }} /> {page_views_count}
-                        </Box>
                     </Box>
                     <Box>
                         <IconButton aria-label="share" onClick={handleCopyLink}>
