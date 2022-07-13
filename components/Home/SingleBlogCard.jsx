@@ -2,6 +2,7 @@ import { Card, CardActionArea, CardActions, CardContent, CardMedia, Chip, Grid, 
 import React from 'react';
 import moment from "moment";
 import FavoriteIcon from '@mui/icons-material/Favorite';
+import VisibilityIcon from '@mui/icons-material/Visibility';
 import CommentIcon from '@mui/icons-material/Comment';
 import ShareIcon from '@mui/icons-material/Share';
 import AccessTimeIcon from '@mui/icons-material/AccessTime';
@@ -9,7 +10,7 @@ import { Box } from '@mui/system';
 import toast from 'react-hot-toast';
 
 const SingleBlogCard = ({ blog }) => {
-    const { title, description, created_at, social_image, url, public_reactions_count, comments_count, tag_list } = blog;
+    const { title, description, created_at, social_image, url, public_reactions_count, page_views_count, comments_count, tag_list } = blog;
 
     const handleCopyLink = () => {
         navigator.clipboard.writeText(url);
@@ -58,6 +59,9 @@ const SingleBlogCard = ({ blog }) => {
                         </Box>
                         <Box sx={{ display: 'flex', alignItems: 'center', mx: 1, fontWeight: 500 }}>
                             <CommentIcon sx={{ color: '#707070', fontSize: 22, mr: 1 }} /> {comments_count}
+                        </Box>
+                        <Box sx={{ display: 'flex', alignItems: 'center', mx: 1, fontWeight: 500 }}>
+                            <VisibilityIcon sx={{ color: '#707070', fontSize: 22, mr: 1 }} /> {page_views_count}
                         </Box>
                     </Box>
                     <Box>
